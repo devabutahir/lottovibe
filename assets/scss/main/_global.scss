@@ -6,7 +6,6 @@ html {
 
 //global body
 body {
-	font-family: var(--n0);
 	background-color: rgb(var(--bg1)); 
 	color: var(--n2);
 	font-size: 18px;
@@ -52,7 +51,7 @@ a {
 	&:focus, &:hover {
 		text-decoration: none;
 		outline: none;
-		color: var(--n700);
+		color: var(--p1);
 	}
 	i{
 		font-weight: 400;
@@ -151,6 +150,34 @@ textarea {
 	}
 }
 //common input style
+
+//Global Customer Review
+.customer-review{
+
+}
+.customer-revew-item{
+	border-radius: 50%;
+	display: inline-block;
+	@include box(51);
+	img{
+		@include box(48);
+		border-radius: 50%;
+	}
+}
+.customer-ratting{
+	@include box(48);
+	border-radius: 50%;
+}
+.cmn-style-flex{
+	display: flex;
+	align-items: center;
+	li{
+		&:not(:first-child){
+			margin-left: -16px;
+		}
+	}
+}
+//Global Customer Review
 
 //common container
 .container-header{
@@ -296,11 +323,17 @@ input[type="checkbox"] {
 .s1-clr{
 	color: var(--s1);
 }
+.s1-border{
+	border: 1px solid var(--s1);
+}
 .s1-bg{
 	background: var(--s1);
 }
 .act1-clr{
 	color: var(--act1);
+}
+.act1-border{
+	border: 1px solid var(--act1);
 }
 .act1-bg{
 	background: var(--act1);
@@ -308,11 +341,17 @@ input[type="checkbox"] {
 .act2-clr{
 	color: var(--act2);
 }
+.act2-border{
+	border: 1px solid var(--act2);
+}
 .act2-bg{
 	background: var(--act2);
 }
 .act3-clr{
 	color: var(--act3);
+}
+.act3-border{
+	border: 1px solid var(--act3);
 }
 .act3-bg{
 	background: var(--act3);
@@ -320,11 +359,17 @@ input[type="checkbox"] {
 .act4-clr{
 	color: var(--act4);
 }
+.act4-border{
+	border: 1px solid var(--act4);
+}
 .act4-bg{
 	background: var(--act4);
 }
 .act5-clr{
 	color: var(--act5);
+}
+.act5-border{
+	border: 1px solid var(--act5);
 }
 .act5-bg{
 	background: var(--act5);
@@ -357,6 +402,12 @@ input[type="checkbox"] {
 
 .n0-clr{
 	color: var(--n0);
+}
+.n0-border{
+	border: 2px solid var(--n0);
+}
+.n0-border2{
+	border: 1px solid var(--n0);
 }
 .n0-bg{
 	background: var(--n0);
