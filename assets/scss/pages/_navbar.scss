@@ -103,6 +103,13 @@
             }
         } 
     }
+    @include maxQuery(420){
+        .menu-link{
+            ul{
+                width: calc(100%);
+            }
+        }
+    }
 }
 //nav brand
 .nav-brand {
@@ -267,7 +274,7 @@
             .sub-menu {
                 display: none;
                 padding: 5px 5px 8px;
-                border-left: 2px solid var(--p1);
+                // border-left: 2px solid var(--p1);
                 margin-top: 10px;
                 margin-bottom: 10px;
                 li{

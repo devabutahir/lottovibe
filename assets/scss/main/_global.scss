@@ -182,8 +182,14 @@ textarea {
 //common container
 .container-header{
 	@include minQuery(575){
-		max-width: 1721px;
+		max-width: 1621px;
 		margin: 0 auto;
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+	@include maxQuery(575){
+		padding-right: 16px;
+		padding-left: 16px;
 	}
 }
 //common container
@@ -236,7 +242,55 @@ textarea {
 		padding-left: 10px;
 	}
 }
+.cmn-60{
+	@include box(60);
+	@include maxQuery(1399){
+		@include box(40);
+	}
+}
 //common dots
+
+//custom big button
+.custom-bigarrow{
+	border: 1px solid var(--nw4);
+	border-radius: 100px;
+	padding: 8px 20px 11px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s;
+	.icon{
+		position: relative;
+		svg{
+			z-index: 1;
+			position: relative;
+			transition: all 0.4s;
+		}
+		&::before{
+			position: absolute;
+			right: -18px;
+			top: -5px;
+			content: "";
+			width: 38px;
+			height: 38px;
+			background: var(--act4);
+			border-radius: 50%;
+			z-index: 0;
+			transition: all 0.4s;
+		}
+	}
+	&:hover{
+		.icon{
+			width: 100%;
+			&::before{
+				width: 100%;
+				height: 38px;
+				border-radius: 100px;
+			}
+		}
+	}
+}
+//custom big button
 
 // input custom 
 input::-webkit-outer-spin-button,
@@ -471,7 +525,13 @@ input[type="checkbox"] {
 	font-weight: 500 !important;
 }
 .fw_600{
-	font-weight: 600;
+	font-weight: 600 !important;
+}
+.fw_700{
+	font-weight: 700 !important;
+}
+.fw_800{
+	font-weight: 800 !important;
 }
 //Font Weight
 
@@ -884,7 +944,8 @@ iframe {
 // Custom Dropdown 
 
 *::-webkit-scrollbar {
-	width: 4px;
+	width: 2px;
+	background: var(--n2);
 }
 //dashborar scroll customiz
 *::-webkit-scrollbar-button,
@@ -895,7 +956,7 @@ iframe {
 //mega-menu-style scroll
 .mega-menu-style::-webkit-scrollbar {
 	@include minQuery(1199){
-		width: 4px;
+		width: 2px;
 	}
 	@include maxQuery(1199){
 		width: 0px;
@@ -1315,39 +1376,39 @@ iframe {
 }
 // Single switch
 
-// swiper cmn btn
-.slider-btn{
-	&.active,
-	&:hover{
-		i{
-			transform: rotate(-0deg) !important;
-		}
-	}
-	.cmn-btn{
-		&.active,
-		&:hover{
-			i{
-				transform: rotate(-0deg) !important;
-			}
-		}
-	}
+// cmn body scroll body btn
+.scroll-bn1{
+	width: 112px;
+	height: 212px;
 }
-// swiper cmn btn
+// cmn body scroll body btn
 
 // swiper slider btn
-.slide-button {
+.swiper-button-prevteam,
+.swiper-button-nextteam {
 	outline: none;
 	bottom: 0;
 	padding: 0;
-	width: 40px;
-	height: 40px;
 	justify-content: center;
 	align-items: center;
 	flex-shrink: 0;
 	border-radius: 5px;
 	z-index: 5;
-	&.ara-prev {
-		transform: rotate(180deg);
+	transition: all 0.4s;
+	i{
+		transition: all 0.4s;
+		font-size: 26px;
+	}
+	&:hover{
+		background: var(--p1);
+		i{
+			color: var(--n1);
+		}
+	}
+	@include maxQuery(1399){
+		i{
+			font-size: 18px;
+		}
 	}
 }
 // swiper cmn btn

@@ -47,17 +47,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         // Check Scroll //
 
-        // Odometer Init //
-        let windowHeight = $(window).height();
-        $('.odometer').children().each(function () {
-          if ($(this).isInViewport({ "tolerance": windowHeight, "toleranceForLast": windowHeight, "debug": false })) {
-            var section = $(this).closest(".counters");
-            section.find(".odometer").each(function () {
-              $(this).html($(this).attr("data-odometer-final"));
-            });
+      //--Odometer--//
+      $(".odometer-item").each(function () {
+        $(this).isInViewport(function (status) {
+          if (status === "entered") {
+            for (
+              var i = 0;
+              i < document.querySelectorAll(".odometer").length;
+              i++
+            ) {
+              var el = document.querySelectorAll(".odometer")[i];
+              el.innerHTML = el.getAttribute("data-odometer-final");
+            }
           }
         });
-        // Odometer Init //
+      });
+      //--Odometer--//
 
       });
       // window on scroll function//
@@ -165,34 +170,34 @@ document.addEventListener("DOMContentLoaded", function () {
       // swipper slide //
 
       // educational slide //
-        var swiper = new Swiper(".educational__wrap", {
+        var swiper = new Swiper(".banner-carslide-wrap", {
           loop: true,
           slidesPerView: 1,
           slidesToShow: 1,
           spaceBetween: 24,
           speed: 1000,
           navigation: {
-            nextEl: ".swiper-button-next2",
-            prevEl: ".swiper-button-prev2",
+            nextEl: ".swiper-button-prevteam",
+            prevEl: ".swiper-button-nextteam",
           },
           autoplay: {
             delay: 1200,
           },
           breakpoints: {
             1400: {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 24,
             },
             992: {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 14,
             },
             768: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 14,
             },
             576: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 14,
             },
             500: {

@@ -1,4 +1,60 @@
 //Banner styel version One
+.banner-section-v1{
+    z-index: 1;
+    &::before{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 1060px;
+        height: 250px;
+        content: "";
+        background: var(--n1);
+        z-index: -1;
+    }
+    .slider-btn{
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+    }
+    @include maxQuery(1500){
+        &::before{
+            width: 900px;
+        }
+        .slider-btn{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+    @include maxQuery(1199){
+        &::before{
+            display: none;
+        }
+    }
+    @include maxQuery(575){
+        .slider-btn{
+            display: none !important;
+        }
+    }
+}
+.banner-content-v1{
+    padding: 120px 0 95px;
+    position: relative;
+    z-index: 1;
+    .bn-pra{
+        font-size: 18px;
+        line-height: 1.5;
+        max-width: 750px;
+    }
+    .how-cont{
+        border-bottom: 1px solid ;
+    }
+}
+.banner-content-v1customer{
+    padding-top: 90px;
+    position: relative;
+    z-index: 2;
+}
 .custom-display{
     font-size: 100px;
     font-weight: 900;
@@ -8,4 +64,226 @@
         display: block;
     }
 }
+.winner-span{
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 120%;
+    font-family: var(--body-font);
+    .wins{
+        font-size: 100px;
+        font-weight: 900;
+        line-height: 120%;
+        font-family: var(--body-font);
+    }
+    .thumb{
+        position: relative;
+        display: block;
+        width: 196px;
+        overflow: hidden;
+        img{
+            border: 1px solid var(--act3);
+            border-radius: 100px;
+            width: 100%;
+            height: 84px;
+            padding: 1px;
+            animation: zum 2s linear infinite;
+        }
+    }
+    .bn-vid{
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.bn-vid{
+   @include box(40);
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+    background: rgba(255, 255, 255, 0.60);
+    border-radius: 50%;
+}
+.shape-win{
+    position: absolute;
+    right: 70px;
+    top: 350px;
+}
 //Banner styel version One
+
+//Odometer items
+.bn1-odometer{
+    padding-top: 148px;
+}
+.arrow-rotate{
+    animation: rots 2s linear infinite;
+}
+@keyframes rots {
+    50%{
+        transform: rotate(7deg);
+    }
+}
+.odometer__items{
+    p{
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--nw1);
+        margin-top: 6px;
+    }
+}
+
+//banner one car slider
+.banner-oneslider{
+    position: absolute;
+    bottom: -12px;
+    right: 0; 
+    .banner-carslide-wrap{
+        max-width: 960px;
+        .bn-carslide-item{
+            max-width: 850px;
+        }
+    }
+    @include maxQuery(1500){
+        right: -120px;
+        .banner-carslide-wrap{
+            max-width: 860px;
+            .bn-carslide-item{
+                max-width: 700px;
+            }
+        }
+    }
+    @include maxQuery(1199){
+        right: -150px;
+        bottom: -18px;
+        .banner-carslide-wrap{
+            max-width: 700px;
+            .bn-carslide-item{
+                max-width: 500px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        right: -200px;
+        bottom: -18px;
+        .banner-carslide-wrap{
+            max-width: 700px;
+            .bn-carslide-item{
+                max-width: 500px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        right: -220px;
+        bottom: -10px;
+        .banner-carslide-wrap{
+            max-width: 580px;
+            .bn-carslide-item{
+                max-width: 360px;
+            }
+        }
+    }
+    @include maxQuery(575){
+       display: none;
+    }
+}
+
+
+
+//responsive area
+@include maxQuery(1399){
+    .custom-display{
+        font-size: 68px;
+        line-height: 110%;
+    }
+    .winner-span{
+        font-size: 68px;
+        line-height: 110%;
+        .wins{
+            font-size: 68px;
+             line-height: 110%;
+        }
+    }
+    .shape-win{
+        top: 335px;
+    }
+}
+@include maxQuery(1199){
+    .banner-content-v1{
+        padding: 70px 0 80px;
+    }
+    .banner-content-v1customer{
+        padding-top: 50px;
+    }
+    .bn1-odometer{
+        padding-top: 30px;
+    }
+}
+@include maxQuery(991){
+    .bn1-odometer{
+        padding-top: 30px;
+        .cont{
+            span{
+                font-size: 32px !important;
+            }
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .banner-content-v1customer{
+        padding-top: 24px;
+        padding-bottom: 70px;
+    }
+    .banner-content-v1{
+        padding: 50px 0 0px;
+    }
+    .arrow-rotate,
+    .shape-win{
+        display: none !important;
+    }
+}
+@include maxQuery(767){
+    .banner-content-v1{
+        padding: 50px 0 0px;
+    }
+    .custom-display{
+        font-size: 38px;
+    }
+    .winner-span{
+        font-size: 38px;
+        .wins{
+            font-size: 38px;
+        }
+    }
+    .bn-pra{
+        font-size: 17px !important;
+    }
+}
+@include maxQuery(400){
+    .banner-content-v1{
+        padding: 40px 0 0px;
+    }
+    .custom-display{
+        font-size: 32px;
+    }
+    .winner-span{
+        font-size: 32px;
+        .wins{
+            font-size: 32px;
+        }
+        .thumb{
+            width: 100%;
+            img{
+                height: 70px;
+                padding: 1px;
+            }
+            .bn-vid{
+                top: 50%;
+            }
+        }
+    }
+    .bn-pra{
+        font-size: 17px !important;
+    }
+}
+//Odometer items
