@@ -75,7 +75,7 @@ h6 > a,
 .display-one, .display-two, .display-three, .display-four, .display-five, .display-six, .heading{
 	font-family: var(--body-font);
 	color: var(--n2);
-	font-weight: 700;
+	font-weight: 800;
 	padding: 0;
 	margin: 0;
 	line-height: 128%;
@@ -411,7 +411,7 @@ input[type="checkbox"] {
 	background: var(--act3);
 }
 .act4-clr{
-	color: var(--act4);
+	color: var(--act4) !important;
 }
 .act4-border{
 	border: 1px solid var(--act4);
@@ -1115,44 +1115,26 @@ iframe {
 
 //section title
 .section__title{
-	.sec__title{
-		max-width: 636px;
-	}
-	.sec__pra{
-		max-width: 416px;
-		.cmnhober-rotate{
-			transition: all 0.5s;
-			i{
-				transition: all 0.4s;
-			}
-			&:hover{
-				color: var(--s2) !important;
-				border-bottom: 1px solid var(--s2) !important;
-				i{
-					color: var(--s2) !important;
-					transform: rotate(46deg) !important;
-					padding-left: 2px !important;
-				}
-			}
+	.act4-underline{
+		position: relative;
+		&::before{
+			position: absolute;
+			bottom: 6px;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			content: "";
+			background: var(--act4);
 		}
 	}
 	@include maxQuery(1399){
-		.sec__title{
-			font-size: 48px;
+		.display-four{
+			font-size: 36px;
 		}
 	}
-	@include maxQuery(991){
-		.sec__title{
-			font-size: 28px;
-		}
-		.sec__pra{
-			max-width: 316px;
-		}
-	}
-	@include maxQuery(767){
-		flex-wrap: wrap;
-		.sec__title{
-			font-size: 28px;
+	@include maxQuery(575){
+		.display-four{
+			font-size: 29px;
 		}
 	}
 }
@@ -1380,6 +1362,61 @@ iframe {
 .scroll-bn1{
 	width: 112px;
 	height: 212px;
+	position: absolute;
+	bottom: 40px;
+	left: 60px;
+	.scroll-iconrarea{
+		animation: updown10 2s linear infinite;
+	}
+	@include maxQuery(1700){
+		bottom: 10px;
+		left: 10px;
+		width: 70px;
+		height: 160px;
+	}
+	@include maxQuery(1600){
+		width: 60px;
+		height: 110px;
+		span{
+			margin-bottom: 1px;
+		}
+		svg{
+			width: 20px;
+			height: 40px;
+		}
+	}
+	@include maxQuery(1399){
+		bottom: 5px;
+		left: 5px;
+		width: 30px;
+		height: 50px;
+		.fs18{
+			display: none !important;
+		}
+		svg{
+			width: 8px;
+			height: 26px;
+		}
+	}
+	@include maxQuery(575){
+		bottom: 15px;
+		right: 15px !important;
+		left: initial;
+		width: 30px;
+		height: 50px;
+		.fs18{
+			display: none !important;
+		}
+		svg{
+			width: 8px;
+			height: 26px;
+		}
+	}
+}
+@keyframes updown10 {
+	50%{
+		transform: translateY(-10px);
+	}
 }
 // cmn body scroll body btn
 
@@ -1403,6 +1440,34 @@ iframe {
 		background: var(--p1);
 		i{
 			color: var(--n1);
+		}
+	}
+	@include maxQuery(1399){
+		i{
+			font-size: 18px;
+		}
+	}
+}
+.cmn-s1-slide{
+	outline: none;
+	bottom: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	z-index: 5;
+	transition: all 0.4s;
+	i{
+		transition: all 0.4s;
+		font-size: 26px;
+	}
+	.ti{
+		line-height: 2;
+	}
+	&:hover{
+		background: var(--act4);
+		i{
+			color: var(--n0) !important;
 		}
 	}
 	@include maxQuery(1399){

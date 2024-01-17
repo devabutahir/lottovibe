@@ -13,6 +13,7 @@
 
 .display-four {
 	font-size: 56px;
+	line-height: 120%;
 }
 
 .display-five {
@@ -230,31 +231,37 @@ li {
 	.display-one {
 		font-size: 72px;
 		line-height: 86.4px;
+		font-weight: 800;
 	}
 	
 	.display-two {
 		font-size: 64px;
 		line-height: 76.8px;
+		font-weight: 800;
 	}
 	
 	.display-three {
 		font-size: 56px;
 		line-height: 67.2px;
+		font-weight: 800;
 	}
 	
 	.display-four {
 		font-size: 48px;
 		line-height: 46.4px;
+		font-weight: 800;
 	}
 	
 	.display-five {
 		font-size: 42px;
 		line-height: 54.6px;
+		font-weight: 800;
 	}
 	
 	.display-six {
 		font-size: 32px;
 		line-height: 38.4px;
+		font-weight: 800;
 	}
 	// Heading responsive
 	.fs-one,
@@ -262,6 +269,7 @@ li {
 	h1 > a {
 		font-size: 40px;
 		line-height: 48px;
+		font-weight: 800;
 	}
 	
 	.fs-two,
@@ -269,6 +277,7 @@ li {
 	h2 > a {
 		font-size: 32px;
 		line-height: 38.4px;
+		font-weight: 800;
 	}
 	
 	.fs-three,
@@ -276,6 +285,7 @@ li {
 	h3 > a {
 		font-size: 24px;
 		line-height: 31.2px;
+		font-weight: 800;
 	}
 	
 	.fs-four,
@@ -283,13 +293,15 @@ li {
 	h4 > a {
 		font-size: 20px;
 		line-height: 26px;
+		font-weight: 800;
 	}
 	
 	.fs-five,
 	h5,
 	h5 > a {
-		font-size: 18px;
+		font-size: 17px;
 		line-height: 20.8px;
+		font-weight: 800;
 	}
 	
 	.fs-six,
@@ -297,6 +309,7 @@ li {
 	h6 > a {
 		font-size: 16px;
 		line-height: 18.8px;
+		font-weight: 800;
 	}
 	
 	.fs-seven {
@@ -372,7 +385,7 @@ li {
 	}
 	
 	.display-four {
-		font-size: 32px;
+		font-size: 29px;
 		line-height: 38.4px;
 	}
 	

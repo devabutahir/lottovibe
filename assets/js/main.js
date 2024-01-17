@@ -134,42 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
-      // swipper slide //
-        var swiper = new Swiper(".free__livewrap", {
-          loop: true,
-          slidesPerView: 1,
-          slidesToShow: 1,
-          spaceBetween: 48,
-          speed: 1000,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          autoplay: {
-            delay: 1400,
-          },
-          breakpoints: {
-            1400: {
-                slidesPerView: 2,
-                spaceBetween: 48,
-            },
-            992: {
-                slidesPerView: 2,
-                spaceBetween: 24,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            576: {
-                slidesPerView: 1,
-                spaceBetween: 14,
-            },
-        }
-        });
-      // swipper slide //
-
-      // educational slide //
+      // banner car slide //
         var swiper = new Swiper(".banner-carslide-wrap", {
           loop: true,
           slidesPerView: 1,
@@ -198,6 +163,47 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             576: {
                 slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            500: {
+              slidesPerView: 1,
+              spaceBetween: 14,
+            },
+        }
+        });
+        // lottery service
+        var swiper = new Swiper(".lottery-service-wrap", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 24,
+          speed: 1500,
+          navigation: {
+            nextEl: ".swiper-button-prevteam",
+            prevEl: ".swiper-button-nextteam",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          autoplay: {
+            delay: 1600,
+          },
+          breakpoints: {
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 14,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 14,
+            },
+            576: {
+                slidesPerView: 2,
                 spaceBetween: 14,
             },
             500: {

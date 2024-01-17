@@ -57,7 +57,7 @@
 }
 .custom-display{
     font-size: 100px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 120%;
     font-family: var(--body-font);
     span{
@@ -66,14 +66,21 @@
 }
 .winner-span{
     font-size: 100px;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 120%;
     font-family: var(--body-font);
     .wins{
         font-size: 100px;
-        font-weight: 900;
+        font-weight: 800;
         line-height: 120%;
         font-family: var(--body-font);
+        position: relative;
+        svg{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            max-width: 353px;
+        }
     }
     .thumb{
         position: relative;
@@ -186,6 +193,72 @@
        display: none;
     }
 }
+// Lottary service
+.lotto-services-container{
+    margin-left: 310px;
+    position: relative;
+    @include maxQuery(1900){
+        margin-left: 0;
+    }
+}
+.lotter-service-item{
+    img{
+        width: 100%;
+    }
+    .lottory-sercar{
+        top: 32px;
+        left: 32px;
+    }
+    .serial-badge{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        z-index: 2;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 90px;
+            bottom: 22%;
+            z-index: -1;
+            border-radius: var(--number-token-0, 0px) var(--number-token-0, 0px) var(--number-token-25, 100px) var(--number-token-25, 100px);
+            background: linear-gradient(180deg, rgba(254, 201, 47, 0.00) 0%, rgba(254, 201, 47, 0.70) 100%);
+        }
+    }
+}
+// Lottary service
+
+.swiper-pagination{
+    background: red;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+}
+
+// Serial Badge
+.serial-badge{
+    @include box(60);
+    @include maxQuery(1199){
+        @include box(44);
+    }
+}
+// Serial Badge
+
+//l badge
+.lbadge{
+    @include box(80);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include maxQuery(1399){
+        @include box(60);
+    }
+    @include maxQuery(1199){
+        @include box(50);
+    }
+}
+//l badge
 
 
 
