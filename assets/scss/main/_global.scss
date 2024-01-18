@@ -158,14 +158,14 @@ textarea {
 .customer-revew-item{
 	border-radius: 50%;
 	display: inline-block;
-	@include box(51);
+	@include box(49);
 	img{
-		@include box(48);
+		@include box(46);
 		border-radius: 50%;
 	}
 }
 .customer-ratting{
-	@include box(48);
+	@include box(46);
 	border-radius: 50%;
 }
 .cmn-style-flex{
@@ -173,7 +173,7 @@ textarea {
 	align-items: center;
 	li{
 		&:not(:first-child){
-			margin-left: -16px;
+			margin-left: -17px;
 		}
 	}
 }
@@ -1460,8 +1460,6 @@ iframe {
 	i{
 		transition: all 0.4s;
 		font-size: 26px;
-	}
-	.ti{
 		line-height: 2;
 	}
 	&:hover{
@@ -1477,6 +1475,79 @@ iframe {
 	}
 }
 // swiper cmn btn
+
+// cmn circle 160
+.cmn__collection{
+	@include box(160);
+	display: block;
+	z-index: 1;
+	&::before{
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		content: "";
+		background: rgb(255 148 88 / 35%);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: all 0.5s;
+		z-index: 0;
+		opacity: 0;
+	}
+	&::after{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		content: "";
+		background: var(--act4);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: all 1.8s;
+		z-index: 0;
+		opacity: 0;
+	}
+	&:hover{
+		&::before{
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+		}
+		&::after{
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+		}
+		.cmn-cont-box{
+			color: var(--n0);
+			span{
+				color: var(--n0);
+			}
+			.icon{
+				transform: rotate(-60deg);
+			}
+		}
+	}
+	.cmn-cont-box{
+		z-index: 3;
+		transition: all 0.4s;
+		span,
+		i{
+			transition: all 0.4s;
+		}
+	}
+	@include maxQuery(1199){
+		@include box(100);
+		span{
+			font-size: 12px;
+			max-width: 50px;
+			line-height: 1.1;
+		}
+	}
+}
+// cmn circle 160
 
 // slider pagination
 .slider-pagination{

@@ -15,6 +15,9 @@
         position: absolute;
         right: 40px;
         bottom: 40px;
+        i{
+            line-height: 2;
+        }
     }
     @include maxQuery(1500){
         &::before{
@@ -44,7 +47,7 @@
     .bn-pra{
         font-size: 18px;
         line-height: 1.5;
-        max-width: 750px;
+        max-width: 696px;
     }
     .how-cont{
         border-bottom: 1px solid ;
@@ -134,7 +137,7 @@
     p{
         font-size: 18px;
         font-weight: 600;
-        color: var(--nw1);
+        color: var(--nw2);
         margin-top: 6px;
     }
 }
@@ -197,17 +200,50 @@
 .lotto-services-container{
     margin-left: 310px;
     position: relative;
-    @include maxQuery(1900){
+    @include maxQuery(1800){
         margin-left: 0;
+        .swiper-pagination{
+            width: 100%;
+            @include maxQuery(767){
+                display: none !important;
+            }
+        }
+    }
+}
+.swiper-pagination{
+    background: rgba(255, 101, 14, 0.5);
+    width: 70%;
+    height: 2px;
+    position: initial;
+    .swiper-pagination-bullet{
+        width: 200px;
+        border-radius: 0;
+        opacity: 0;
+        transition: all 0.5s;
+        height: 6px;
+        &.swiper-pagination-bullet-active{
+            background: var(--act4);
+            opacity: 1;
+            height: 6px;
+        }
     }
 }
 .lotter-service-item{
     img{
         width: 100%;
     }
+    .lotto-img{
+        @include maxQuery(991){
+            opacity: 0.6;
+        }
+    }
     .lottory-sercar{
         top: 32px;
         left: 32px;
+    }
+    .lbadge{
+        transition: all 0.5s;
+        border: 1px solid var(--p1);
     }
     .serial-badge{
         position: absolute;
@@ -223,17 +259,22 @@
             z-index: -1;
             border-radius: var(--number-token-0, 0px) var(--number-token-0, 0px) var(--number-token-25, 100px) var(--number-token-25, 100px);
             background: linear-gradient(180deg, rgba(254, 201, 47, 0.00) 0%, rgba(254, 201, 47, 0.70) 100%);
+            transition: all 0.4s;
+        }
+    }
+    &:hover{
+        .serial-badge{
+            &::before{
+                bottom: -22%;
+            }
+        } 
+        .lbadge{
+            border: 1px solid var(--p1);
+            background: transparent !important;
         }
     }
 }
 // Lottary service
-
-.swiper-pagination{
-    background: red;
-    width: 100%;
-    height: 20px;
-    position: absolute;
-}
 
 // Serial Badge
 .serial-badge{
@@ -259,6 +300,104 @@
     }
 }
 //l badge
+
+//luxury  selection car 
+.luxury-selection-v1{
+    .click-slideluxry-button{
+        position: absolute;
+        top: 50%;
+    }
+    .luxury-shape{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .cmn__collection {
+        margin-bottom: -40px;
+    }
+    @include maxQuery(991){
+        .click-slideluxry-button{
+            position: absolute;
+            top: initial;
+            bottom: 10px;
+        }
+    }
+}
+.click-slideluxry-button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.luxury-car-item1{
+    .display-three{
+        @include maxQuery(1499){
+            font-size: 44px;
+        }
+        @include maxQuery(767){
+            font-size: 32px;
+        }
+        @include maxQuery(575){
+            font-size: 20px;
+        }
+    }
+}
+//luxury  selection car 
+
+//Howit Section
+.howit-work-section{
+    .howit-video{
+        @include maxQuery(575){
+            max-width: 240px;
+        }
+    }
+}
+.howit-video{
+    width: 100%;
+    img{
+        width: 100%;
+        border-radius: 100px;
+    }
+    .bn-vid{
+        @include box(60);
+        background: var(--n4);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.work-item1{
+    .number-shadow{
+        font-size: 240px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%;
+        color: var(--nw4);
+        position: absolute;
+        right: 0;
+        top: -60px;
+        display: block;
+        opacity: 0.1;
+    }
+    @include maxQuery(1199){
+        .number-shadow{
+            font-size: 140px;
+            top: -20px;
+        }
+    }
+    @include maxQuery(575){
+        h2{
+            font-size: 28px;
+        }
+        .number-shadow{
+            font-size: 80px;
+            line-height: 120%;
+            top: -0px;
+        }
+    }
+}
+//Howit Section
 
 
 

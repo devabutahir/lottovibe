@@ -18,6 +18,7 @@
 ============================================*/
 @import "../css/bootstrap.min.css";
 @import "../css/plugins/magnific-popup.css";
+@import "../css/plugins/aos.css";
 @import "../css/plugins/swiper.min.css";
 @import "../css/plugins/odometer-min.css";
 @import "../css/plugins/fontawesome.min.css";
@@ -582,21 +583,21 @@ textarea:focus {
 .customer-revew-item {
   border-radius: 50%;
   display: inline-block;
-  width: 51px;
-  min-width: 51px;
-  height: 51px;
+  width: 49px;
+  min-width: 49px;
+  height: 49px;
 }
 .customer-revew-item img {
-  width: 48px;
-  min-width: 48px;
-  height: 48px;
+  width: 46px;
+  min-width: 46px;
+  height: 46px;
   border-radius: 50%;
 }
 
 .customer-ratting {
-  width: 48px;
-  min-width: 48px;
-  height: 48px;
+  width: 46px;
+  min-width: 46px;
+  height: 46px;
   border-radius: 50%;
 }
 
@@ -605,7 +606,7 @@ textarea:focus {
   align-items: center;
 }
 .cmn-style-flex li:not(:first-child) {
-  margin-left: -16px;
+  margin-left: -17px;
 }
 
 @media (min-width: 575px) {
@@ -1877,8 +1878,6 @@ iframe {
 .cmn-s1-slide i {
   transition: all 0.4s;
   font-size: 26px;
-}
-.cmn-s1-slide .ti {
   line-height: 2;
 }
 .cmn-s1-slide:hover {
@@ -1890,6 +1889,81 @@ iframe {
 @media (max-width: 1399px) {
   .cmn-s1-slide i {
     font-size: 18px;
+  }
+}
+
+.cmn__collection {
+  width: 160px;
+  min-width: 160px;
+  height: 160px;
+  display: block;
+  z-index: 1;
+}
+.cmn__collection::before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  content: "";
+  background: rgba(255, 148, 88, 0.35);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  z-index: 0;
+  opacity: 0;
+}
+.cmn__collection::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  content: "";
+  background: var(--act4);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1.8s;
+  z-index: 0;
+  opacity: 0;
+}
+.cmn__collection:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.cmn__collection:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.cmn__collection:hover .cmn-cont-box {
+  color: var(--n0);
+}
+.cmn__collection:hover .cmn-cont-box span {
+  color: var(--n0);
+}
+.cmn__collection:hover .cmn-cont-box .icon {
+  transform: rotate(-60deg);
+}
+.cmn__collection .cmn-cont-box {
+  z-index: 3;
+  transition: all 0.4s;
+}
+.cmn__collection .cmn-cont-box span,
+.cmn__collection .cmn-cont-box i {
+  transition: all 0.4s;
+}
+@media (max-width: 1199px) {
+  .cmn__collection {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+  }
+  .cmn__collection span {
+    font-size: 12px;
+    max-width: 50px;
+    line-height: 1.1;
   }
 }
 
@@ -2582,6 +2656,9 @@ iframe {
   right: 40px;
   bottom: 40px;
 }
+.banner-section-v1 .slider-btn i {
+  line-height: 2;
+}
 @media (max-width: 1500px) {
   .banner-section-v1::before {
     width: 900px;
@@ -2611,7 +2688,7 @@ iframe {
 .banner-content-v1 .bn-pra {
   font-size: 18px;
   line-height: 1.5;
-  max-width: 750px;
+  max-width: 696px;
 }
 .banner-content-v1 .how-cont {
   border-bottom: 1px solid;
@@ -2706,7 +2783,7 @@ iframe {
 .odometer__items p {
   font-size: 18px;
   font-weight: 600;
-  color: var(--nw1);
+  color: var(--nw2);
   margin-top: 6px;
 }
 
@@ -2778,18 +2855,54 @@ iframe {
   margin-left: 310px;
   position: relative;
 }
-@media (max-width: 1900px) {
+@media (max-width: 1800px) {
   .lotto-services-container {
     margin-left: 0;
   }
+  .lotto-services-container .swiper-pagination {
+    width: 100%;
+  }
+}
+@media (max-width: 1800px) and (max-width: 767px) {
+  .lotto-services-container .swiper-pagination {
+    display: none !important;
+  }
+}
+
+.swiper-pagination {
+  background: rgba(255, 101, 14, 0.5);
+  width: 70%;
+  height: 2px;
+  position: initial;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 200px;
+  border-radius: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  height: 6px;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--act4);
+  opacity: 1;
+  height: 6px;
 }
 
 .lotter-service-item img {
   width: 100%;
 }
+@media (max-width: 991px) {
+  .lotter-service-item .lotto-img {
+    opacity: 0.6;
+  }
+}
 .lotter-service-item .lottory-sercar {
   top: 32px;
   left: 32px;
+}
+.lotter-service-item .lbadge {
+  transition: all 0.5s;
+  border: 1px solid var(--p1);
 }
 .lotter-service-item .serial-badge {
   position: absolute;
@@ -2806,13 +2919,14 @@ iframe {
   z-index: -1;
   border-radius: var(--number-token-0, 0px) var(--number-token-0, 0px) var(--number-token-25, 100px) var(--number-token-25, 100px);
   background: linear-gradient(180deg, rgba(254, 201, 47, 0) 0%, rgba(254, 201, 47, 0.7) 100%);
+  transition: all 0.4s;
 }
-
-.swiper-pagination {
-  background: red;
-  width: 100%;
-  height: 20px;
-  position: absolute;
+.lotter-service-item:hover .serial-badge::before {
+  bottom: -22%;
+}
+.lotter-service-item:hover .lbadge {
+  border: 1px solid var(--p1);
+  background: transparent !important;
 }
 
 .serial-badge {
@@ -2849,6 +2963,102 @@ iframe {
     width: 50px;
     min-width: 50px;
     height: 50px;
+  }
+}
+
+.luxury-selection-v1 .click-slideluxry-button {
+  position: absolute;
+  top: 50%;
+}
+.luxury-selection-v1 .luxury-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.luxury-selection-v1 .cmn__collection {
+  margin-bottom: -40px;
+}
+@media (max-width: 991px) {
+  .luxury-selection-v1 .click-slideluxry-button {
+    position: absolute;
+    top: initial;
+    bottom: 10px;
+  }
+}
+
+.click-slideluxry-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 1499px) {
+  .luxury-car-item1 .display-three {
+    font-size: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .luxury-car-item1 .display-three {
+    font-size: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .luxury-car-item1 .display-three {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .howit-work-section .howit-video {
+    max-width: 240px;
+  }
+}
+
+.howit-video {
+  width: 100%;
+}
+.howit-video img {
+  width: 100%;
+  border-radius: 100px;
+}
+.howit-video .bn-vid {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  background: var(--n4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.work-item1 .number-shadow {
+  font-size: 240px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  color: var(--nw4);
+  position: absolute;
+  right: 0;
+  top: -60px;
+  display: block;
+  opacity: 0.1;
+}
+@media (max-width: 1199px) {
+  .work-item1 .number-shadow {
+    font-size: 140px;
+    top: -20px;
+  }
+}
+@media (max-width: 575px) {
+  .work-item1 h2 {
+    font-size: 28px;
+  }
+  .work-item1 .number-shadow {
+    font-size: 80px;
+    line-height: 120%;
+    top: 0px;
   }
 }
 
