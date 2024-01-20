@@ -3313,6 +3313,9 @@ iframe {
   .cate-body-wrap .cate-body-item .thumb img {
     width: 100%;
   }
+  .cate-body-wrap .cate-body-item:not(:first-child) {
+    margin-left: 0px;
+  }
 }
 
 .cate-body-item {
@@ -3374,6 +3377,13 @@ iframe {
   opacity: 1;
 }
 
+@media (max-width: 991px) {
+  .testimonial-wrap1 {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+
 .testi-people-title li a span {
   color: var(--n4);
 }
@@ -3400,6 +3410,9 @@ iframe {
   width: 100%;
   border-radius: 50%;
   height: 100%;
+}
+.testimonial-item1 .testi-winthumb {
+  margin-bottom: -1px;
 }
 
 @media (max-width: 1399px) {

@@ -245,6 +245,45 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
         });
+        //luxury selection
+        var swiper = new Swiper(".testimonial-wrap1", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 24,
+          speed: 4500,
+          autoplay: true,
+          centeredSlides: true,
+          autoplay: {
+            delay: 100,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          breakpoints: {
+            1600: {
+                slidesPerView: 4.1,
+                spaceBetween: 24,
+            },
+            992: {
+                slidesPerView: 3.5,
+                spaceBetween: 14,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 14,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 14,
+            },
+            500: {
+              slidesPerView: 1,
+              spaceBetween: 14,
+            },
+        }
+        });
       // swipper slide //
 
 

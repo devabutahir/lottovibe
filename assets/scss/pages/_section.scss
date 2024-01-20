@@ -572,6 +572,9 @@
                  }
              }
              width: calc(100%);
+             &:not(:first-child){
+                margin-left: -0px;
+            }
         }
      }
 }
@@ -638,6 +641,12 @@
 //car body type Section
 
 //Testimonial Section
+.testimonial-wrap1{
+    @include maxQuery(991){
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
 .testi-people-title{
     li{
         a{
@@ -669,6 +678,9 @@
             border-radius: 50%;
             height: 100%;
         }
+    }
+    .testi-winthumb{
+        margin-bottom: -1px;
     }
 }
 //Testimonial Section
