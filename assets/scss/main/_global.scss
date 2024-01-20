@@ -453,6 +453,9 @@ input[type="checkbox"] {
 .nw4-bg{
 	background: var(--nw4);
 }
+.nw4-bb{
+	border-bottom: 1px solid var(--nw4);
+}
 
 .n0-clr{
 	color: var(--n0);
@@ -490,7 +493,32 @@ input[type="checkbox"] {
 .n4-bg{
 	background: var(--n4);
 }
+.current-bg{
+	background: #E9F2FF;
+}
 //variable color Defult
+
+//bg hover 
+.s1-hover{
+	transition: all 0.4s;
+	&:hover{
+		background: var(--act4) !important;
+	}
+}
+.n0-hover{
+	transition: all 0.4s;
+	&:hover{
+		background: var(--act3) !important;
+	}
+}
+.n0-fillhover{
+	transition: all 0.4s;
+	&:hover{
+		background: var(--n0) !important;
+		border-color: var(--n0) !important;
+	}
+}
+//bg hover 
 
 //Global bg
 .bg1-color{
@@ -625,8 +653,33 @@ i{
 		}
 	}
 }
-
 // cmn-btn
+
+// cmn width
+.cmn-40{
+	@include box(40);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+// cmn width
+
+// Draw Badge
+.draw-badge{
+	position: relative;
+	padding: 10px 29px 10px 16px; 
+	&::before{
+		background: var(--act3);
+		clip-path: polygon(100% 0, 83% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 142px;
+		height: 41px;
+	}
+}
+// Draw Badge
 
 // File Upload Custom
 .file-upload{
@@ -1567,10 +1620,13 @@ iframe {
 	border-radius: 100px !important;
 }
 .radius32{
-	border-radius: 35px !important;
+	border-radius: 32px !important;
+}
+.radius24{
+	border-radius: 24px !important;
 }
 .radius20{
-	border-radius: 17px !important;
+	border-radius: 10px !important;
 }
 .radius18{
 	border-radius: 18px !important;
