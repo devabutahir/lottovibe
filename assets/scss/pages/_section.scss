@@ -863,7 +863,7 @@
         border-radius: 24px;
         // padding: 24px;
         .boxs{
-            transform: scale(0.9);
+            transform: scale(0.91);
         }
         .kewta-btn{
             .kew-text{
@@ -887,6 +887,183 @@
     }
 }
 //blog Section
+
+//question faq Section
+.question-section{
+    background: rgba(244, 244, 244, 0.50);
+}
+// custom tabs
+.tabcontents {
+    position: relative;
+  }
+  .tabitem {
+    transform: translateY(100px);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s all;
+  }
+  .tabitem.active {
+    position: initial;
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(0);
+  }
+// custom tabs
+.question-tab{
+    .tablinks{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        .nav-links{
+            .tablink{
+                color: var(--n4);
+                font-size: 20px;
+                font-weight: 700;
+                padding: 14px 24px;
+                background: var(--nw2);
+                border-radius: 100px;
+                transition: all 0.4s;
+            }
+            &.active{
+                .tablink{
+                    background: var(--s1);
+                    color: var(--n0);
+                }
+            }
+        }
+        @include maxQuery(1199){
+            gap: 10px;
+            .nav-links{
+                .tablink{
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                }
+                &.active{
+                    .tablink{
+                        border-radius: 16px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        @include maxQuery(991){
+            .nav-links{
+                .tablink{
+                    font-size: 16px;
+                    padding: 10px 16px;
+                }
+                &.active{
+                    .tablink{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+//question faq Section
+
+//Accordion Section
+.accordion-single{
+    &:not(:last-child){
+        margin-bottom: 24px;
+    }
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.4s;
+    .header-area{
+        .accordion-btn{
+            background: var(--nw2);
+            padding: 20px 24px;
+            transition: all 0.4s;
+            .faq-icon{
+                i{
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+    .content-area{
+        display: none;
+        padding: 0 24px 20px;
+        p{
+            color: var(--nw1);
+            transition: all 0.5s;
+            font-size: 18px;
+        }
+    }
+    &.active{
+        background: var(--s1);
+        .header-area{
+            .accordion-btn{
+                background: var(--s1);
+                span{
+                    color: var(--n0);
+                }
+                .faq-icon{
+                    transform: rotate(180deg);
+                    i{
+                        color: var(--n0);
+                    }
+                }
+            }
+        }
+    }
+    @include maxQuery(400){
+        .header-area{
+            .accordion-btn{
+                padding: 16px 18px;
+            }
+        }
+        .content-area{
+            padding: 0 20px 14px;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+.this-single.active{
+   .content-area{
+    display: block;
+   } 
+}
+//Accordion Section
+
+//Smart Phone Section
+.phone-thumb{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+//Smart Phone Section
+
+//Sponsor Section
+.sponsor-borderwrap{
+    text-align:center;
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(56,2,155,0), rgba(219, 219, 219, 0.572), rgba(56,2,155,0));
+    border-image-slice: 1;
+    width:100%;
+    padding: 45px 0;
+    @include maxQuery(1399){
+        padding: 30px 0;
+    }
+    .sponsor-items{
+        img{
+            filter: brightness(2);
+        }
+    }
+}
+//Sponsor Section
 
 
 

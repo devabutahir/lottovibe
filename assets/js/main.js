@@ -284,6 +284,45 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
         });
+        //Sponsor selection
+        var swiper = new Swiper(".sponsor-wrap", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 24,
+          speed: 4500,
+          autoplay: true,
+          centeredSlides: true,
+          autoplay: {
+            delay: 100,
+          },
+          breakpoints: {
+            1600: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 14,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 14,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 14,
+            },
+            500: {
+              slidesPerView: 2,
+              spaceBetween: 14,
+            },
+            0: {
+              slidesPerView: 2,
+              spaceBetween: 14,
+            },
+        }
+        });
       // swipper slide //
 
 

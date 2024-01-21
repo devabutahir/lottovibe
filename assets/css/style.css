@@ -162,6 +162,11 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
+@media (max-width: 991px) {
+  .fs18 {
+    font-size: 16px;
+  }
+}
 
 .fs-22 {
   font-size: 22px;
@@ -3630,7 +3635,7 @@ iframe {
   border-radius: 24px;
 }
 .blog-v1-hover:hover .boxs {
-  transform: scale(0.9);
+  transform: scale(0.91);
 }
 .blog-v1-hover:hover .kewta-btn .kew-text {
   background: var(--s1);
@@ -3644,6 +3649,157 @@ iframe {
 }
 .blog-v1-hover:hover h3 a {
   color: var(--s1);
+}
+
+.question-section {
+  background: rgba(244, 244, 244, 0.5);
+}
+
+.tabcontents {
+  position: relative;
+}
+
+.tabitem {
+  transform: translateY(100px);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.tabitem.active {
+  position: initial;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.question-tab .tablinks {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.question-tab .tablinks .nav-links .tablink {
+  color: var(--n4);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 14px 24px;
+  background: var(--nw2);
+  border-radius: 100px;
+  transition: all 0.4s;
+}
+.question-tab .tablinks .nav-links.active .tablink {
+  background: var(--s1);
+  color: var(--n0);
+}
+@media (max-width: 1199px) {
+  .question-tab .tablinks {
+    gap: 10px;
+  }
+  .question-tab .tablinks .nav-links .tablink {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+  }
+  .question-tab .tablinks .nav-links.active .tablink {
+    border-radius: 16px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .question-tab .tablinks .nav-links .tablink {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+  .question-tab .tablinks .nav-links.active .tablink {
+    font-size: 16px;
+  }
+}
+
+.accordion-single {
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.accordion-single:not(:last-child) {
+  margin-bottom: 24px;
+}
+.accordion-single .header-area .accordion-btn {
+  background: var(--nw2);
+  padding: 20px 24px;
+  transition: all 0.4s;
+}
+.accordion-single .header-area .accordion-btn .faq-icon i {
+  transition: all 0.4s;
+}
+.accordion-single .content-area {
+  display: none;
+  padding: 0 24px 20px;
+}
+.accordion-single .content-area p {
+  color: var(--nw1);
+  transition: all 0.5s;
+  font-size: 18px;
+}
+.accordion-single.active {
+  background: var(--s1);
+}
+.accordion-single.active .header-area .accordion-btn {
+  background: var(--s1);
+}
+.accordion-single.active .header-area .accordion-btn span {
+  color: var(--n0);
+}
+.accordion-single.active .header-area .accordion-btn .faq-icon {
+  transform: rotate(180deg);
+}
+.accordion-single.active .header-area .accordion-btn .faq-icon i {
+  color: var(--n0);
+}
+@media (max-width: 400px) {
+  .accordion-single .header-area .accordion-btn {
+    padding: 16px 18px;
+  }
+  .accordion-single .content-area {
+    padding: 0 20px 14px;
+  }
+  .accordion-single .content-area p {
+    font-size: 16px;
+  }
+}
+
+.this-single.active .content-area {
+  display: block;
+}
+
+.phone-thumb {
+  width: 100%;
+}
+.phone-thumb img {
+  width: 100%;
+}
+
+.sponsor-borderwrap {
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  -o-border-image: linear-gradient(0.25turn, rgba(56, 2, 155, 0), rgba(219, 219, 219, 0.572), rgba(56, 2, 155, 0));
+     border-image: linear-gradient(0.25turn, rgba(56, 2, 155, 0), rgba(219, 219, 219, 0.572), rgba(56, 2, 155, 0));
+  border-image-slice: 1;
+  width: 100%;
+  padding: 45px 0;
+}
+@media (max-width: 1399px) {
+  .sponsor-borderwrap {
+    padding: 30px 0;
+  }
+}
+.sponsor-borderwrap .sponsor-items img {
+  filter: brightness(2);
 }
 
 @media (max-width: 1399px) {
