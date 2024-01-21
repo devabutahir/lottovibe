@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 100,
           },
           pagination: {
-            el: ".swiper-pagination",
+            el: ".swiper-pagination-testi",
             clickable: true
           },
           breakpoints: {
