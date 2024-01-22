@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         // Click to Scroll Top //
 
+        const LocoScroll = new LocomotiveScroll({
+          // el: document.querySelector("[data-scroll-container]"),
+          // smooth: true
+        });
+
         //>> Aos Animation <<//
         AOS.init({
           once: true,
