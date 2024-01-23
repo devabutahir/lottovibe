@@ -413,19 +413,19 @@ li {
 }
 @media (max-width: 575px) {
   .display-one {
-    font-size: 56px;
+    font-size: 44px;
     line-height: 67.2px;
   }
   .display-two {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 46.4px;
   }
   .display-three {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 54.6px;
   }
   .display-four {
-    font-size: 29px;
+    font-size: 28px;
     line-height: 38.4px;
   }
   .display-five {
@@ -437,6 +437,10 @@ li {
     line-height: 38.4px;
   }
 }
+.slider-btn i {
+  line-height: 2;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -3187,7 +3191,29 @@ iframe {
 .banner-section-v2 .shape-win {
   top: 240px;
 }
+.banner-section-v2 .slider-btn {
+  position: absolute;
+  right: 290px;
+  bottom: 260px;
+}
+@media (max-width: 1899px) {
+  .banner-section-v2 .slider-btn {
+    bottom: 60px;
+    left: 46%;
+  }
+}
+@media (max-width: 1500px) {
+  .banner-section-v2 .bn-carslide-item {
+    margin: 0 auto;
+  }
+  .banner-section-v2 .shape-win {
+    top: 180px;
+  }
+}
 
+.banner-content-v2 {
+  position: relative;
+}
 .banner-content-v2 .bn-v2textcar1 {
   margin-top: -44px;
 }
@@ -3203,17 +3229,128 @@ iframe {
   max-width: 840px;
   margin: 0 auto;
 }
+@media (max-width: 1399px) and (min-width: 1199px) {
+  .banner-content-v2 .banner-oneslider .banner-carslide-wrap {
+    max-width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-content-v2 .banner-oneslider .banner-carslide-wrap {
+    max-width: 500px;
+  }
+}
+@media (max-width: 480px) {
+  .banner-content-v2 .banner-oneslider .banner-carslide-wrap {
+    max-width: 300px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-content-v2 .banner-oneslider {
+    display: block;
+  }
+}
+.banner-content-v2 .bn-v2cutomer {
+  position: absolute;
+  left: -143px;
+  bottom: 35%;
+  z-index: 3;
+}
+.banner-content-v2 .employed-count {
+  position: absolute;
+  right: -140px;
+  top: 38%;
+}
+.banner-content-v2 .employed-count p {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--nw2);
+  max-width: 169px;
+}
+@media (max-width: 1399px) {
+  .banner-content-v2 .display-two {
+    font-size: 38px;
+  }
+  .banner-content-v2 .display-two .bn-v2textcar2,
+  .banner-content-v2 .display-two .bn-v2textcar1 {
+    width: 120px;
+    margin-bottom: -20px;
+  }
+  .banner-content-v2 .employed-count {
+    right: -100px;
+    top: 51%;
+  }
+  .banner-content-v2 .bn-v2cutomer {
+    position: absolute;
+    left: -100px;
+    bottom: 15%;
+    z-index: 3;
+  }
+}
+@media (max-width: 1299px) {
+  .banner-content-v2 .bn-v2cutomer {
+    position: absolute;
+    left: -100px;
+    bottom: 20%;
+    z-index: 3;
+  }
+  .banner-content-v2 .employed-count {
+    right: -100px;
+  }
+  .banner-content-v2 .employed-count p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .banner-content-v2 .employed-count .display-three {
+    font-size: 29px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-content-v2 .employed-count {
+    position: initial;
+    text-align: start !important;
+    margin-top: 24px;
+  }
+  .banner-content-v2 .bn-v2cutomer {
+    position: initial !important;
+  }
+}
 
 .bn-v2-carshape {
   position: absolute;
-  top: 120px;
+  top: 220px;
   left: 0;
+}
+@media (max-width: 1899px) {
+  .bn-v2-carshape {
+    width: 180px;
+  }
+  .bn-v2-carshape img {
+    width: 100%;
+  }
 }
 
 .bn-v2-rounging {
   position: absolute;
-  top: 40%;
-  left: 300px;
+  top: 36%;
+  left: 368px;
+}
+@media (max-width: 1899px) {
+  .bn-v2-rounging {
+    width: 80px;
+  }
+  .bn-v2-rounging img {
+    width: 100%;
+  }
+}
+@media (max-width: 1299px) {
+  .bn-v2-rounging {
+    left: 268px;
+  }
+}
+@media (max-width: 991px) {
+  .bn-v2-rounging {
+    display: none;
+  }
 }
 
 .bn1-odometer {

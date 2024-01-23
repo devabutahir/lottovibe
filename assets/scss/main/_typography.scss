@@ -386,22 +386,22 @@ li {
 //max 575
 @media (max-width: 575px) {
 	.display-one {
-		font-size: 56px;
+		font-size: 44px;
 		line-height: 67.2px;
 	}
 	
 	.display-two {
-		font-size: 48px;
+		font-size: 40px;
 		line-height: 46.4px;
 	}
 	
 	.display-three {
-		font-size: 38px;
+		font-size: 36px;
 		line-height: 54.6px;
 	}
 	
 	.display-four {
-		font-size: 29px;
+		font-size: 28px;
 		line-height: 38.4px;
 	}
 	
@@ -416,4 +416,12 @@ li {
 	}
 }
 //Default all responsive
+
+//light icon
+.slider-btn{
+	i{
+		line-height: 2;
+	}
+}
+//light icon
 

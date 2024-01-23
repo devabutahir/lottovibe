@@ -131,8 +131,28 @@
     .shape-win{
         top: 240px;
     }
+    .slider-btn{
+        position: absolute;
+        right: 290px;
+        bottom: 260px;
+    }
+    @include maxQuery(1899){
+        .slider-btn{
+            bottom: 60px;
+            left: 46%;
+        }
+    }
+    @include maxQuery(1500){
+        .bn-carslide-item{
+            margin: 0 auto;
+        }
+        .shape-win{
+            top: 180px;
+        }
+    }
 }
 .banner-content-v2{
+    position: relative;
     .bn-v2textcar1{
         margin-top: -44px;
     }
@@ -146,18 +166,115 @@
         .banner-carslide-wrap{
             max-width: 840px;
             margin: 0 auto;
+            @include maxQuery(1399){
+                @include minQuery(1199){
+                    max-width: 500px;
+                }
+            }
+            @include maxQuery(767){
+                max-width: 500px;
+            }
+            @include maxQuery(480){
+                max-width: 300px;
+            }
+        }
+        @include maxQuery(575){
+            display: block;
+        }
+    }
+    .bn-v2cutomer{
+        position: absolute;
+        left: -143px;
+        bottom: 35%;
+        z-index: 3;
+    }
+    .employed-count{
+        position: absolute;
+        right: -140px;
+        top: 38%;
+        p{
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--nw2);
+            max-width: 169px;
+        }
+    }
+    @include maxQuery(1399){
+        .display-two{
+            font-size: 38px;
+            .bn-v2textcar2,
+            .bn-v2textcar1{
+                width: 120px;
+                margin-bottom: -20px;
+            }
+        }
+        .employed-count{
+            right: -100px;
+            top: 51%;
+        }
+        .bn-v2cutomer{
+            position: absolute;
+            left: -100px;
+            bottom: 15%;
+            z-index: 3;
+        }
+    }
+    @include maxQuery(1299){
+        .bn-v2cutomer{
+            position: absolute;
+            left: -100px;
+            bottom: 20%;
+            z-index: 3;
+        }
+        .employed-count{
+            right: -100px;
+            p{
+                font-size: 18px;
+                line-height: 1.2;
+            }
+            .display-three{
+                font-size: 29px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .employed-count{
+            position: initial;
+            text-align: start !important;
+            margin-top: 24px;
+        }
+        .bn-v2cutomer{
+            position: initial !important;
         }
     }
 }
 .bn-v2-carshape{
     position: absolute;
-    top: 120px;
+    top: 220px;
     left: 0;
+    @include maxQuery(1899){
+        width: 180px;
+        img{
+            width: 100%;
+        }
+    }
 }
 .bn-v2-rounging{
     position: absolute;
-    top: 40%;
-    left: 300px;
+    top: 36%;
+    left: 368px;
+    @include maxQuery(1899){
+        width: 80px;
+        img{
+            width: 100%;
+        }
+    }
+    @include maxQuery(1299){
+        left: 268px;
+    }
+    @include maxQuery(991){
+        display: none;
+    }
 }
 //banner-section-v2
 
