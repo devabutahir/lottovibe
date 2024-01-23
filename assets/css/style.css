@@ -2794,6 +2794,16 @@ iframe {
   z-index: 1;
   position: relative;
 }
+@media (max-width: 1199px) and (min-width: 991px) {
+  .footer-thumbv1-wrap .footer-thumb1 img {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1199px) {
+  .footer-thumbv1-wrap .footer-thumb1 img {
+    max-width: 600px;
+  }
+}
 
 @keyframes sfoot1 {
   10% {
@@ -2892,7 +2902,7 @@ iframe {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 1px solid var(--p1);
+  border: 0.2px solid rgba(176, 254, 58, 0.5960784314);
   animation: videoTwo 8s linear infinite;
 }
 
@@ -2921,7 +2931,7 @@ iframe {
 }
 
 .video-bg span::after, .video-bg span::before {
-  border: 1px solid var(--p1);
+  border: 0.2px solid rgba(176, 254, 58, 0.4862745098);
 }
 
 @keyframes videoTwo {
@@ -2932,6 +2942,8 @@ iframe {
   100% {
     transform: translate(-50%, -50%) scale(5);
     opacity: 0;
+    width: 300px;
+    height: 300px;
   }
 }
 .linkfooter {
@@ -3172,12 +3184,36 @@ iframe {
   background: url(../../assets/images/banner/banner-v2-bg.png) no-repeat center center;
   background-size: cover;
 }
+.banner-section-v2 .shape-win {
+  top: 240px;
+}
 
 .banner-content-v2 .bn-v2textcar1 {
   margin-top: -44px;
 }
 .banner-content-v2 .bn-v2textcar2 {
   margin-top: -44px;
+}
+.banner-content-v2 .banner-oneslider {
+  position: initial;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner-content-v2 .banner-oneslider .banner-carslide-wrap {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.bn-v2-carshape {
+  position: absolute;
+  top: 120px;
+  left: 0;
+}
+
+.bn-v2-rounging {
+  position: absolute;
+  top: 40%;
+  left: 300px;
 }
 
 .bn1-odometer {

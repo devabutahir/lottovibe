@@ -128,6 +128,9 @@
 .banner-section-v2{
     background: url(../../assets/images/banner/banner-v2-bg.png) no-repeat center center;
     background-size: cover;
+    .shape-win{
+        top: 240px;
+    }
 }
 .banner-content-v2{
     .bn-v2textcar1{
@@ -136,6 +139,25 @@
     .bn-v2textcar2{
         margin-top: -44px;
     }
+    .banner-oneslider{
+        position: initial;
+        text-align: center;
+        margin: 0 auto;
+        .banner-carslide-wrap{
+            max-width: 840px;
+            margin: 0 auto;
+        }
+    }
+}
+.bn-v2-carshape{
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+.bn-v2-rounging{
+    position: absolute;
+    top: 40%;
+    left: 300px;
 }
 //banner-section-v2
 
