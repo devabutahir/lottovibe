@@ -121,6 +121,16 @@
 }
 //Banner styel version One
 
+//banner-section-v2
+.banner-section-v2{
+    background: url(../../assets/images/banner/banner-v2-bg.png) no-repeat center center;
+    background-size: cover;
+}
+.banner-content-v2{
+    
+}
+//banner-section-v2
+
 //Odometer items
 .bn1-odometer{
     padding-top: 148px;
@@ -306,6 +316,7 @@
     .click-slideluxry-button{
         position: absolute;
         top: 50%;
+        z-index: 2;
     }
     .luxury-shape{
         position: absolute;
@@ -341,6 +352,10 @@
             font-size: 20px;
         }
     }
+}
+.luxury-cusbtn{
+    position: relative;
+    z-index: 3;
 }
 //luxury  selection car 
 

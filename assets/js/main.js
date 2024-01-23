@@ -17,16 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         // Click to Scroll Top //
 
-        const LocoScroll = new LocomotiveScroll({
-          // el: document.querySelector("[data-scroll-container]"),
-          // smooth: true
-        });
-
         //>> Aos Animation <<//
-        AOS.init({
-          once: true,
-          easing: 'ease-in-out',
-        });
+        // AOS.init({
+        //   once: true,
+        //   easing: 'ease-in-out',
+        // });
+        // AOS.init({
+        //   easing: 'ease-in-out-sine',
+        //   once: true,
+        // });
+        // window.addEventListener('load', AOS.refresh);
+        $(document).ready(function () {
+          $('.title').attr({
+             "data-aos": "zoom-in",
+             "data-aos-duration": "2000"
+          });
+      
+          AOS.init({
+            once: true,
+          });
+       });
         //>> Aos Animation <<//
 
       // Sticky Header //

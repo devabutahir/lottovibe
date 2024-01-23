@@ -17,8 +17,8 @@
 # Footer Area
 ============================================*/
 @import "../css/bootstrap.min.css";
-@import "../css/plugins/magnific-popup.css";
 @import "../css/plugins/aos.css";
+@import "../css/plugins/magnific-popup.css";
 @import "../css/plugins/swiper.min.css";
 @import "../css/plugins/odometer-min.css";
 @import "../css/plugins/fontawesome.min.css";
@@ -3160,6 +3160,11 @@ iframe {
   top: 350px;
 }
 
+.banner-section-v2 {
+  background: url(../../assets/images/banner/banner-v2-bg.png) no-repeat center center;
+  background-size: cover;
+}
+
 .bn1-odometer {
   padding-top: 148px;
 }
@@ -3362,6 +3367,7 @@ iframe {
 .luxury-selection-v1 .click-slideluxry-button {
   position: absolute;
   top: 50%;
+  z-index: 2;
 }
 .luxury-selection-v1 .luxury-shape {
   position: absolute;
@@ -3400,6 +3406,11 @@ iframe {
   .luxury-car-item1 .display-three {
     font-size: 20px;
   }
+}
+
+.luxury-cusbtn {
+  position: relative;
+  z-index: 3;
 }
 
 @media (max-width: 575px) {
