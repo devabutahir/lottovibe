@@ -58,6 +58,9 @@
     position: relative;
     z-index: 2;
 }
+.how-cont{
+    border-bottom: 1px solid ;
+}
 .custom-display{
     font-size: 100px;
     font-weight: 800;
@@ -127,7 +130,12 @@
     background-size: cover;
 }
 .banner-content-v2{
-    
+    .bn-v2textcar1{
+        margin-top: -44px;
+    }
+    .bn-v2textcar2{
+        margin-top: -44px;
+    }
 }
 //banner-section-v2
 
@@ -339,6 +347,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    @include maxQuery(991){
+        margin-bottom: 60px !important;
+    }
 }
 .luxury-car-item1{
     .display-three{
@@ -656,6 +667,22 @@
 //car body type Section
 
 //Testimonial Section
+.testimonial-v1-before{
+    position: relative;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 422px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background: var(--act3);
+        @include maxQuery(991){
+            display: none;
+        }
+    }
+}
 .testimonial-wrap1{
     @include maxQuery(991){
         margin-left: 4px;

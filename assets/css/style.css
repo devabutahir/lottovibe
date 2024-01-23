@@ -1062,6 +1062,10 @@ input[type=checkbox] {
   font-weight: 800 !important;
 }
 
+.fw_900 {
+  font-weight: 900 !important;
+}
+
 .cus__scroll {
   max-height: 65vh;
   overflow-y: scroll;
@@ -3093,6 +3097,10 @@ iframe {
   z-index: 2;
 }
 
+.how-cont {
+  border-bottom: 1px solid;
+}
+
 .custom-display {
   font-size: 100px;
   font-weight: 800;
@@ -3163,6 +3171,13 @@ iframe {
 .banner-section-v2 {
   background: url(../../assets/images/banner/banner-v2-bg.png) no-repeat center center;
   background-size: cover;
+}
+
+.banner-content-v2 .bn-v2textcar1 {
+  margin-top: -44px;
+}
+.banner-content-v2 .bn-v2textcar2 {
+  margin-top: -44px;
 }
 
 .bn1-odometer {
@@ -3390,6 +3405,11 @@ iframe {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+@media (max-width: 991px) {
+  .click-slideluxry-button {
+    margin-bottom: 60px !important;
+  }
 }
 
 @media (max-width: 1499px) {
@@ -3703,6 +3723,25 @@ iframe {
   width: 100%;
   height: 100%;
   opacity: 1;
+}
+
+.testimonial-v1-before {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-v1-before::before {
+  position: absolute;
+  content: "";
+  width: 422px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: var(--act3);
+}
+@media (max-width: 991px) {
+  .testimonial-v1-before::before {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
