@@ -130,11 +130,15 @@
     background-size: cover;
     .shape-win{
         top: 240px;
+        animation: updown 2s linear infinite;
     }
     .slider-btn{
         position: absolute;
         right: 290px;
         bottom: 260px;
+    }
+    @include minQuery(1900){
+        overflow: visible;
     }
     @include maxQuery(1899){
         .slider-btn{
@@ -150,11 +154,44 @@
             top: 180px;
         }
     }
+    @include maxQuery(520){
+        .slider-btn{
+            bottom: 35px;
+            left: 38%;
+        }
+        .kewta-btn{
+            .kew-text{
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+            .kew-arrow{
+                min-width: 36px;
+                min-height: 36px;
+                .kt-two{
+                    top: 9px;
+                    left: 8px;
+                    i{
+                        font-size: 18px;
+                    }
+                }
+                .kt-one{
+                    top: 9px !important;
+                    left: 8px !important;
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
 }
 .banner-content-v2{
     position: relative;
     .bn-v2textcar1{
         margin-top: -44px;
+        @include maxQuery(767){
+            display: none;
+        }
     }
     .bn-v2textcar2{
         margin-top: -44px;
@@ -202,6 +239,7 @@
     @include maxQuery(1399){
         .display-two{
             font-size: 38px;
+            line-height: 38px;
             .bn-v2textcar2,
             .bn-v2textcar1{
                 width: 120px;
@@ -239,12 +277,51 @@
     }
     @include maxQuery(991){
         .employed-count{
-            position: initial;
+            right: -16px;
+            top: initial;
+            bottom: 24px;
             text-align: start !important;
             margin-top: 24px;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+            p{
+                font-size: 14px;
+            }
         }
         .bn-v2cutomer{
             position: initial !important;
+            transform: translateY(56px);
+        }
+    }
+    @include maxQuery(767){
+        .display-two{
+            font-size: 38px;
+            font-weight: 700;
+            span{
+                font-weight: 700 !important;
+            }
+        }
+        .bn-v2textcar2{
+            display: none;
+        }
+    }
+    @include maxQuery(520){
+        .employed-count{
+            display: none;
+        }
+        .bn-v2cutomer{
+           display: none;
+        }
+    }
+    @include maxQuery(500){
+        .display-two{
+            font-size: 28px;
+            font-weight: 700;
+            span{
+                font-weight: 700 !important;
+            }
         }
     }
 }
@@ -252,17 +329,29 @@
     position: absolute;
     top: 220px;
     left: 0;
+    animation: alf 2s linear infinite;
     @include maxQuery(1899){
         width: 180px;
         img{
             width: 100%;
         }
     }
+    @include maxQuery(767){
+        width: 90px;
+        top: 400px;
+        img{
+            width: 100%;
+        }
+    }
+    @include maxQuery(767){
+       display: none;
+    }
 }
 .bn-v2-rounging{
     position: absolute;
     top: 36%;
     left: 368px;
+    animation: ske 2s linear infinite;
     @include maxQuery(1899){
         width: 80px;
         img{
@@ -508,6 +597,157 @@
     z-index: 3;
 }
 //luxury  selection car 
+
+//Next Draw 
+.next-draw-section{
+    @include minQuery(1900){
+        overflow: visible;
+    }
+}
+.draw-nextwrap{
+    background: #FFEAE4;
+    clip-path: polygon(5% 0, 100% 0, 100% 0, 100% 80%, 96% 100%, 0 100%, 0 16%);
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    .thumb{
+        max-width: 390px;
+        padding-right: 40px;
+        border-right: 2px solid var(--act4);
+    }
+    .right-side-nextdraw{
+        width: calc(100% - 390px);
+        padding-left: 88px;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+    @include minQuery(1900){
+        transform: translateY(-90px);
+        margin-bottom: -90px;
+    }
+    @include maxQuery(1899){
+        margin-top: 60px;
+    }
+    @include maxQuery(1399){
+        .right-side-nextdraw{
+            width: unset;
+            padding-left: 40px;
+        }
+    }
+    @include maxQuery(1199){
+        .thumb{
+            min-width: 200px;
+            height: 180px;
+            max-width: 400px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    @include maxQuery(1199){
+        padding: 30px 20px;
+        .thumb{
+           display: none;
+        }
+        .right-side-nextdraw{
+            width: unset;
+            padding-left: 0px;
+        }
+    }
+    @include maxQuery(767){
+        .right-side-nextdraw{
+            display: grid;
+            gap: 30px;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .watch-live-wrap{
+            justify-content: center;
+        }
+    }
+}
+.watch-live-wrap{
+    display: flex;
+    align-items: center;
+}
+.draw-watch{
+    display: block;
+    background: var(--act4);
+    border-radius: 50%;
+    margin-left: -20px;
+    .icon-lonk{
+        margin-right: -10px;
+    }
+    .watch-text{
+        margin-right: -20px;
+    }
+    @include maxQuery(1399){
+        .icon-lonk{
+            margin-right: -10px;
+            svg{
+                width: 40px;
+            }
+        }
+        .watch-text{
+            margin-right: -8px;
+            svg{
+                width: 40px;
+            }
+        }
+    }
+}
+.cmn-width{
+    @include box(160);
+    @include maxQuery(1399){
+        @include box(100);
+    }
+}
+//cout down timer
+.draw-timerwrap{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    .draw-timer-item{
+        text-align: center;
+        .text-hed{
+            color: var(--n4);
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .smalltext{
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--n4);
+        }
+    }
+    .lborder{
+        border-width: 2px;
+        border: 1px solid var(--act4);
+        height: 78px;
+    }
+    @include maxQuery(500){
+        gap: 10px;
+        .draw-timer-item{
+            .text-hed{
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .smalltext{
+                font-size: 16px;
+            }
+        }
+        .lborder{
+            border-width: 1px;
+            border: 1px solid var(--act4);
+            height: 55px;
+        }
+    }
+}
+//Next Draw 
 
 //Howit Section
 .howit-work-section{

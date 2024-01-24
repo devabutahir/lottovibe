@@ -752,6 +752,11 @@ i{
 		opacity: 0;
 	}
 }
+@keyframes updown {
+	50%{
+		transform: translateY(-10px);
+	}
+}
 
 // vertical border 
 .v-border{
@@ -1481,9 +1486,21 @@ iframe {
 		}
 	}
 }
+
+//cmn animation eyframes
 @keyframes updown10 {
 	50%{
 		transform: translateY(-10px);
+	}
+}
+@keyframes ske {
+	50%{
+		transform: skewX(10deg);
+	}
+}
+@keyframes alf {
+	50%{
+		transform: translateX(-10px);
 	}
 }
 // cmn body scroll body btn
