@@ -497,6 +497,8 @@ document.addEventListener("DOMContentLoaded", function () {
       var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
       initializeClock('clockdiv', deadline);
 
+      initializeClock('clockdiv2', deadline);
+
     });
 });
 

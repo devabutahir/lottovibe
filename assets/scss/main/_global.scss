@@ -683,6 +683,9 @@ i{
 .draw-badge{
 	position: relative;
 	padding: 10px 29px 10px 16px; 
+	span{
+		text-transform: uppercase;
+	}
 	&::before{
 		background: var(--act3);
 		clip-path: polygon(100% 0, 83% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
@@ -690,7 +693,7 @@ i{
 		content: "";
 		top: 0;
 		left: 0;
-		width: 142px;
+		width: 148px;
 		height: 41px;
 	}
 }

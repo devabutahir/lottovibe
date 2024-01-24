@@ -1156,6 +1156,9 @@ i {
   position: relative;
   padding: 10px 29px 10px 16px;
 }
+.draw-badge span {
+  text-transform: uppercase;
+}
 .draw-badge::before {
   background: var(--act3);
   -webkit-clip-path: polygon(100% 0, 83% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
@@ -1164,7 +1167,7 @@ i {
   content: "";
   top: 0;
   left: 0;
-  width: 142px;
+  width: 148px;
   height: 41px;
 }
 
@@ -3026,7 +3029,6 @@ iframe {
 .footer-copyright {
   display: flex;
   align-items: center;
-  color: var(--nw4);
   font-size: 16px;
   gap: 12px;
 }
@@ -3046,16 +3048,9 @@ iframe {
   display: block;
   height: 16px;
 }
-.footer-copyright .designed {
-  color: var(--nw4);
-}
 .footer-copyright .designed a {
   transition: all 0.4s;
-  color: var(--p1);
   text-decoration: underline;
-}
-.footer-copyright .designed:hover a {
-  color: var(--p1);
 }
 @media (max-width: 380px) {
   .footer-copyright {
@@ -3881,6 +3876,78 @@ iframe {
   }
 }
 
+.limit-time {
+  display: flex;
+  align-items: center;
+  gap: 49px;
+  justify-content: center;
+}
+.limit-time .draw-timer-item {
+  text-align: center;
+}
+.limit-time .draw-timer-item .text-hed {
+  font-size: 100px;
+  font-weight: 800;
+  color: var(--n4);
+  line-height: 120%;
+}
+.limit-time .draw-timer-item .smalltext {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--n4);
+}
+.limit-time .ldots {
+  font-size: 100px;
+  font-weight: 800;
+  color: var(--n4);
+  line-height: 120%;
+}
+@media (max-width: 1399px) {
+  .limit-time {
+    gap: 36px;
+  }
+  .limit-time .draw-timer-item {
+    text-align: center;
+  }
+  .limit-time .draw-timer-item .text-hed {
+    font-size: 48px;
+  }
+  .limit-time .draw-timer-item .smalltext {
+    font-size: 18px;
+  }
+  .limit-time .ldots {
+    font-size: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .limit-time {
+    gap: 24px;
+  }
+  .limit-time .draw-timer-item .text-hed {
+    font-size: 36px;
+  }
+  .limit-time .draw-timer-item .smalltext {
+    font-size: 16px;
+  }
+  .limit-time .ldots {
+    font-size: 36px;
+  }
+}
+@media (max-width: 575px) {
+  .limit-time {
+    gap: 10px;
+  }
+  .limit-time .draw-timer-item .text-hed {
+    font-size: 26px;
+  }
+  .limit-time .draw-timer-item .smalltext {
+    font-size: 14px;
+  }
+  .limit-time .ldots {
+    font-size: 26px;
+  }
+}
+
 @media (max-width: 575px) {
   .howit-work-section .howit-video {
     max-width: 240px;
@@ -4573,10 +4640,34 @@ iframe {
 }
 
 .phone-thumb {
-  width: 100%;
+  width: 1000px;
 }
 .phone-thumb img {
   width: 100%;
+  max-width: unset;
+}
+@media (max-width: 1800px) {
+  .phone-thumb {
+    width: unset;
+  }
+  .phone-thumb img {
+    width: unset;
+  }
+}
+@media (max-width: 1399px) {
+  .phone-thumb {
+    width: 100%;
+  }
+  .phone-thumb img {
+    width: 100%;
+    max-width: unset;
+  }
+}
+
+.phone-thumb-v2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .sponsor-borderwrap {

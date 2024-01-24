@@ -259,7 +259,6 @@
 .footer-copyright{
     display: flex;
     align-items: center;
-    color: var(--nw4);
     font-size: 16px;
     gap: 12px;
     .copy{
@@ -279,16 +278,9 @@
         height: 16px;
     }
     .designed{
-        color: var(--nw4);
         a{
             transition: all 0.4s;
-            color: var(--p1);
             text-decoration: underline;
-        }
-        &:hover{
-            a{
-                color: var(--p1);
-            }
         }
     }
     @include maxQuery(380){

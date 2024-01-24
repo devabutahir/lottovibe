@@ -749,6 +749,78 @@
 }
 //Next Draw 
 
+//limit-time
+.limit-time{
+    display: flex;
+    align-items: center;
+    gap: 49px;
+    justify-content: center;
+    .draw-timer-item{
+        text-align: center;
+        .text-hed{
+           font-size: 100px;
+           font-weight: 800;
+           color: var(--n4); 
+           line-height: 120%;
+        }
+        .smalltext{
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--n4); 
+        }
+    }
+    .ldots{
+        font-size: 100px;
+        font-weight: 800;
+        color: var(--n4); 
+        line-height: 120%;
+    }
+    @include maxQuery(1399){
+        gap: 36px;
+        .draw-timer-item{
+            text-align: center;
+            .text-hed{
+               font-size: 48px;
+            }
+            .smalltext{
+                font-size: 18px;
+            }
+        }
+        .ldots{
+            font-size: 48px;
+        }
+    }
+    @include maxQuery(767){
+        gap: 24px;
+        .draw-timer-item{
+            .text-hed{
+               font-size: 36px;
+            }
+            .smalltext{
+                font-size: 16px;
+            }
+        }
+        .ldots{
+            font-size: 36px;
+        }
+    }
+    @include maxQuery(575){
+        gap: 10px;
+        .draw-timer-item{
+            .text-hed{
+               font-size: 26px;
+            }
+            .smalltext{
+                font-size: 14px;
+            }
+        }
+        .ldots{
+            font-size: 26px;
+        }
+    }
+}
+//limit-time
+
 //Howit Section
 .howit-work-section{
     .howit-video{
@@ -1459,10 +1531,29 @@
 
 //Smart Phone Section
 .phone-thumb{
-    width: 100%;
+    width:1000px;
     img{
         width: 100%;
+        max-width: unset;
     }
+    @include maxQuery(1800){
+        width: unset;
+        img{
+            width: unset;
+        }
+    }
+    @include maxQuery(1399){
+        width: 100%;
+        img{
+            width: 100%;
+            max-width: unset;
+        }
+    }
+}
+.phone-thumb-v2{
+    display: flex;  
+    align-items: center;
+    justify-content: flex-end;
 }
 //Smart Phone Section
 
