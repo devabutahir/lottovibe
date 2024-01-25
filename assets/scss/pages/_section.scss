@@ -1213,6 +1213,14 @@
     }
 
 }
+.tablet-arrow{
+    position: absolute;
+    right: 0;
+    top: 187px;
+    @include maxQuery(1399){
+        display: none;
+    }
+}
 //Testimonial Section
 
 //Call to Action Section

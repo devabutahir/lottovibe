@@ -59,6 +59,21 @@
 .display-two {
   font-size: 72px;
 }
+@media (max-width: 1399px) {
+  .display-two {
+    font-size: 46px !important;
+  }
+}
+@media (max-width: 767px) {
+  .display-two {
+    font-size: 36px !important;
+  }
+}
+@media (max-width: 550px) {
+  .display-two {
+    font-size: 28px !important;
+  }
+}
 
 .display-three {
   font-size: 64px;
@@ -4343,6 +4358,17 @@ iframe {
   background: var(--act4);
   opacity: 1;
   height: 6px;
+}
+
+.tablet-arrow {
+  position: absolute;
+  right: 0;
+  top: 187px;
+}
+@media (max-width: 1399px) {
+  .tablet-arrow {
+    display: none;
+  }
 }
 
 .call-custom-space {

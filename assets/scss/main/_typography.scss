@@ -5,6 +5,15 @@
 
 .display-two {
 	font-size: 72px;
+	@include maxQuery(1399){
+		font-size: 46px !important;
+	}
+	@include maxQuery(767){
+		font-size: 36px !important;
+	}
+	@include maxQuery(550){
+		font-size: 28px !important;
+	}
 }
 
 .display-three {
