@@ -980,6 +980,14 @@ input[type=checkbox] {
   color: var(--n4);
 }
 
+.n4-bt {
+  border-top: 1px solid var(--n4);
+}
+
+.n4-border {
+  border: 1px solid var(--n4);
+}
+
 .n4-bg {
   background: var(--n4);
 }
@@ -1340,100 +1348,30 @@ i {
   list-style: decimal;
 }
 
-.social-area a {
-  width: 48px;
-  min-width: 48px;
-  height: 48px;
-  border: 1px solid var(--p1);
-  border-radius: 50%;
-  display: block;
+.soc-item {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+}
+.soc-item svg, .soc-item i, .soc-item span {
   transition: var(--transition);
 }
-.social-area a i {
-  color: var(--p1);
+.soc-item svg path {
   transition: all 0.4s;
 }
-.social-area a:hover {
-  background-color: var(--p1);
-}
-.social-area a:hover i {
-  color: var(--n1);
-}
-@media (max-width: 991px) {
-  .social-area a {
-    width: 38px;
-    min-width: 38px;
-    height: 38px;
-  }
-}
-.social-area.w32 a {
-  width: 32px;
-  min-width: 32px;
-  height: 32px;
-}
-.social-area.w32 a i {
-  font-size: 14px;
-}
-.social-area.alt a {
-  border-color: var(--p1);
-  background: var(--p1);
-}
-.social-area.alt a i {
-  color: var(--n1);
-}
-.social-area.alt a:hover {
-  background: transparent;
-}
-.social-area.alt a:hover i {
-  color: var(--n0);
-}
 
-.social-items a i, .social-items a span {
-  transition: var(--transition);
+.soc-item-hover-black:hover {
+  background: var(--n4);
 }
-.social-items a:hover i, .social-items a:hover span {
+.soc-item-hover-black:hover i {
   color: var(--p1);
 }
-
-.cmn__social {
-  width: 48px;
-  min-width: 48px;
-  height: 48px;
-  border: 1px solid var(--p1);
-  border-radius: 50%;
-  display: block;
-  transition: var(--transition);
-}
-.cmn__social i {
-  color: var(--p1);
-  transition: all 0.4s;
-}
-.cmn__social:hover {
-  background-color: var(--p1);
-}
-.cmn__social:hover i {
-  color: var(--n1);
-}
-@media (max-width: 991px) {
-  .cmn__social {
-    width: 38px;
-    min-width: 38px;
-    height: 38px;
-  }
+.soc-item-hover-black:hover svg path {
+  stroke: var(--p1);
 }
 
-.soc__box.second-alt {
-  width: 48px;
-  height: 48px;
-}
-.soc__box.second-alt::before {
-  border-color: var(--p1);
-}
-@media (max-width: 1399px) {
-  .soc__box.second-alt {
-    width: 42px;
-    height: 42px;
-  }
+.hover-black:hover {
+  color: var(--n4);
 }
 
 .mouse-follower {
@@ -2767,6 +2705,10 @@ iframe {
   border-bottom: 1px solid rgba(78, 78, 78, 0.5450980392);
 }
 
+.max-300 {
+  max-width: 305px;
+}
+
 .footer-thumbv1-wrap {
   position: relative;
 }
@@ -3032,11 +2974,7 @@ iframe {
   font-size: 16px;
   gap: 12px;
 }
-.footer-copyright .copy {
-  color: var(--nw4);
-}
 .footer-copyright .copy a {
-  color: var(--nw4);
   transition: all 0.4s;
 }
 .footer-copyright .copy a:hover {
@@ -3059,6 +2997,79 @@ iframe {
   .footer-copyright .midbor {
     display: none;
   }
+}
+
+.f2-color {
+  color: var(--n4);
+  font-weight: 500;
+  text-decoration: underline;
+}
+.f2-color:hover {
+  color: var(--act4);
+}
+
+.footer-section2 .call-sun {
+  position: absolute;
+  top: 60px;
+  left: 53px;
+}
+.footer-section2 .call-sun img {
+  animation: zoms 3s linear infinite;
+  filter: brightness(0);
+}
+.footer-section2 .d-star {
+  position: absolute;
+  top: 300px;
+  right: 80px;
+  animation: zoms 2s linear infinite;
+}
+@media (max-width: 1800px) {
+  .footer-section2 .call-sun {
+    width: 80px;
+    top: 20px;
+    left: 20px;
+  }
+  .footer-section2 .d-star {
+    width: 60px;
+    right: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer-section2 .call-sun {
+    display: none;
+  }
+  .footer-section2 .d-star {
+    display: none;
+  }
+}
+
+@keyframes zoms {
+  50% {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 1399px) {
+  .footer-v2-logo {
+    max-width: 180px;
+  }
+  .footer-v2-logo img {
+    width: 100%;
+  }
+}
+
+.footer-item-link li .hover-act4 {
+  font-weight: 400 !important;
+}
+.footer-item-link li .hover-act4:hover {
+  font-weight: 600 !important;
+  text-decoration: underline;
+}
+.footer-item-link li a {
+  transition: all 0.4s;
+}
+
+.hover-act4:hover {
+  color: var(--act4);
 }
 
 .banner-section-v1 {
@@ -4255,6 +4266,14 @@ iframe {
 }
 @media (max-width: 991px) {
   .testimonial-v1-before::before {
+    display: none;
+  }
+}
+.testimonial-v1-before.alt1::before {
+  background: var(--s1);
+}
+@media (max-width: 991px) {
+  .testimonial-v1-before.alt1::before {
     display: none;
   }
 }

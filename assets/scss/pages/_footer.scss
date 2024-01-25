@@ -2,6 +2,9 @@
 .say-helow{
     border-bottom: 1px solid #4e4e4e8b;
 }
+.max-300{
+    max-width: 305px;
+}
 .footer-thumbv1-wrap{
     position: relative;
     .animation-boxfooter{
@@ -262,9 +265,7 @@
     font-size: 16px;
     gap: 12px;
     .copy{
-        color: var(--nw4);
         a{
-            color: var(--nw4);
             transition: all 0.4s;
             &:hover{
                 color: var(--act4);
@@ -288,5 +289,85 @@
         .midbor{
             display: none;
         }
+    }
+}
+.f2-color{
+    color: var(--n4);
+    font-weight: 500;
+    text-decoration: underline;
+    &:hover{
+        color: var(--act4);
+    }
+}
+
+//Footer Version Two
+.footer-section2{
+    .call-sun{
+        position: absolute;
+        top: 60px;
+        left: 53px;
+        img{
+            animation: zoms 3s linear infinite;
+            filter: brightness(0);
+        }
+    }
+    .d-star{
+        position: absolute;
+        top: 300px;
+        right: 80px;
+        animation: zoms 2s linear infinite;
+    }
+    @include maxQuery(1800){
+        .call-sun{
+            width: 80px;
+            top: 20px;
+            left: 20px;
+        }
+        .d-star{
+            width: 60px;
+            right: 20px;
+        }
+    }
+    @include maxQuery(1199){
+        .call-sun{
+            display: none;
+        }
+        .d-star{
+           display: none;
+        }
+    }
+}
+@keyframes zoms {
+    50%{
+        transform: scale(1.1);
+    }
+}
+.footer-v2-logo{
+    @include maxQuery(1399){
+        max-width: 180px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+//footer diffrent item 
+.footer-item-link{
+    li{
+        .hover-act4{
+            font-weight: 400 !important;
+            &:hover{
+                font-weight: 600 !important;
+                text-decoration: underline;
+            }
+        }
+        a{
+            transition: all 0.4s;
+        }
+    }
+}
+.hover-act4{
+    &:hover{
+        color: var(--act4);
     }
 }

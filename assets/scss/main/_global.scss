@@ -493,6 +493,12 @@ input[type="checkbox"] {
 .n4-clr{
 	color: var(--n4);
 }
+.n4-bt{
+	border-top: 1px solid var(--n4);
+}
+.n4-border{
+	border: 1px solid var(--n4);
+}
 .n4-bg{
 	background: var(--n4);
 }
@@ -875,92 +881,35 @@ i{
 // ul custom dicimal
 
 // Social Area 
-.social-area{
-	a{
-		@include box(48);
-		border: 1px solid var(--p1);
-		border-radius: 50%;
-		display: block;
+.soc-item{
+	@include box(40);
+	svg, i, span{
 		transition: var(--transition);
-		i{
-			color: var(--p1);
+	}
+	svg{
+		path{
 			transition: all 0.4s;
 		}
-		&:hover{
-			background-color: var(--p1);
-			i{
-				color: var(--n1);
-			}
-		}
-		@include maxQuery(991){
-			@include box(38);
-		}
-	}
-	&.w32{
-		a{
-			@include box(32);
-			i{
-				font-size: 14px;
-			}
-		}
-	}
-	&.alt{
-		a{
-			border-color: var(--p1);
-			background: var(--p1);
-			i{
-				color: var(--n1);
-			}
-			&:hover{
-				background: transparent;
-				i{
-					color: var(--n0);
-				}
-			}
-		}
 	}
 }
-.social-items{
-	a{
-		i, span{
-			transition: var(--transition);
-		}
-		&:hover{
-			i, span{
-				color: var(--p1);
-			}
-		}
-	}
-}
-.cmn__social{
-	@include box(48);
-	border: 1px solid var(--p1);
-	border-radius: 50%;
-	display: block;
-	transition: var(--transition);
-	i{
-		color: var(--p1);
-		transition: all 0.4s;
-	}
+
+//Hover black
+.soc-item-hover-black{
 	&:hover{
-		background-color: var(--p1);
+		background: var(--n4);
 		i{
-			color: var(--n1);
+			color: var(--p1);
+		}
+		svg{
+			path{
+				stroke: var(--p1);
+			}
 		}
 	}
-	@include maxQuery(991){
-		@include box(38);
-	}
 }
-.soc__box.second-alt{
-	width: 48px;
-	height: 48px;
-	&::before{
-		border-color: var(--p1);
-	}
-	@include maxQuery(1399){
-		width: 42px;
-		height: 42px;
+.hover-black{
+	&:hover{
+		color: var(--n4);
 	}
 }
 

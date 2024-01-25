@@ -1133,6 +1133,14 @@
             display: none;
         }
     }
+    &.alt1{
+        &::before{
+            background: var(--s1);
+            @include maxQuery(991){
+                display: none;
+            }
+        }
+    }
 }
 .testimonial-wrap1{
     @include maxQuery(991){
