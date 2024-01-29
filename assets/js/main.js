@@ -18,15 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Click to Scroll Top //
 
         //>> Aos Animation <<//
-        // AOS.init({
-        //   once: true,
-        //   easing: 'ease-in-out',
-        // });
-        // AOS.init({
-        //   easing: 'ease-in-out-sine',
-        //   once: true,
-        // });
-        // window.addEventListener('load', AOS.refresh);
         $(document).ready(function () {
           $('.title').attr({
              "data-aos": "zoom-in",
@@ -169,6 +160,44 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           autoplay: {
             delay: 1200,
+          },
+          breakpoints: {
+            1400: {
+                slidesPerView: 1,
+                spaceBetween: 24,
+            },
+            992: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            500: {
+              slidesPerView: 1,
+              spaceBetween: 14,
+            },
+        }
+        });
+        // banner Bike one slide //
+        var swiper = new Swiper(".banner-bikeslide-wrap", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 24,
+          speed: 1000,
+          navigation: {
+            nextEl: ".swiper-button-prevteam",
+            prevEl: ".swiper-button-nextteam",
+          },
+          autoplay: {
+            delay: 1200,
+            reverseDirection: true,
           },
           breakpoints: {
             1400: {

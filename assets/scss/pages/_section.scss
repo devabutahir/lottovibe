@@ -367,6 +367,161 @@
 }
 //banner-section-v2
 
+//banner-section-v3
+.banner-content-v3{
+    .bn-v2textcar1{
+        margin-top: -24px;
+    }
+}
+.mouse-animation{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 120px;
+    bottom: 120px;
+    gap: 32px;
+    .m-aniline{
+        width: 4px;
+        margin: 0 auto;
+        svg{
+            width: 4px;
+        }
+    }
+    .m-ani{
+        width: 34px;
+        transition: all 0.4s;
+        animation: updown 2s linear infinite;
+    }
+    @include maxQuery(1700){
+        right: 20px;
+        bottom: 20px;
+    }
+    @include maxQuery(1500){
+        right: 10px;
+        bottom: 10px;
+    }
+    @include maxQuery(767){
+        right: 50%;
+        bottom: 5px;
+        transform: translateX(50%);
+        z-index: 99;
+        .m-aniline{
+          display: none;
+        }
+        .m-ani{
+            svg{
+                path{
+                    stroke: var(--n0);
+                    fill: var(--n0);
+                }
+            }
+        }
+    }
+    @include maxQuery(767){
+        .m-ani{
+            svg{
+               width: 26px;
+            }
+        }
+    }
+}
+.max-520{
+    max-width: 520px;
+}
+.banner-bike-animation{
+    .video-bg2{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        z-index: 0;
+        opacity: 0.8;
+    }
+}
+.banner-bike-onewrap{
+    border-top-left-radius: 856px;
+    border-top-right-radius: 856px;
+    max-width: 856px;
+    margin: 0 auto;
+    height: 400px;
+    padding: 50px 5px 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    .bn-carslide-item{
+        max-width: 580px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+    @include maxQuery(991){
+        height: 320px;
+        .bn-carslide-item{
+            max-width: 400px;
+        }
+    }
+    @include maxQuery(550){
+        height: initial;
+        padding: 40px 30px 20px;
+    }
+}
+.bnv3-countedwrap{
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    .win-bn3-thumb{
+        position: absolute;
+        left: 10px;
+        top: -250px;
+    }
+    @include maxQuery(1199){
+        flex-wrap: wrap;
+        position: initial;
+        .win-bn3-thumb{
+            position: initial;
+        }
+        .employed-itemv3{
+            .display-five{
+                font-size: 28px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        .win-bn3-thumb{
+            width: 100px;
+        }
+        .banner-content-v1customer{
+            padding-bottom: 35px;
+        }
+    }
+    @include maxQuery(500){
+        .win-bn3-thumb{
+            display: none;
+        }
+        .employed-countv3{
+            display: flex;
+            align-items: center;
+             gap: 40px;
+             width: 100%;
+             justify-content: center;
+             text-align: center;
+        }
+        .banner-content-v1customer{
+            padding-top: 8px;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    @include maxQuery(375){
+        .banner-content-v1customer{
+            padding-top: 8px;
+        }
+    }
+}
+//banner-section-v3
+
 //Odometer items
 .bn1-odometer{
     padding-top: 148px;
