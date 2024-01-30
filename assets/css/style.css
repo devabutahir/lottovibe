@@ -2223,6 +2223,29 @@ iframe {
   font-size: 16px;
 }
 
+.textcircle .text {
+  width: 200px;
+  height: 200px;
+  color: var(--n0);
+  font-size: 14px;
+  animation: textRotation 18s linear infinite;
+}
+@keyframes textRotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.textcircle .text span {
+  position: absolute;
+  left: 50%;
+  font-size: 14px;
+  transform-origin: 0 80px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400 !important;
+  font-family: initial;
+  text-transform: uppercase;
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -3586,6 +3609,11 @@ iframe {
 .banner-content-v3 .bn-v2textcar1 {
   margin-top: -24px;
 }
+@media (max-width: 1399px) {
+  .banner-content-v3 .bn-v2textcar1 {
+    margin-top: -40px;
+  }
+}
 
 .mouse-animation {
   display: grid;
@@ -3739,6 +3767,87 @@ iframe {
   .bnv3-countedwrap .banner-content-v1customer {
     padding-top: 8px;
   }
+}
+
+.banner-textanimation {
+  position: absolute;
+  right: 250px;
+  top: 300px;
+  background: var(--act3);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.banner-textanimation::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 500px;
+  content: "";
+  border-radius: var(--number-token-0, 0px) var(--number-token-0, 0px) var(--number-token-25, 100px) var(--number-token-25, 100px);
+  background: linear-gradient(180deg, rgba(254, 201, 47, 0) 0%, #FEC92F 100%);
+  z-index: -1;
+}
+.banner-textanimation .textcircle .text {
+  width: 160px;
+  height: 160px;
+}
+.banner-textanimation .textcircle .text span {
+  color: var(--n4);
+}
+.banner-textanimation .icon-explore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 1700px) {
+  .banner-textanimation {
+    right: 40px;
+  }
+}
+@media (max-width: 1399px) {
+  .banner-textanimation {
+    right: 10px;
+    top: 140px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-textanimation {
+    display: none;
+  }
+}
+
+.icon-explore {
+  width: 85px;
+  min-width: 85px;
+  height: 85px;
+  border: 1px solid var(--n4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-explore .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--n4);
+  transition: all 0.4s;
+}
+.icon-explore .icon i {
+  color: var(--n0);
+}
+.icon-explore:hover .icon {
+  transform: rotate(20deg);
 }
 
 .bn1-odometer {

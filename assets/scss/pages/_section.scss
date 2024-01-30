@@ -372,6 +372,11 @@
     .bn-v2textcar1{
         margin-top: -24px;
     }
+    @include maxQuery(1399){
+        .bn-v2textcar1{
+            margin-top: -40px;
+        }
+    }
 }
 .mouse-animation{
     display: grid;
@@ -424,7 +429,7 @@
                width: 26px;
             }
         }
-    }
+    } 
 }
 .max-520{
     max-width: 520px;
@@ -517,6 +522,82 @@
     @include maxQuery(375){
         .banner-content-v1customer{
             padding-top: 8px;
+        }
+    }
+}
+.banner-textanimation{
+	position: absolute;
+    right: 250px;
+    top: 300px;
+    background: var(--act3);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        height: 500px;
+        content: "";
+        border-radius: var(--number-token-0, 0px) var(--number-token-0, 0px) var(--number-token-25, 100px) var(--number-token-25, 100px);
+        background: linear-gradient(180deg, rgba(254, 201, 47, 0.00) 0%, #FEC92F 100%);
+        z-index: -1;
+    }
+	.textcircle{
+        .text{
+            width: 160px;
+            height: 160px;
+            span{
+                color: var(--n4);
+            }
+        }
+	}
+    .icon-explore{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @include maxQuery(1700){
+        right: 40px;
+    }
+    @include maxQuery(1399){
+        right: 10px;
+        top: 140px;
+    }
+    @include maxQuery(991){
+        display: none;
+    }
+}
+.icon-explore{
+    @include box(85);
+    border: 1px solid var(--n4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--n4);
+        transition: all 0.4s;
+        i{
+            color: var(--n0);
+
+        }
+    }
+    &:hover{
+        .icon{
+            transform: rotate(20deg);
         }
     }
 }

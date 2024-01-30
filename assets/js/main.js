@@ -381,6 +381,16 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".currentYear").text(new Date().getFullYear());
       // Current Year//
 
+      //text circle
+      const text = document.querySelector(".text");
+      text.innerHTML = text.innerText
+        .split("")
+        .map(
+          (char, i) => `<span style="transform:rotate(${i * 14}deg)">${char}</span>`
+        )
+        .join("");
+      //text circle
+
       //propdown common lide//
         $('.dropdown-toggle').dropdown()
       //propdown common lide//
@@ -422,6 +432,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       //nice select
       $('select').niceSelect();
+
+
 
       // Mouse Follower Hide Function //
       $("a, button").on('mouseenter mouseleave', function () {
