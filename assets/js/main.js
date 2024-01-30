@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 2500);
       
       // Click to Scroll Top //
-        var ScrollTop = $(".scrollToTop");
+        const ScrollTop = $(".scrollToTop");
         $('.scrollToTop').on('click', function () {
           $('html, body').animate({
             scrollTop: 0
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //>> Aos Animation <<//
 
       // Sticky Header //
-        var fixed_top = $(".custom-fixed");
+        const fixed_top = $(".custom-fixed");
         if ($(window).scrollTop() > 50) {
           fixed_top.addClass("animated fadeInDown header-fixed");
         }
@@ -43,39 +43,39 @@ document.addEventListener("DOMContentLoaded", function () {
       // window on scroll function//
         $(window).on("scroll", function () {
 
-        // Sticky Header//
-        if ($(window).scrollTop() > 50) {
-          fixed_top.addClass("animated fadeInDown header-fixed");
-        }
-        else {
-          fixed_top.removeClass("animated fadeInDown header-fixed");
-        }
-        // Sticky Header//
-
-        // Check Scroll //
-        if ($(this).scrollTop() < 600) {
-          ScrollTop.removeClass("active");
-        } else {
-          ScrollTop.addClass("active");
-        }
-        // Check Scroll //
-
-      //--Odometer--//
-      $(".odometer-item").each(function () {
-        $(this).isInViewport(function (status) {
-          if (status === "entered") {
-            for (
-              var i = 0;
-              i < document.querySelectorAll(".odometer").length;
-              i++
-            ) {
-              var el = document.querySelectorAll(".odometer")[i];
-              el.innerHTML = el.getAttribute("data-odometer-final");
-            }
+          // Sticky Header//
+          if ($(window).scrollTop() > 50) {
+            fixed_top.addClass("animated fadeInDown header-fixed");
           }
+          else {
+            fixed_top.removeClass("animated fadeInDown header-fixed");
+          }
+          // Sticky Header//
+
+          // Check Scroll //
+          if ($(this).scrollTop() < 600) {
+            ScrollTop.removeClass("active");
+          } else {
+            ScrollTop.addClass("active");
+          }
+          // Check Scroll //
+
+        //--Odometer--//
+        $(".odometer-item").each(function () {
+          $(this).isInViewport(function (status) {
+            if (status === "entered") {
+              for (
+                var i = 0;
+                i < document.querySelectorAll(".odometer").length;
+                i++
+              ) {
+                var el = document.querySelectorAll(".odometer")[i];
+                el.innerHTML = el.getAttribute("data-odometer-final");
+              }
+            }
+          });
         });
-      });
-      //--Odometer--//
+        //--Odometer--//
 
       });
       // window on scroll function//
@@ -116,36 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
         $(this).siblings("ul").slideToggle(300);
       });
       // navbar custom//
-
-      // toggle search box //
-      $('.search-toggle-btn').on('click', function () {
-        $('.search-toggle-box').slideToggle(300);
-      });
-      // toggle search box //
-
-      // Attach the handleWindowResize function to the window resize event//
-      $(window).resize(function () {
-        handleWindowResize();
-      });
-          
-      // Function to handle window resize//
-      function handleWindowResize() {
-        var windowWidth = $(window).width();
-        if (windowWidth <= 767) {
-          $(document).click(function (event) {
-            if (!$(event.target).closest(".search-toggle-box, .search-toggle-btn").length) {
-              $('.search-toggle-box').slideUp(300);
-            }
-          });
-        }
-      }
-      if ($(window).width() <= 767) {
-        $(document).click(function (event) {
-          if (!$(event.target).closest(".search-toggle-box, .search-toggle-btn").length) {
-            $('.search-toggle-box').slideUp(300);
-          }
-        });
-      }
 
       // banner car slide //
         var swiper = new Swiper(".banner-carslide-wrap", {
@@ -441,7 +411,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       // Mouse Follower slider icon Function //
-      var newElement = $('<i class="material-symbols-outlined fs-four"> arrow_range </i>');
+      const newElement = $('<i class="material-symbols-outlined fs-four"> arrow_range </i>');
       $(".slider-icon-area").on('mouseleave', function () {
         $('.mouse-follower').removeClass('slider-icon-active');
         newElement.remove();
@@ -490,55 +460,55 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       // count down timer
-        function getTimeRemaining(endtime) {
-          var t = Date.parse(endtime) - Date.parse(new Date());
-          
-          /***** CONVERT THE TIME TO A USEABLE FORMAT *****/
-          var seconds = Math.floor( (t / 1000) % 60 );
-          var minutes = Math.floor( (t / 1000 / 60) % 60 );
-          var hours = Math.floor( (t / (1000 * 60 * 60)) %  24);
-          var days = Math.floor( t / (1000 * 60 * 60 * 24) );
-          
-          /***** OUTPUT THE CLOCK DATA AS A REUSABLE OBJECT *****/
-          return {
-              'total': t,
-              'days': days,
-              'hours': hours,
-              'minutes': minutes,
-              'seconds': seconds
-          };
-        }
-    
-        /***** DISPLAY THE CLOCK AND STOP IT WHEN IT REACHES ZERO *****/
-        function initializeClock(id, endtime) {
-            var clock = document.getElementById(id);
-            var daysSpan = clock.querySelector('.days');
-            var hoursSpan = clock.querySelector('.hours');
-            var minutesSpan = clock.querySelector('.minutes');
-            var secondsSpan = clock.querySelector('.seconds');
-            
-            function updateClock() {
-                var t = getTimeRemaining(endtime);
-                
-                daysSpan.innerHTML = t.days;
-                hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-                minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-                secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-                
-                if (t.total <= 0) {
-                    clearInterval(timeinterval);
-                }
-            }
+      function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
         
-        updateClock(); // run function once at first to avoid delay
-        var timeinterval = setInterval(updateClock,1000);
-        }
-      
-      /***** SET A VALID END DATE *****/
-      var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-      initializeClock('clockdiv', deadline);
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        
+        return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        };
+      }
 
-      initializeClock('clockdiv2', deadline);
+// Display the clock and stop it when it reaches zero
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+  
+  function updateClock() {
+      var t = getTimeRemaining(endtime);
+      
+      daysSpan.innerHTML = t.days;
+      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+      
+      if (t.total <= 0) {
+          clearInterval(timeinterval);
+      }
+  }
+  
+  updateClock(); // Run function once at first to avoid delay
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+// Set a valid end date 300 days from now
+var deadline = new Date();
+deadline.setDate(deadline.getDate() + 300);
+initializeClock('clockdiv', deadline);
+
+initializeClock('clockdiv2', deadline);
+
 
     });
 });
