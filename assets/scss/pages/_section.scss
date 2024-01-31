@@ -730,7 +730,6 @@
         }
     }
 }
-
 .content-wrap{
     background: #FFF0E7;
     border-radius: 100px;
@@ -794,7 +793,6 @@
         }
     }
 }
-
 .cmn-arrows{
     @include box(48);
     border-radius: 50%;
@@ -1667,6 +1665,82 @@
 }
 //Testimonial Section
 
+//win bike Section
+.win-bikeslide-itemv1{
+    background: var(--n0);
+    .win-thumbv1{
+        max-width: 446px;
+        margin: 0 auto 10px;
+        img{
+            width: 100%;
+        }
+    }
+    .n4-badge{
+        transform: rotate(90deg);
+        position: absolute;
+        top: 80px;
+        right: -50px;
+        transition: all 0.4s;
+    }
+    .win-bikefooter{
+        border-top: 1px solid var(--nw4);
+        .box-ticketcmn{
+            padding: 5px 16px;
+        }
+        .box-ticket{
+            padding: 0px 28px;
+            width: 290px;
+        }
+        .box-price{
+            padding-left: 20px;
+        }
+        .line{
+            height: 50px;
+            border-left: 1px solid var(--nw4);
+        }
+    }
+    i{
+        line-height: 2;
+    }
+    @include maxQuery(1800){
+       .win-thumbv1{
+        padding: 0 24px;
+       }
+       .n4-badge{
+            top: 80px;
+            right: -70px;
+            padding: 6px 38px 6px 16px;
+        }
+    }
+    @include maxQuery(1399){
+        .win-thumbv1{
+            margin: 0 auto 1px;
+        }
+        .win-bikefooter{
+            .box-ticketcmn{
+                padding: 5px 8px;
+            }
+            .box-ticket{
+                padding: 0px 8px;
+                width: 290px;
+            }
+            .box-price{
+                padding-left: 5px;
+            }
+            .line{
+                height: 50px;
+                border-left: 1px solid var(--nw4);
+            }
+        }
+    }
+    &:hover{
+        .n4-badge{
+            background: var(--act4);
+        }
+    }
+}
+//win bike Section
+
 //Call to Action Section
 .call-custom-space{
     margin-bottom: 150px;
@@ -2037,8 +2111,203 @@
 }
 //Sponsor Section
 
-//Sponsor Section
-//Sponsor Section
+//Progaram Section
+.bike-program-before{
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 618px;
+        height: 100%;
+        background: var(--n4);
+        z-index: -1;
+        clip-path: polygon(0 0, 93% 0, 100% 6%, 100% 92%, 91% 100%, 0 100%, 0 100%, 0 0);
+    }
+    @include maxQuery(1399){
+        &::before{
+            width: 450px;
+        }
+    }
+    @include maxQuery(1399){
+        &::before{
+            display: none;
+        }
+    }
+}
+.program-content{
+    .car-tybtn{
+        margin-top: 130px;
+    }
+    @include maxQuery(1600){
+        .car-tybtn{
+            margin-top: 50px;
+        }
+    }
+    @include maxQuery(374){
+        .car-tybtn{
+            margin-top: 30px;
+        }
+    }
+}
+.program-planwrap{
+    .program-plan-item{
+        .pro-check{
+            @include box(60);
+            border-radius: 50%;
+            i{
+                font-size: 20px;
+                color: var(--n0);
+            }
+            &::before{
+                position: absolute;
+                top: 120%;
+                left: 50%;
+                width: 2px;
+                height: 68px;
+                content: "";
+                border-radius: var(--number-token-0, 0px);
+                background: linear-gradient(59deg, rgba(85, 74, 255, 0) 0%, #554AFF 100.14%);
+            }
+        }
+        .program-plan-inner{
+            .icon{
+                @include box(80);
+                border-radius: 50%;
+                i{
+                    font-size: 42px;
+                }
+            }
+        }
+        &:not(:last-child){
+            margin-bottom: 80px;
+        }
+    }
+    @include maxQuery(1600){
+        .program-plan-item{
+            .pro-check{
+                @include box(40);
+                i{
+                    font-size: 16px;
+                }
+                &::before{
+                    top: 110%;
+                    height: 38px;
+                }
+            }
+            .program-plan-inner{
+                .icon{
+                    @include box(60);
+                    i{
+                        font-size: 26px;
+                    }
+                }
+            }
+            &:not(:last-child){
+                margin-bottom: 50px;
+            }
+        }
+    }
+    @include maxQuery(374){
+        .program-plan-item{
+            .pro-check{
+                @include box(30);
+                i{
+                    font-size: 14px;
+                }
+                &::before{
+                    top: 100%;
+                    height: 30px;
+                }
+            }
+            .program-plan-inner{
+                .icon{
+                    @include box(42);
+                    i{
+                        font-size: 21px;
+                    }
+                }
+            }
+            &:not(:last-child){
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+.program-thumb{
+    direction: rtl;
+    position: relative;
+    .thumb{
+        max-width: 850px;
+        img{
+            width: 820px;
+        }
+    }
+    img{
+        max-width: unset;
+    }
+    &::before{
+        position: absolute;
+        top: 42%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        content: "";
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: var(--act4);
+        z-index: -1;
+    }
+    @include maxQuery(1600){
+        .thumb{
+            img{
+                width: 620px;
+            }
+        }
+        &::before{
+            top: 42%;
+            left: 45%;
+            width: 400px;
+            height: 400px;
+        }
+    }
+    @include maxQuery(1399){
+       @include minQuery(991){
+            .thumb{
+                img{
+                    width: 480px;
+                }
+            }
+            &::before{
+                top: 42%;
+                left: 45%;
+                width: 300px;
+                height: 300px;
+            }
+       }
+    }
+    @include maxQuery(991){
+        direction: ltr;
+        .thumb{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &::before{
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    @include maxQuery(400){
+        &::before{
+            width: 180px;
+            height: 180px;
+        }
+    }
+}
+//Progaram Section
 
 
 

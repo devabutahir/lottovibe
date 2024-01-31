@@ -514,6 +514,9 @@ input[type="checkbox"] {
 .bbd{
 	border-bottom: 1px solid var(--borderd);
 }
+.winbg{
+	background: rgba(244, 244, 244, 0.60);
+}
 //variable color Defult
 
 //bg hover 
@@ -701,6 +704,20 @@ i{
 		left: 0;
 		width: 148px;
 		height: 41px;
+	}
+	&.badge-blac{
+		&::before{
+			background: var(--n4);
+		}
+	}
+}
+
+.n4-badge{
+	clip-path: polygon(100% 0, 93% 51%, 100% 100%, 0% 100%, 0 100%, 0% 0%);
+	padding: 10px 38px 10px 16px;
+	background: var(--n4);
+	&.act4{
+		background: var(--act4);
 	}
 }
 // Draw Badge
