@@ -259,6 +259,24 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
         });
+        //Bike Working win Slider
+        var swiper = new Swiper(".bikeworking-wrap", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 50,
+          direction: "vertical",
+          autoHeight: true,
+          mousewheel: true,
+          speed: 1000,
+          pagination: {
+            el: ".swiper-pagination-workguide",
+            clickable: true
+          },
+          autoplay: {
+            delay: 3000,
+          },
+        });
         //luxury selection
         var swiper = new Swiper(".testimonial-wrap1", {
           loop: true,
