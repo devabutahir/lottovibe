@@ -2318,8 +2318,11 @@
         height: 370px;
     }
     @include maxQuery(1199){
-        height: 342px;
+        height: 390px;
     }
+}
+.work-sliderwing{
+    overflow: hidden;
 }
 .work-thumb-widing{
     max-width: 500px;
@@ -2337,7 +2340,7 @@
     }
     @include maxQuery(1199){
         max-width: 400px;
-        height: 380px;
+        height: 390px;
         .work-thumbv3{
             width: 472px;
             height: 447px;
@@ -2385,7 +2388,6 @@
         }
     }
 }
-
 .bike-worksection{
     .swiper-pagination-workguide {
         background: #fff;
@@ -2416,7 +2418,57 @@
         }
     }
 }
+.re-working-position{
+    top: 1px !important;
+}
 //Work wingin slide Section
+
+//bliss Section
+.bliss-bodywrap{
+    position: relative;
+    z-index: 1;
+    &::before{
+        background: url(../../assets/images/bike/bliss-bg.png) no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 82%;
+        height: 594px;
+        z-index: -1;
+    }
+    @include maxQuery(1900){
+        &::before{
+            width: 100%;
+        }
+    }
+}
+.bliss-thumbmain{
+    .bliss-thumb{
+        direction: ltr;
+        margin-bottom: -100px;
+        img{
+            padding-right: 100px;
+            max-width: initial;
+        }
+    }
+}
+.bliss-counterwrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 90px 0 120px;
+    .bliss-item{
+        .odometer{
+            color: var(--act4);
+        }
+    }
+    @include maxQuery(1399){
+        padding: 110px 0 90px;
+    }
+}
+//bliss Section
 
 
 

@@ -228,6 +228,14 @@ li {
   padding-top: 120px;
 }
 
+.mt-120 {
+  margin-top: 120px;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+
 .pt-120 {
   padding-top: 120px;
 }
@@ -269,6 +277,12 @@ li {
   .pb-120 {
     padding-bottom: 100px;
   }
+  .mt-120 {
+    margin-top: 100px;
+  }
+  .mb-120 {
+    margin-bottom: 100px;
+  }
   .pt-100 {
     padding-top: 90px;
   }
@@ -288,6 +302,12 @@ li {
   }
   .pt-120 {
     padding-top: 70px;
+  }
+  .mt-120 {
+    margin-top: 70px;
+  }
+  .mb-120 {
+    margin-bottom: 70px;
   }
   .pb-120 {
     padding-bottom: 70px;
@@ -407,6 +427,12 @@ li {
   }
   .pt-120 {
     padding-top: 60px;
+  }
+  .mt-120 {
+    margin-top: 60px;
+  }
+  .mb-120 {
+    margin-bottom: 60px;
   }
   .pb-120 {
     padding-bottom: 60px;
@@ -5601,8 +5627,12 @@ iframe {
 }
 @media (max-width: 1199px) {
   .bikeworking-wrap {
-    height: 342px;
+    height: 390px;
   }
+}
+
+.work-sliderwing {
+  overflow: hidden;
 }
 
 .work-thumb-widing {
@@ -5623,7 +5653,7 @@ iframe {
 @media (max-width: 1199px) {
   .work-thumb-widing {
     max-width: 400px;
-    height: 380px;
+    height: 390px;
   }
   .work-thumb-widing .work-thumbv3 {
     width: 472px;
@@ -5712,6 +5742,55 @@ iframe {
 @media (max-width: 480px) {
   .bike-worksection .swiper-pagination-workguide {
     display: none;
+  }
+}
+
+.re-working-position {
+  top: 1px !important;
+}
+
+.bliss-bodywrap {
+  position: relative;
+  z-index: 1;
+}
+.bliss-bodywrap::before {
+  background: url(../../assets/images/bike/bliss-bg.png) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 82%;
+  height: 594px;
+  z-index: -1;
+}
+@media (max-width: 1900px) {
+  .bliss-bodywrap::before {
+    width: 100%;
+  }
+}
+
+.bliss-thumbmain .bliss-thumb {
+  direction: ltr;
+  margin-bottom: -100px;
+}
+.bliss-thumbmain .bliss-thumb img {
+  padding-right: 100px;
+  max-width: initial;
+}
+
+.bliss-counterwrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 90px 0 120px;
+}
+.bliss-counterwrap .bliss-item .odometer {
+  color: var(--act4);
+}
+@media (max-width: 1399px) {
+  .bliss-counterwrap {
+    padding: 110px 0 90px;
   }
 }
 

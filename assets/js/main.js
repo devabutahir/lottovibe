@@ -61,19 +61,29 @@ document.addEventListener("DOMContentLoaded", function () {
           // Check Scroll //
 
         //--Odometer--//
-        $(".odometer-item").each(function () {
-          $(this).isInViewport(function (status) {
-            if (status === "entered") {
-              for (
-                var i = 0;
-                i < document.querySelectorAll(".odometer").length;
-                i++
-              ) {
-                var el = document.querySelectorAll(".odometer")[i];
-                el.innerHTML = el.getAttribute("data-odometer-final");
-              }
-            }
-          });
+        // $(".odometer-item").each(function () {
+        //   $(this).isInViewport(function (status) {
+        //     if (status === "entered") {
+        //       for (
+        //         var i = 0;
+        //         i < document.querySelectorAll(".odometer").length;
+        //         i++
+        //       ) {
+        //         var el = document.querySelectorAll(".odometer")[i];
+        //         el.innerHTML = el.getAttribute("data-odometer-final");
+        //       }
+        //     }
+        //   });
+        // });
+              // Odometer Init 
+        let windowHeight = $(window).height();
+        $('.odometer').children().each(function () {
+          if ($(this).isInViewport({ "tolerance": windowHeight, "toleranceForLast": windowHeight, "debug": false })) {
+            var section = $(this).closest(".counters");
+            section.find(".odometer").each(function () {
+              $(this).html($(this).attr("data-odometer-final"));
+            });
+          }
         });
         //--Odometer--//
 
@@ -261,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         //Bike Working win Slider
         var swiper = new Swiper(".bikeworking-wrap", {
-          loop: true,
+          loop: false,
           slidesPerView: 1,
           slidesToShow: 1,
           spaceBetween: 50,
