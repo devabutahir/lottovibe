@@ -380,17 +380,31 @@ document.addEventListener("DOMContentLoaded", function () {
       // Current Year//
 
       //text circle
-        const text = document.querySelector(".text");
-        if (text) {
-          text.innerHTML = text.innerText
-            .split("")
-            .map(
-              (char, i) => `<span style="display:inline-block; transform:rotate(${i * 14}deg)">${char}</span>`
-            )
-            .join("");
-        } else {
-          console.log("print");
-        }
+        // const text = document.querySelector(".text");
+        // if (text) {
+        //   text.innerHTML = text.innerText
+        //     .split("")
+        //     .map(
+        //       (char, i) => `<span style="display:inline-block; transform:rotate(${i * 14}deg)">${char}</span>`
+        //     )
+        //     .join("");
+        // } else {
+        //   console.log("print");
+        // }
+        const texts = document.querySelectorAll(".text, .text2");
+
+        texts.forEach(text => {
+          if (text) {
+            text.innerHTML = text.innerText
+              .split("")
+              .map(
+                (char, i) => `<span style="display:inline-block; transform:rotate(${i * 14}deg)">${char}</span>`
+              )
+              .join("");
+          } else {
+            console.log("print");
+          }
+        });
       //text circle
 
       //propdown common lide//

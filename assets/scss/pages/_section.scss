@@ -1663,6 +1663,21 @@
         display: none;
     }
 }
+.badge-before{
+    position: relative;
+    &::before{
+        position: absolute;
+        top: -15%;
+        right: 0;
+        content: "";
+        width: 345px;
+        height: 115%;
+        background: var(--s1);
+    }
+    @include maxQuery(991){
+        display: none;
+    }
+}
 //Testimonial Section
 
 //win bike Section
@@ -1740,6 +1755,51 @@
     }
 }
 //win bike Section
+
+//meet previous Section
+.meet-previous-item{
+    .thumb-man{
+        max-width: 306px;
+        border-radius: 50%;
+        margin: 0 auto;
+        .mimg{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 0.4s;
+        }
+        .man-bike{
+            max-width: 306px;
+            background: var(--nw3);
+            border-radius: 100px;
+            padding: 4px 10px;
+            margin: -30px auto 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(218, 218, 218, 0.50);
+            transition: all 0.4s;
+            z-index: 2;
+            position: relative;
+            img{
+                max-width: 210px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    &:hover{
+        .man-bike{
+            background: var(--act4);
+        }
+        .mimg{
+            transform: rotate(5deg);
+        }
+    }
+}
+//meet previous Section
 
 //Call to Action Section
 .call-custom-space{
@@ -2432,7 +2492,7 @@
         background-size: cover;
         position: absolute;
         content: "";
-        top: 0;
+        top: 7px;
         left: 0;
         width: 82%;
         height: 594px;
@@ -2443,6 +2503,11 @@
             width: 100%;
         }
     }
+    @include maxQuery(1199){
+        &::before{
+            height: 100%;
+        }
+    }
 }
 .bliss-thumbmain{
     .bliss-thumb{
@@ -2451,6 +2516,17 @@
         img{
             padding-right: 100px;
             max-width: initial;
+        }
+        @include maxQuery(1199){
+            margin-bottom: 10px;
+        }
+        @include maxQuery(991){
+            width: 100%;
+            img{
+                padding-right: 0px;
+                width: 100%;
+                max-width: initial;
+            }
         }
     }
 }
@@ -2466,6 +2542,13 @@
     }
     @include maxQuery(1399){
         padding: 110px 0 90px;
+    }
+    @include maxQuery(1199){
+        padding: 40px 0 60px;
+    }
+    @include maxQuery(991){
+        padding: 40px 0 10px;
+        gap: 30px;
     }
 }
 //bliss Section

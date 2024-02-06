@@ -1793,6 +1793,33 @@ iframe {
 		text-transform: uppercase;
 	}
 }
+
+.textcircle2{
+	position: relative;
+	.text2 {
+		width: 200px;
+		height: 200px;
+		color: var(--n0);
+		font-size: 14px;
+		animation: textRotation 18s linear infinite;
+	}
+	@keyframes textRotation {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+	.text2 span {
+		position: absolute;
+		left: 50%;
+		top: 19px;
+		font-size: 14px;
+		transform-origin: 0 80px;
+		color: rgba(255, 255, 255, 0.60);
+		font-weight: 400 !important;
+		font-family: initial;
+		text-transform: uppercase;
+	}
+}
 // Text animation
 
 // Animation Start 

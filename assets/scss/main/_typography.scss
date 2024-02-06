@@ -198,6 +198,36 @@ li {
 }
 //Defult Padding 
 
+//form news
+.news-form{
+	border: 1px solid var(--n3);
+	border-radius: 100px;
+	padding: 2px 2px;
+	input{
+		border: unset;
+		outline: none;
+		font-size: 16px;
+		font-weight: 600;
+		color: var(--n1);
+	}
+	::placeholder{
+		color: var(--n1);
+	}
+}
+//form news
+
+.footer-web{
+	font-size: 340px;
+	font-weight: 800;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: black;
+	-webkit-text-fill-color: var(--n5); 
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--nw1);
+	opacity: 0.1;
+}
+
 //Default all responsive
 //max 1399
 @media (max-width: 1399px) {
