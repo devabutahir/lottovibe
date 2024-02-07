@@ -8,12 +8,56 @@
     background: var(--bg1);
 
 }
+//header four style
+.header-section-v4.header-fixed{
+    background: var(--n0);
+    z-index: 999;
+}
+.header-section-v4{
+    @include maxQuery(1199){
+        background: var(--n0);
+    }
+    .head-card{
+        li{
+            .cmn-circle{
+                border: 1px solid rgb(0 0 0 / 52%);
+                i{
+                    color: var(--n4);
+                }
+                &:hover{
+                    border-color: var(--act4);
+                    i{
+                        color: var(--act4);
+                    }
+                }
+            }
+        }
+    }
+    .head-language{
+        .nice-select{
+            .current{
+                color: var(--n4);
+            }
+            &::after{
+                border-color: var(--n4);
+            }
+        }
+    }
+}
+.navbar-toggle-black{
+    span{
+        background: var(--n4) !important;
+    }
+}
+//header four style
+
 .header-position{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     transition: all 0.5s;
+    z-index: 999;
 }
 // header common here
 .header-section-v1 {
@@ -256,6 +300,7 @@
         .menu-item,
         .menu-link {
             button, a {
+                font-weight: 600;
                 font-size: 16px !important;
                 @include maxQuery(991){
                     font-size: 14px !important;
@@ -413,14 +458,21 @@
             a,
             button{
                 color: var(--n1);
+                &:hover, &.active{
+                    color: var(--act4);
+                }
             }
             .sub-menu{
-                background: #fff;
+                background: var(--n0) !important;
                 box-shadow: rgba(149, 157, 165, 0.389) 0px 8px 24px;
+            }
+            .sub-menu.mega-menu-style{
+                background: var(--n2) !important;
             }
         }
     }
 }
+
 // sticky header 
 
 // show case img

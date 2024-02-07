@@ -441,8 +441,8 @@
     }
     .banner-textanimation2{
         position: absolute;
-        right: 250px;
-        top: 300px;
+        right: 100px;
+        top: 60px;
         background: var(--n5);
         border: 1px solid var(--n3);
         width: 200px;
@@ -477,12 +477,14 @@
                 }
             }
         }
-        @include maxQuery(1700){
-            right: 40px;
+        @include maxQuery(1850){
+            right: 20px;
+            top: 15px;
+            z-index: -1;
         }
         @include maxQuery(1399){
             right: 10px;
-            top: 140px;
+            top: 15px;
         }
         @include maxQuery(991){
             display: none;
@@ -578,5 +580,55 @@
                 height: 40px;
             }
         }
+    }
+}
+
+.banner-textanimation2{
+    position: absolute;
+    right: 250px;
+    top: 300px;
+    background: var(--n5);
+    border: 1px solid var(--n3);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    &::before{
+        display: none;
+    }
+    .textcircle{
+        .text{
+            width: 160px;
+            height: 160px;
+            span{
+                color: var(--n0);
+            }
+        }
+    }
+    .icon-explore{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-color: var(--n3);
+        .icon{
+            background: var(--act3) !important;
+            i{
+                color: var(--n5);
+            }
+        }
+    }
+    @include maxQuery(1700){
+        right: 40px;
+    }
+    @include maxQuery(1399){
+        right: 10px;
+        top: 140px;
+    }
+    @include maxQuery(991){
+        display: none;
     }
 }
