@@ -1002,13 +1002,76 @@
     background: rgba(255, 101, 14, 0.12);
     .banner-4v-shape{
         position: absolute;
-        top: 210px;
+        top: 307px;
         right: 60px;
+        animation: updown 2s linear infinite;
     }
     .win-bn4-thumb{
         position: absolute;
         right: 290px;
         top: 180px;
+    }
+    .bnv4-countedwrap{
+        position: absolute;
+        right: 91px;
+        bottom: 170px;
+    }
+    .banner-v4wraper{
+        padding: 100px 0 270px;
+    }
+    @include maxQuery(1600){
+        .banner-4v-shape{
+            top: 307px;
+            right: 10px;
+            width: 120px;
+        }
+    }
+    @include maxQuery(1399){
+        .banner-4v-shape{
+            display: none;
+        }
+        .win-bn4-thumb{
+            top: 100px;
+            right: 10px;
+            width: 140px;
+        }
+    }
+    @include maxQuery(1199){
+        .banner-v4wraper{
+            padding: 100px 0 170px;
+        }
+        .bnv4-countedwrap{
+            position: initial;
+            justify-content: flex-start !important;
+            margin-top: -60px;
+        }
+    }
+    @include maxQuery(991){
+        .banner-v4wraper{
+            padding: 0px 0 70px;
+        }
+        .banner-4v-shape{
+            display: block;
+        }
+        .win-bn4-thumb{
+            top: 50%;
+        }
+    }
+    @include maxQuery(767){
+        .win-bn4-thumb{
+            display: none;
+        }
+        .banner-4v-shape{
+            width: 70px;
+        }
+    }
+    @include maxQuery(575){
+        .bnv4-countedwrap{
+            position: initial;
+            justify-content: flex-start !important;
+            margin-top: -80px;
+            margin-bottom: 40px;
+        }
     }
 }
 .banner-content-v4{
@@ -1141,17 +1204,34 @@
     @include maxQuery(767){
         width: 100%;
         height: initial;
-        border-radius: 0 0px 360px 0;
+        border-radius: 0 0px 0px 0;
         .banner-v4-thumbbox{
-            padding-top: 50px;
+            padding-top: 0px;
+            margin-right: 0;
+            .thumb {
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
         }
         &::before{
-            width: 480px;
-            height: 480px;
+            width: 280px;
+            height: 280px;
         }
         &::after{
-            width: 480px;
-            height: 480px;
+            width: 280px;
+            height: 280px;
+        }
+    }
+    @include maxQuery(480){
+        &::before{
+            width: 180px;
+            height: 180px;
+        }
+        &::after{
+            width: 180px;
+            height: 180px;
         }
     }
 }

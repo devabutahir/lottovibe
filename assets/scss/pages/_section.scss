@@ -202,6 +202,152 @@
 }
 //Next Draw 
 
+//Next Drow Two
+.next-draw-positonv4{
+    transform: translateY(-240px);
+    margin-bottom: -240px;
+}
+.draw-nextwrap-v4wrap{
+    background: url(../../assets/images/global/draw-bg.png) no-repeat center center;
+    background-size: contain;
+    height: 344px;
+    padding: 27px 70px 34px 27px;
+    margin-top: 75px;
+    .draw-netwrap-inner{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        z-index: 1;
+        &::before{
+            position: absolute;
+            top: -160px;
+            left: 20px;
+            content: "";
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background: var(--act4);
+            border: 2px solid var(--n0);
+            z-index: -1;
+        }
+    }
+    .thumb{
+        max-width: 400px;
+        img{
+            width: 100%;
+        }
+    }
+    .right-side-nextdraw{
+        display: flex;
+        align-items: center;
+        gap: 80px;
+    }
+    .draw-countdraw{
+        .draw-timerwrap{
+            .draw-timer-item{
+                .text-hed{
+                    font-size: 40px;
+                    font-weight: 800;
+                }
+            }
+            .lborder-dot{
+                font-size: 40px;
+                font-weight: 900;
+            }
+        }
+        .next-arrow{
+            position: absolute;
+            top: -20px;
+            right: -70px;
+            width: 120px;
+            animation: ske 2s linear infinite;
+        }
+    }
+    @include maxQuery(1199){
+        padding: 45px 40px 20px 27px;
+        .draw-netwrap-inner{
+            gap: 20px;
+            &::before{
+                top: -0px;
+                left: 20px;
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .right-side-nextdraw{
+            gap: 30px;
+        }
+        .draw-countdraw{
+            .draw-timerwrap{
+                .draw-timer-item{
+                    .text-hed{
+                        font-size: 24px;
+                        font-weight: 800;
+                    }
+                }
+                .lborder-dot{
+                    font-size: 26px;
+                    font-weight: 900;
+                }
+            }
+            .next-arrow{
+                top: -20px;
+                right: -20px;
+                width: 80px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .draw-netwrap-inner{
+            gap: 20px;
+            &::before{
+                display: none;
+            }
+        }
+        .thumb{
+            display: none;
+        }
+    }
+    @include maxQuery(767){
+        .right-side-nextdraw{
+            flex-wrap: wrap;
+            gap: 16px 20px;
+            justify-content: center;
+        }
+    }
+    @include maxQuery(575){
+        background-size: cover;
+        .right-side-nextdraw{
+            flex-wrap: wrap;
+            gap: 16px 20px;
+            justify-content: center;
+        }
+        .next-arrow{
+            display: none;
+        }
+    }
+    @include maxQuery(380){
+        .draw-countdraw{
+            .draw-timerwrap{
+                gap: 20px;
+                .draw-timer-item{
+                    .text-hed{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .smalltext{
+                        font-size: 12px;
+                    }
+                }
+                .lborder-dot{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 //limit-time
 .limit-time{
     display: flex;
