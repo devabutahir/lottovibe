@@ -1238,6 +1238,15 @@ i {
   justify-content: center;
 }
 
+.cmn-48 {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .draw-badge {
   position: relative;
   padding: 10px 29px 10px 16px;
@@ -1879,16 +1888,17 @@ iframe {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 1px solid var(--n40);
+  border: 1px solid var(--n0);
 }
 .checkbox-single .checkmark::after {
   content: "";
 }
 .checkbox-single input:checked ~ .checkmark::after {
   content: "done";
-  position: absolute;
-  font-family: "Material Symbols Outlined";
-  color: var(--n500);
+  font-family: FontAwesome;
+  top: 0;
+  left: 0px;
+  content: "\f00c";
 }
 .checkbox-single input:checked ~ .checkmark:after {
   display: block;
@@ -5924,6 +5934,107 @@ iframe {
   }
 }
 
+.call-posi-bikev4 {
+  max-width: 400px;
+}
+.call-posi-bikev4 img {
+  width: 100%;
+}
+@media (max-width: 1700px) {
+  .call-posi-bikev4 {
+    max-width: 300px;
+  }
+}
+
+.callto-action-v4 .listing-checkwrap {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.callto-action-v4 .listing-checkwrap .listing-box {
+  width: 160px;
+  min-width: 160px;
+  height: 160px;
+  border: double 6px transparent;
+  border-radius: 50%;
+  display: inline-block;
+  background-image: linear-gradient(#000000, #000000), radial-gradient(circle at top left, #AEFE3A, #554AFF);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.4s;
+}
+.callto-action-v4 .listing-checkwrap .listing-box .listing-arrow {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.callto-action-v4 .listing-checkwrap .listing-box:hover {
+  background-image: linear-gradient(#000000, #000000), radial-gradient(circle at top left, #554AFF, #AEFE3A);
+}
+.callto-action-v4 .listing-checkwrap .listing-right .cruz-expm {
+  background: var(--nw1);
+  padding: 12px 16px;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--n5);
+  font-weight: 600;
+}
+.callto-action-v4 .listing-checkwrap .listing-right .listing-submit {
+  border-top: 1px solid var(--n3);
+}
+.callto-action-v4 .listing-checkwrap .listing-right .checkbox-single {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.callto-action-v4 .listing-checkwrap .listing-right .checkbox-single .checkbox-area .checkmark {
+  background: var(--p1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: unset;
+}
+.callto-action-v4 .listing-checkwrap .listing-right .checkbox-single .checkbox-area .checkmark::after {
+  color: var(--n4);
+}
+.callto-action-v4 .listing-checkwrap .listing-right .checkbox-single .text-check {
+  max-width: 254px;
+}
+@media (max-width: 767px) {
+  .callto-action-v4 .listing-checkwrap {
+    gap: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .callto-action-v4 .listing-checkwrap .listing-box {
+    width: 120px;
+    min-width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .callto-action-v4 .listing-checkwrap {
+    flex-wrap: wrap;
+    gap: 20px 20px;
+  }
+}
+
+.call-custom-spacev4 {
+  margin-bottom: 0;
+}
+@media (max-width: 991px) {
+  .call-custom-spacev4::before {
+    display: none;
+  }
+}
+
 .blog-items1 .thumb {
   overflow: hidden;
   transition: all 0.4s;
@@ -6551,6 +6662,79 @@ iframe {
   .bliss-counterwrap {
     padding: 40px 0 10px;
     gap: 30px;
+  }
+}
+
+@media (min-width: 991px) {
+  .winner-man .container {
+    max-width: 1630px;
+    margin: 0 auto;
+  }
+}
+
+.winner-people-wrap {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.winner-people-wrap .winner-people-item .thumb {
+  position: relative;
+  max-width: 254px;
+}
+.winner-people-wrap .winner-people-item .thumb img {
+  width: 100%;
+}
+.winner-people-wrap .winner-people-item .thumb .soc {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  position: absolute;
+  opacity: 0;
+  margin-bottom: -50px;
+  transform: scale(0);
+  transition: all 0.4s;
+}
+.winner-people-wrap .winner-people-item .thumb .soc i {
+  font-size: 24px;
+  color: var(--n4);
+}
+.winner-people-wrap .winner-people-item .thumb:hover .soc {
+  margin-bottom: 0px;
+  opacity: 1;
+  transform: scale(1);
+}
+@media (max-width: 1399px) {
+  .winner-people-wrap {
+    flex-wrap: wrap;
+  }
+  .winner-people-wrap .winner-people-item .thumb .soc {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+  }
+  .winner-people-wrap .winner-people-item .thumb .soc i {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .winner-people-wrap .winner-people-item {
+    width: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .winner-people-wrap .winner-people-item {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 450px) {
+  .winner-people-wrap {
+    justify-content: center;
+  }
+  .winner-people-wrap .winner-people-item {
+    width: initial;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 

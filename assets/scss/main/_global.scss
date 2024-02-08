@@ -687,6 +687,12 @@ i{
 	align-items: center;
 	justify-content: center;
 }
+.cmn-48{
+	@include box(48);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 // cmn width
 
 // Draw Badge
@@ -1374,7 +1380,7 @@ iframe {
 		height: 20px;
 		width: 20px;
 		border-radius: 50%;
-		border: 1px solid var(--n40);
+		border: 1px solid var(--n0);
 		&::after {
 			content: "";
 		}
@@ -1382,9 +1388,13 @@ iframe {
 	input:checked ~ .checkmark {
 		&::after {
 			content: "done";
-			position: absolute;
-            font-family: 'Material Symbols Outlined';
-			color: var(--n500);
+			font-family: FontAwesome;
+			top:0;
+			left: 0px;
+			content: "\f00c"; 
+			// position: absolute;
+            // font-family: 'Material Symbols Outlined';
+			// color: var(--n500);
 		}
 	}
 	input:checked ~ .checkmark:after {

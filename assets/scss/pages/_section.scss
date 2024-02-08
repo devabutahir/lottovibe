@@ -1072,6 +1072,103 @@
 }
 //Call to Action Section
 
+//Call to Actionv4 Section
+.call-posi-bikev4{
+    max-width: 400px;
+    img{
+        width: 100%;
+    }
+    @include maxQuery(1700){
+        max-width: 300px;
+    }
+}
+.callto-action-v4{
+    .listing-checkwrap{
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        .listing-box{
+            @include box(160);
+            border: double 6px transparent;
+            border-radius: 50%;
+            display:inline-block;
+            background-image: linear-gradient(#000000, #000000), radial-gradient(circle at top left, #AEFE3A,#554AFF);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.4s;
+            .listing-arrow{
+                position: absolute;
+                top: -10px;
+                right: -10px;
+            }
+            &:hover{
+                background-image: linear-gradient(#000000, #000000), radial-gradient(circle at top left, #554AFF,#AEFE3A);
+            }
+        }
+        .listing-right{
+            .cruz-expm{
+                background: var(--nw1);
+                padding: 12px 16px;
+                border-radius: 100px;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                color: var(--n5);
+                font-weight: 600;
+            }
+            .listing-submit{
+                border-top: 1px solid var(--n3);
+            }
+            .checkbox-single{
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                .checkbox-area{
+                    .checkmark{
+                        background: var(--p1);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: unset;
+                       &::after{
+                         color: var(--n4);
+                       }
+                    }
+                }
+                .text-check{
+                    max-width: 254px;
+                }
+            }
+        }
+        @include maxQuery(767){
+            gap: 30px;
+        }
+        @include maxQuery(575){
+            .listing-box{
+                @include box(120);
+                margin: 0 auto;
+            }
+        }
+        @include maxQuery(480){
+            flex-wrap: wrap;
+            gap: 20px 20px;
+        }
+    }
+}
+.call-custom-spacev4{
+    margin-bottom: 0;
+    &::before{
+        @include maxQuery(991){
+            display: none;
+        }
+    }
+}
+//Call to Actionv4 Section
+
 //blog Section
 .blog-items1{
     .thumb{
@@ -1709,6 +1806,82 @@
     }
 }
 //bliss Section
+
+//Winner man Section
+.winner-man{
+    .container{
+        @include minQuery(991){
+            max-width: 1630px;
+            margin: 0 auto;
+        }
+    }
+}
+.winner-people-wrap{
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .winner-people-item{
+        .thumb{
+            position: relative;
+            max-width: 254px;
+            img{
+                width: 100%;
+            }
+            .soc{
+                @include box(60);
+                position: absolute;
+                opacity: 0;
+                margin-bottom: -50px;
+                transform: scale(0);
+                transition: all 0.4s;
+                i{
+                    font-size: 24px;
+                    color: var(--n4);
+                }
+            }
+            &:hover{
+                .soc{
+                    margin-bottom: 0px;
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+    @include maxQuery(1399){
+        flex-wrap: wrap;
+        .winner-people-item{
+            .thumb{
+                .soc{
+                    @include box(40);
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    @include maxQuery(991){
+        .winner-people-item{
+            width: calc(100% / 4);
+        }
+    }
+    @include maxQuery(767){
+        .winner-people-item{
+            width: calc(100% / 3);
+        }
+    }
+    @include maxQuery(450){
+        justify-content: center;
+        .winner-people-item{
+            width: initial;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+//Winner man Section
 
 
 
