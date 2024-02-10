@@ -1237,3 +1237,155 @@
 }
 //banner four 
 
+//banner Five 
+.banner-section-v5{
+    padding-bottom: 310px;
+    padding-top: 110px;
+    .banner-textanimation{
+        right: 340px;
+        top: 140px;
+        &::before{
+            height: 420px;
+        }
+    }
+    .mouse-animation{
+        bottom: 80px;
+        right: initial;
+        left: 120px;
+    }
+    .arrow-v5{
+        animation: ske 2s linear infinite;
+    }
+    @include maxQuery(1700){
+        .mouse-animation{
+            left: 10px;
+            bottom: 10px;
+        }
+    }
+    @include maxQuery(1399){
+        .banner-textanimation{
+            right: 20px;
+            top: 100px;
+            &::before{
+                height: 420px;
+            }
+        }
+    }
+    @include maxQuery(1199){
+        padding-bottom: 260px;
+        padding-top: 100px; 
+        .arrow-v5{
+            width: 80px;
+        }
+    }
+    @include maxQuery(991){
+        padding-bottom: 260px;
+        padding-top: 80px; 
+    }
+    @include maxQuery(767){
+        padding-bottom: 220px;
+        padding-top: 60px; 
+    }
+    @include maxQuery(575){
+        padding-bottom: 220px;
+        padding-top: 100px; 
+        bottom: 70px;
+    }
+}
+.banner-v5bicycle-thumb{
+    width: 1000px;
+    height: 650px;
+    position: absolute;
+    right: 0px;
+    bottom: -50px;
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    @include maxQuery(1399){
+        width: 700px;
+        height: 500px;
+        bottom: 30px;
+    }
+    @include maxQuery(1199){
+        width: 600px;
+        height: 400px;
+    }
+    @include maxQuery(991){
+        width: 500px;
+        height: 300px;
+        right: -20px;
+    }
+    @include maxQuery(767){
+        width: 350px;
+        height: 200px;
+        right: -20px;
+    }
+}
+//banner Five 
+
+//Next Draw v5
+.next-draw-sectionv5{
+    margin-top: -200px;
+    z-index: 1;
+    position: relative;
+}
+.draw-nextwrap-v5wrap{
+    background: url(../../assets/images/banner/next-drawv5.png) no-repeat center center !important;
+    padding: 27px 70px 19px 27px !important;
+    margin-top: 0 !important;
+    .draw-netwrap-inner{
+        &::before{
+            display: none;
+        }
+        .thumb{
+            margin-top: -40px !important;
+        }
+    }
+    .right-side-nextdraw{
+        gap: 55px !important;
+        padding-top: 80px;
+        .lborder-dot{
+            font-size: 36px !important;
+        }
+        .text-hed{
+            font-size: 36px !important;
+        }
+    }
+    .next-arrow{
+        position: absolute;
+        right: -120px;
+        top: -20px;
+        width: 120px;
+    }
+    @include maxQuery(1199){
+        padding: 27px 18px 19px 12px !important;
+        .right-side-nextdraw{
+            gap: 35px !important;
+            .lborder-dot{
+                font-size: 26px !important;
+            }
+            .text-hed{
+                font-size: 26px !important;
+            }
+        }
+        .next-arrow{
+            width: 80px;
+        }
+    }
+    @include maxQuery(767){
+        background-size: cover !important;
+        height: 410px !important;
+        padding: 58px 10px 19px 12px !important;
+        .right-side-nextdraw{
+            gap: 20px !important;
+        }
+        .next-arrow{
+           display: none;
+        }
+    }
+}
+//Next Draw v5 
+

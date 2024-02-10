@@ -403,7 +403,13 @@ input[type="checkbox"] {
 	background: var(--act2);
 }
 .act3-clr{
-	color: var(--act3);
+	color: var(--act3) !important;
+}
+.act3-hover{
+	transition: all 0.4s !important;
+	&:hover{
+		color: var(--act3);
+	}
 }
 .act3-border{
 	border: 1px solid var(--act3);
@@ -1238,6 +1244,21 @@ iframe {
 		}
 		p{
 			font-size: 16px;
+		}
+	}
+}
+.act3-underline{
+	position: relative;
+	&::before{
+		position: absolute;
+		bottom: 6px;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		content: "";
+		background: var(--act3);
+		@include maxQuery(1399){
+			bottom: 0;
 		}
 	}
 }

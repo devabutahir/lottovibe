@@ -1883,6 +1883,69 @@
 }
 //Winner man Section
 
+//Bicycle Cate Section
+.bicycle-cate-item{
+    margin-bottom: 60px;
+    .bithumb{
+        max-width: 330px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content-wrap{
+        clip-path: polygon(0 0, 94% 0, 100% 48%, 100% 100%, 100% 100%, 6% 100%, 0 56%, 0 0);
+        border-radius: 10px;
+        margin-top: 0;
+        transform: translateY(-0);
+        .doble-cont{
+            justify-content: center;
+            gap: 32px;
+        }
+    }
+    @include maxQuery(1199){
+        margin-bottom: 0;
+        .bithumb{
+            max-width: 250px;
+        }
+    }
+}
+//Bicycle Cate Section
+
+//Work step v5 Section
+.howit-work-sectionv5{
+    .howit-video{
+        @include maxQuery(575){
+            max-width: 250px;
+            margin: 0 auto;
+        }
+    }
+}
+.work-stepv5{
+    .tbox{
+        position: relative;
+        .number-shadow{
+            color: rgba(63, 62, 62, 0.594) !important;
+            font-size: 240px;
+            font-weight: 900;
+            line-height: 120%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    @include maxQuery(1399){
+        .tbox{
+            .number-shadow{
+                font-size: 180px;
+                line-height: 120%;
+            }
+        }
+    }
+}
+//Work step v5 Section
+
 
 
 //responsive area
