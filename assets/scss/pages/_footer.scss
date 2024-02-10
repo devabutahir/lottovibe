@@ -632,3 +632,74 @@
         display: none;
     }
 }
+
+//footer four
+.box-address{
+    input{
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--n0);
+        border-radius: 0;
+        border: unset;
+        padding-bottom: 20px;
+        padding-left: 0;
+        border-bottom: 1px solid rgba(78, 78, 78, 0.6);
+        width: 100%;
+        outline: none;
+    }
+    ::placeholder{
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--n0);
+    }
+    .worries{
+        margin-top: 8px;
+    }
+}
+.footer-v4cont-info{
+    border-radius: 32px;
+    padding: 50px 50px;
+    border: 1px solid var(--n3);
+    gap: 24px;
+    display: grid;
+    @include maxQuery(1399){
+        padding: 20px 20px;
+    }
+    .fline{
+        border-bottom: 1px solid rgba(78, 78, 78, 0.5);
+    }
+}
+.fv4-cont-item{
+    .icon{
+      border: 1px solid rgba(244, 244, 244, 0.60);  
+    }
+}
+.footer-bottomv4{
+    border-top: 1px solid var(--n3);
+    .social-wrap60{
+        li{
+            .soc-item{
+                @include box(60);
+                border: 1px solid var(--nw2);
+                transition: all 0.4s;
+                svg{
+                    path{
+                        stroke: var(--nw2);
+                        transition: all 0.4s;
+                    }
+                }
+                &:hover{
+                    border-color: var(--p1);
+                    svg{
+                        path{
+                            stroke: var(--p1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.b-one{
+    border-color: var(--n2) !important;
+}
