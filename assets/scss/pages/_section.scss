@@ -1623,6 +1623,62 @@
 }
 //Progaram Section
 
+//Progaramv5 Section
+.program-thumbv5{
+    direction: initial;
+    &::before{
+        background: var(--act3);
+        width: 600px;
+        height: 600px;
+        top: 50%;
+    }
+    .thumb{
+        max-width: 638px;
+        margin-left: -100px;
+        img{
+            width: 100%;
+            max-width: unset;
+        }
+    }
+    @include maxQuery(1199){
+        .thumb{
+            max-width: 480px;
+            margin-left: -50px;
+            img{
+                width: 100%;
+                max-width: unset;
+            }
+        }
+        &::before{
+            width: 350px;
+            height: 350px;
+        }
+    }
+    @include maxQuery(991){
+        margin-top: 20px;
+        .thumb{
+            max-width: 780px;
+            margin-left: -50px;
+        }
+        &::before{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    @include maxQuery(767){
+        margin-top: 20px;
+        .thumb{
+            max-width: 780px;
+            margin-left: -0px;
+        }
+        &::before{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+//Progaramv5 Section
+
 //Work wingin slide Section
 .bikeworking-wrap{
     clip-path: polygon(5% 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 10%);
@@ -1945,6 +2001,132 @@
     }
 }
 //Work step v5 Section
+
+//Bicycle winv4 Section
+.win-bicycleslide-itemv5{
+    .box-ticket{
+        padding: 0 12px !important;
+        width: 200px !important;
+    }
+    .win-thumbv1{
+        max-width: 428px;
+        height: 270px;
+        img{
+            height: 100%;
+        }
+        @include maxQuery(1700){
+            height: initial;
+        }
+    }
+    .iconbox{
+        position: absolute;
+        right: 20px;
+        bottom: 90px;
+        @include box(40);
+        .icon{
+            @include box(40);
+            z-index: 1;
+            position: relative;
+            background: var(--n4);
+            transition: all 0.4s;
+            i{
+                color: var(--n0);
+            }
+        }
+        .team-social{
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            transition: all 0.6s;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0);
+            .social-area{
+                li{
+                    a{
+                        @include box(40);
+                        border: 1px solid var(--n4);
+                        border-radius: 50%;
+                        i{
+                            transition: all 0.4s;
+                        }
+                    }
+                    &:hover{
+                        a{
+                            border-color: var(--act4);
+                            i{
+                                color: var(--act4);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .team-social{
+                bottom: 50px;
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+            .icon{
+                background: var(--act4);
+                cursor: pointer;
+            }
+        }
+    }
+    .n4-badge{
+        right: initial;
+        left: -75px;
+    }
+    .box-ticketcmn{
+        padding: 5px 12px;
+    }
+    .box-price{
+        padding-left: 12px !important;
+    }
+    .line{
+        height: 59px !important;
+    }
+    .kewta-btn{
+        .kew-text{
+            transition: all 0.4s;
+        }
+        &:hover{
+            .kew-arrow{
+                .kt-one{
+                    top: 0 !important;
+                }
+            } 
+        }
+    }
+    &:hover{
+        .kewta-btn{
+           .kew-text{
+               background: var(--act4);
+           }
+        .kew-arrow{
+            background: var(--act4);
+        }
+       } 
+    }
+    @include maxQuery(1900){
+        .win-bikefooter{
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 14px;
+        }
+        .line{
+            display: none;
+        }
+        .iconbox{
+            top: 30%;
+        }
+    }
+}
+//Bicycle winv4 Section
 
 
 
