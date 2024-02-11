@@ -837,6 +837,19 @@
 }
 //Testimonial Section
 
+//Testimonialv5 Section
+.testimonial-wrap1v5{
+    .testimonial-item1{
+        .testi-winthumb{
+            height: 176px;
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+//Testimonialv5 Section
+
 //win bike Section
 .win-bikeslide-itemv1{
     background: var(--n0);
@@ -956,6 +969,19 @@
         }
     }
 }
+.previous-winnerv5{
+    .meet-previous-item{
+        .man-bike{
+            padding: 16px 5px;
+            img{
+                max-width: 207px;
+                height: 122px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
 //meet previous Section
 
 //Call to Action Section
@@ -966,7 +992,7 @@
     }
     &::before{
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         content: "";
         max-width: 720px;
@@ -1078,6 +1104,12 @@
     img{
         width: 100%;
     }
+    @include maxQuery(1700){
+        max-width: 300px;
+    }
+}
+.call-posi-bikev5{
+    max-width: 440px;
     @include maxQuery(1700){
         max-width: 300px;
     }
@@ -1807,6 +1839,7 @@
         width: 82%;
         height: 594px;
         z-index: -1;
+        border-top-right-radius: 124px;
     }
     @include maxQuery(1900){
         &::before{
@@ -1861,7 +1894,49 @@
         gap: 30px;
     }
 }
+.bliss-thumbv5{
+    @include maxQuery(1199){
+        img{
+            padding-right: 0 !important;
+            max-width: 100% !important;
+        }
+    }
+}
 //bliss Section
+
+//bicyclev5 Section
+.bicycle-brogram-before{
+    &::before{
+        top: 1px;
+    }
+}
+.whell-trophy{
+    position: absolute;
+    top: 250px;
+    right: 60px;
+    @include maxQuery(1900){
+        top: 2px;
+        right: 20px;
+        width: 70px;
+    }
+}
+.win-trophy{
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 2;
+    @include maxQuery(1650){
+        width: 100px;
+    }
+    @include maxQuery(1399){
+        bottom: 10px;
+        left: 10px;
+    }
+    @include maxQuery(1199){
+        display: none;
+    }
+}
+//bicyclev5 Section
 
 //Winner man Section
 .winner-man{
