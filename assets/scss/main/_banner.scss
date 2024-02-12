@@ -1389,3 +1389,39 @@
 }
 //Next Draw v5 
 
+//Banner Six 
+.banner-v6wrap{
+    height: 500px;
+    width: 100%;
+    .banner-v6wrap-inner{
+        position: absolute;
+        bottom: 0;
+        margin: 0 20px;
+        width: 100%;
+        .thumb{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    @include maxQuery(1399){
+        height: 440px;
+    }
+    @include maxQuery(1199){
+        height: 370px;
+    }
+    @include maxQuery(767){
+        height: 260px;
+    }
+    @include maxQuery(575){
+        height: initial;
+        margin-top: 0px;
+        .banner-v6wrap-inner{
+            margin: 0 2px;
+            position: initial;
+        }
+    }
+}
+//Banner Six 
+

@@ -365,6 +365,63 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
         });
+        //Testimonial unique
+        var swiper = new Swiper(".testimonial-uniquewrap", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 24,
+          speed: 2000,
+          autoplay: false,
+          pagination: {
+            el: ".swiper-paginations",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-nextteam",
+            prevEl: ".swiper-button-prevteam",
+          },
+          breakpoints: {
+            1600: {
+                slidesPerView: 1,
+                spaceBetween: 24,
+            },
+            992: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            500: {
+              slidesPerView: 1,
+              spaceBetween: 14,
+            },
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 14,
+            },
+        }
+        });
+        //banner Slide v6
+        var swiper = new Swiper(".banner-v6wrap-slide", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 24,
+          speed: 2000,
+          autoplay: true,
+          autoplay: {
+            delay: 1200,
+            reverseDirection: true,
+          },
+        });
+        
       // swipper slide //
 
 

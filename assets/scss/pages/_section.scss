@@ -848,6 +848,68 @@
         }
     }
 }
+//Testimonial Qnique
+.testimonial-v5-thumb{
+     height: 439px;
+     width: 100%;
+     .thumb1{
+        .quotes{
+            @include box(100);
+            transform: rotate(180deg);
+            position: absolute;
+            top: 0;
+            left: -30px;
+            i{
+                font-size: 40px;
+                color: var(--s1);
+            }
+        }
+     }
+     .thumb2{
+        margin-bottom: -40px;
+     }
+     .happy-cbox{
+        @include box(200);
+     }
+     .happy-thumb3{
+        margin-top: -120px;
+        margin-left: -70px;
+        z-index: 1;
+        position: relative;
+     }
+     .thumb3{
+        margin: -40px auto 0;
+     }
+    @include maxQuery(1199){
+        .happy-cbox{
+            @include box(150);
+        }
+        .happy-thumb3{
+            margin-top: -60px;
+            margin-left: -40px;
+         }
+         .thumb3{
+            margin: -20px auto 0;
+         }
+    } 
+    @include maxQuery(400){
+        .happy-cbox{
+            @include box(140);
+        }
+        .happy-thumb3{
+            margin-top: -8px;
+            margin-left: -1px;
+         }
+    } 
+}
+.swiper-paginations{
+    font-size: 36px;
+    font-weight: 800;
+    span{
+        font-size: 40px;
+        font-weight: 800;
+    }
+}
 //Testimonialv5 Section
 
 //win bike Section
@@ -1231,10 +1293,10 @@
     .boxs{
         transition: all 0.4s;
     }
+    &.active,
     &:hover{
         border: 1px solid var(--borderd);
         border-radius: 24px;
-        // padding: 24px;
         .boxs{
             transform: scale(0.91);
         }
@@ -1255,6 +1317,90 @@
         h3{
             a{
                 color: var(--s1);
+            }
+        }
+    }
+}
+//blog v5
+.blog-items-v5{
+    border: 1px solid var(--borderd);
+    border-radius: 24px;
+    .boxs{
+        transform: scale(0.91) !important;
+    }
+}
+.blog-v5-rightwrap{
+    border: 1px solid var(--nw4);
+    border-radius: 24px;
+    padding: 24px;
+    .blog-v5-inner{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        .thumb{
+            max-width: 196px;
+            border-radius: 12px;
+            img{
+                border-radius: 12px;
+            }
+        }
+        .content{
+            width: calc(100% - 196px);
+            .btn-area{
+                border-top: 1px solid var(--nw4);
+            }
+        }
+    }
+    .line{
+        border-bottom: 1px solid var(--nw4);
+    }
+    @include maxQuery(1800){
+        padding: 18px;
+        .blog-v5-inner{
+            gap: 16px;
+            .content{
+                width: calc(100% - 196px);
+                .btn-area{
+                    border-top: 1px solid var(--nw4);
+                }
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .blog-v5-inner{
+            gap: 14px;
+            .thumb{
+                max-width: 140px;
+            }
+            .content{
+                width: calc(100% - 140px);
+                .fs-four{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @include maxQuery(991){
+        .blog-v5-inner{
+            gap: 12px;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            .thumb{
+                max-width: 190px;
+                margin: 0 auto;
+            }
+            .content{
+                width: calc(100%);
+                .fs-four{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -1654,6 +1800,17 @@
     }
 }
 //Progaram Section
+
+//Bike Testi Customize Section
+.bike-text-smallthumb{
+    padding: 16px 4px;
+    img{
+        max-width: 340px;
+        height: 170px;
+        object-fit: contain;
+    }
+}
+//Bike Testi Customize Section
 
 //Progaramv5 Section
 .program-thumbv5{
