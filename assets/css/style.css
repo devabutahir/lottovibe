@@ -4100,6 +4100,36 @@ iframe {
   color: var(--n0);
 }
 
+.banner-section-v7 {
+  background: rgba(254, 201, 47, 0.1);
+}
+
+.banner-v7wraper {
+  padding-bottom: 200px;
+}
+.banner-v7wraper .banner-v7-thumb {
+  width: 100%;
+  border-radius: 685px;
+}
+.banner-v7wraper .banner-v7-thumb img {
+  border-radius: 685px;
+  width: 100%;
+}
+.banner-v7wraper .banner-v7-thumb .banner-v7-startnow {
+  position: absolute;
+  right: -65px;
+  bottom: 120px;
+}
+.banner-v7wraper .banner-v7-thumb .banner-v7-startnow .box {
+  max-width: 62px;
+}
+.banner-v7wraper .banner-v7-thumb .banner-v7-startnow .box span {
+  font-size: 18px;
+  color: var(--nw1);
+}
+.banner-v7wraper .banner-v7-thumb .banner-v7-startnow .box .icon {
+  background: rgba(255, 255, 255, 0.4);
+}
 .header-fixed {
   position: fixed;
   top: 0px;

@@ -1570,3 +1570,37 @@
 }
 //Banner Six 
 
+//Banner Seven
+.banner-section-v7{
+    background: rgba(254, 201, 47, 0.1);
+}
+.banner-v7wraper{
+    padding-bottom: 200px;
+    .banner-v7-thumb{
+        width: 100%;
+        border-radius: 685px;
+        img{
+            border-radius: 685px;
+            width: 100%;
+        }
+        .banner-v7-startnow{
+            position: absolute;
+            right: -65px;
+            bottom: 120px;
+            .box{
+                max-width: 62px;
+                span{
+                    font-size: 18px;
+                    color: var(--nw1);
+                }
+                .icon{
+                    background: rgba(255, 255, 255, 0.40);
+                }
+            }
+        }
+        &::after{
+            
+        }
+    }
+}
+//Banner Seven
