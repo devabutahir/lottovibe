@@ -420,6 +420,12 @@ input[type="checkbox"] {
 .act4-clr{
 	color: var(--act4) !important;
 }
+.act4-hover{
+	transition: all 0.4s !important;
+	&:hover{
+		color: var(--act4);
+	}
+}
 .act4-border{
 	border: 1px solid var(--act4);
 }
@@ -469,6 +475,12 @@ input[type="checkbox"] {
 
 .n0-clr{
 	color: var(--n0);
+}
+.n0-hover{
+	transition: all 0.4s !important;
+	&:hover{
+		color: var(--n0);
+	}
 }
 .n0-border{
 	border: 2px solid var(--n0);

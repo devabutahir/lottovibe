@@ -205,7 +205,7 @@ li {
 
 .vline-remaing {
   height: 24px;
-  border: 0.1px solid var(--n3);
+  border-right: 0.1px solid var(--n3);
 }
 
 .lh {
@@ -957,6 +957,13 @@ input[type=checkbox] {
   color: var(--act4) !important;
 }
 
+.act4-hover {
+  transition: all 0.4s !important;
+}
+.act4-hover:hover {
+  color: var(--act4);
+}
+
 .act4-border {
   border: 1px solid var(--act4);
 }
@@ -1018,6 +1025,13 @@ input[type=checkbox] {
 }
 
 .n0-clr {
+  color: var(--n0);
+}
+
+.n0-hover {
+  transition: all 0.4s !important;
+}
+.n0-hover:hover {
   color: var(--n0);
 }
 
@@ -5914,6 +5928,10 @@ iframe {
   }
 }
 
+.draw-nextwrapinnerv7::before {
+  top: -100px !important;
+}
+
 .limit-time {
   display: flex;
   align-items: center;
@@ -6153,6 +6171,70 @@ iframe {
   border: 1px solid rgba(85, 74, 255, 0.1);
 }
 
+.current-lottery-itemjewelry .thumb {
+  background: rgba(255, 101, 14, 0.1);
+  width: 100%;
+  border-radius: 1000px;
+  overflow: hidden;
+}
+.current-lottery-itemjewelry .thumb .thumb-inner {
+  max-width: 256px;
+  height: 251px;
+  margin: 0 auto;
+  padding: 14px 5px 30px;
+  transition: all 0.4s;
+}
+.current-lottery-itemjewelry .thumb .thumb-inner img {
+  width: 100%;
+  height: 100%;
+}
+.current-lottery-itemjewelry .thumb .draw-badgev7 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.current-lottery-itemjewelry .thumb .cmn-cart-wrapcircle {
+  position: absolute;
+  bottom: 20px;
+}
+.current-lottery-itemjewelry:hover .thumb .thumb-inner {
+  transform: rotate(10deg);
+}
+.current-lottery-itemjewelry:hover .kewta-btn .kew-arrow,
+.current-lottery-itemjewelry:hover .kewta-btn .kew-text {
+  background: var(--s1);
+}
+.current-lottery-itemjewelry:hover h3 .pr {
+  color: var(--s1);
+}
+
+.draw-badgev7 {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cmn-cart-wrapcircle .bokmart {
+  border: 1px solid var(--n4);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.cmn-cart-wrapcircle .bokmart:hover {
+  background: var(--act3);
+  border-color: var(--act3);
+}
+
+.border-jealt {
+  border-right: 1px solid #4E4E4E !important;
+}
+
+.form-selectv7 .current-lottery-itemjewelry .remaining-info {
+  border-top: 1px solid var(--n4);
+  border-bottom: 1px solid var(--n4);
+}
+
 .cate-body-type {
   background: rgba(244, 244, 244, 0.5);
 }
@@ -6276,6 +6358,39 @@ iframe {
   width: 100%;
   height: 100%;
   opacity: 1;
+}
+
+.cate-body-wrapv7 .cate-body-item .thumb {
+  max-width: 286px;
+  height: 180px;
+  transition: all 0.6s;
+  margin: -20px auto 0;
+}
+.cate-body-wrapv7 .cate-body-item .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cate-body-wrapv7 .cate-body-item:hover .thumb {
+  height: 160px;
+  max-width: 220px;
+}
+@media (max-width: 1899px) {
+  .cate-body-wrapv7 .cate-body-item .thumb {
+    height: 160px;
+    max-width: 220px;
+  }
+}
+@media (max-width: 767px) {
+  .cate-body-wrapv7 .cate-body-item .thumb {
+    height: 100px;
+    max-width: 180px;
+  }
+  .cate-body-wrapv7 .cate-body-item:hover .thumb {
+    height: 90px;
+    max-width: 180px;
+  }
 }
 
 .testimonial-v1-before {
@@ -6475,6 +6590,53 @@ iframe {
 .swiper-paginations span {
   font-size: 40px;
   font-weight: 800;
+}
+
+.testimonial-itemv7 {
+  border-radius: 24px;
+}
+.testimonial-itemv7 .adrew {
+  position: relative;
+  border-color: var(--n0);
+}
+.testimonial-itemv7 .adrew .icon {
+  transform: rotate(180deg);
+  position: absolute;
+  top: -6px;
+  left: -30px;
+}
+.testimonial-itemv7 .adrew .icon i {
+  color: var(--act4);
+  font-size: 42px;
+}
+
+.badge-before-thumb {
+  position: relative;
+}
+.badge-before-thumb::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 410px;
+  height: 100%;
+  background: url(../../assets/images/global/testimonial-before.png) no-repeat center center;
+  background-size: cover;
+}
+@media (max-width: 1850px) {
+  .badge-before-thumb::before {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1399px) {
+  .badge-before-thumb::before {
+    max-width: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .badge-before-thumb::before {
+    display: none;
+  }
 }
 
 .win-bikeslide-itemv1 {
@@ -6839,6 +7001,28 @@ iframe {
 }
 @media (max-width: 991px) {
   .call-custom-spacev4::before {
+    display: none;
+  }
+}
+
+.call-tosectionv7 {
+  z-index: 1;
+}
+.call-tosectionv7::before {
+  display: none;
+}
+.call-tosectionv7 .jewelary-callto {
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  z-index: -1;
+}
+.call-tosectionv7 .jewelary-callto img {
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+}
+@media (max-width: 991px) {
+  .call-tosectionv7 .jewelary-callto {
     display: none;
   }
 }
