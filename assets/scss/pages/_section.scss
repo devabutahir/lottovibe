@@ -677,10 +677,13 @@
 
 //Current lotteryv8 Section
 .current-lottery-itemjewelry8{
+    .thumb{
+        border-radius: 0px;
+    }
     .iconbox{
         position: absolute;
-        right: 20px;
-        bottom: 90px;
+        bottom: 24px;
+        right: 24px;
         @include box(40);
         .icon{
             @include box(40);
