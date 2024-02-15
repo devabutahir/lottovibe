@@ -5575,6 +5575,33 @@ iframe {
   color: var(--p1);
 }
 
+.footer-lottovibe-newsv7 {
+  max-width: 416px;
+  margin: 0 auto;
+  padding: 38px 38px;
+  border-radius: 24px;
+  border: 1px solid var(--n3);
+}
+
+.box-addressv7 input {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(218, 218, 218, 0.6);
+  padding-bottom: 10px;
+}
+.box-addressv7 ::-moz-placeholder {
+  font-size: 14px;
+  color: rgba(218, 218, 218, 0.6);
+}
+.box-addressv7 ::placeholder {
+  font-size: 14px;
+  color: rgba(218, 218, 218, 0.6);
+}
+
+.footer-explore-v7 .kewta-btn {
+  transform: rotate(-40deg);
+}
+
 .luxury-selection-v1 .click-slideluxry-button {
   position: absolute;
   top: 50%;
@@ -6235,6 +6262,62 @@ iframe {
   border-bottom: 1px solid var(--n4);
 }
 
+.current-lottery-itemjewelry8 .iconbox {
+  position: absolute;
+  right: 20px;
+  bottom: 90px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+}
+.current-lottery-itemjewelry8 .iconbox .icon {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  z-index: 1;
+  position: relative;
+  background: var(--n4);
+  transition: all 0.4s;
+}
+.current-lottery-itemjewelry8 .iconbox .icon i {
+  color: var(--n0);
+}
+.current-lottery-itemjewelry8 .iconbox .team-social {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  transition: all 0.6s;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+}
+.current-lottery-itemjewelry8 .iconbox .team-social .social-area li a {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid var(--n4);
+  border-radius: 50%;
+}
+.current-lottery-itemjewelry8 .iconbox .team-social .social-area li a i {
+  transition: all 0.4s;
+}
+.current-lottery-itemjewelry8 .iconbox .team-social .social-area li:hover a {
+  border-color: var(--act4);
+}
+.current-lottery-itemjewelry8 .iconbox .team-social .social-area li:hover a i {
+  color: var(--act4);
+}
+.current-lottery-itemjewelry8 .iconbox:hover .team-social {
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.current-lottery-itemjewelry8 .iconbox:hover .icon {
+  background: var(--act4);
+  cursor: pointer;
+}
+
 .cate-body-type {
   background: rgba(244, 244, 244, 0.5);
 }
@@ -6639,6 +6722,110 @@ iframe {
   }
 }
 
+.testimonial-sectionv8.badge-before-thumb::before {
+  background: url(../../assets/images/global/testi-before-v8.png) no-repeat center center;
+}
+
+.testimonial-itemv8 {
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  gap: 32px;
+}
+.testimonial-itemv8 .adrew {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: initial;
+}
+.testimonial-itemv8 .adrew img {
+  width: 100%;
+  height: 100%;
+}
+.testimonial-itemv8 .total-content {
+  max-width: 412px;
+}
+.testimonial-itemv8 .testi-ring {
+  height: 320px;
+  width: calc(100% - 412px);
+}
+.testimonial-itemv8 .testi-ring .ring {
+  max-width: 194px;
+  height: 200px;
+}
+.testimonial-itemv8 .testi-ring .ring img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 1399px) {
+  .testimonial-itemv8 {
+    gap: 14px;
+  }
+  .testimonial-itemv8 .total-content {
+    max-width: 350px;
+  }
+  .testimonial-itemv8 .testi-ring {
+    height: 320px;
+    width: calc(100% - 350px);
+  }
+  .testimonial-itemv8 .testi-ring .ring {
+    max-width: 194px;
+    height: 200px;
+  }
+}
+@media (max-width: 1199px) {
+  .testimonial-itemv8 {
+    gap: 14px;
+  }
+  .testimonial-itemv8 .total-content {
+    max-width: 290px;
+  }
+  .testimonial-itemv8 .testi-ring {
+    height: 300px;
+    width: calc(100% - 290px);
+  }
+  .testimonial-itemv8 .testi-ring .ring {
+    max-width: 194px;
+    height: 200px;
+  }
+}
+@media (max-width: 991px) {
+  .testimonial-itemv8 {
+    gap: 14px;
+  }
+  .testimonial-itemv8 .total-content {
+    max-width: 270px;
+  }
+  .testimonial-itemv8 .testi-ring {
+    height: 300px;
+    width: calc(100% - 270px);
+  }
+  .testimonial-itemv8 .testi-ring .ring {
+    max-width: 194px;
+    height: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .testimonial-itemv8 {
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .testimonial-itemv8 .total-content {
+    max-width: 100%;
+  }
+  .testimonial-itemv8 .testi-ring {
+    height: 160px;
+    width: 100%;
+  }
+  .testimonial-itemv8 .testi-ring .ring {
+    max-width: 120px;
+    height: 200px;
+  }
+}
+
 .win-bikeslide-itemv1 {
   background: var(--n0);
 }
@@ -6757,6 +6944,17 @@ iframe {
   height: 122px;
   width: 100%;
   height: 100%;
+}
+
+.previous-winner-v8 .meet-previous-item .thumb-man .man-bike {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px 2px;
+}
+.previous-winner-v8 .meet-previous-item .thumb-man .man-bike img {
+  max-width: 152px;
+  height: 131px;
 }
 
 .call-custom-space {
@@ -7530,6 +7728,60 @@ iframe {
   .program-thumb::before {
     width: 180px;
     height: 180px;
+  }
+}
+
+.program-thumb-ring {
+  background: var(--act3);
+  display: flex;
+  border-radius: 50%;
+  max-width: 600px;
+  height: 600px;
+}
+.program-thumb-ring .thumb-ring {
+  max-width: 400px;
+  height: 400px;
+}
+.program-thumb-ring .thumb-ring img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1399px) {
+  .program-thumb-ring {
+    height: initial;
+    max-width: initial;
+    border-radius: 24px;
+    padding: 24px 24px 10px;
+  }
+}
+@media (max-width: 1199px) {
+  .program-thumb-ring .thumb-ring {
+    max-width: 350px;
+    height: 320px;
+  }
+  .program-thumb-ring .thumb-ring img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media (max-width: 991px) {
+  .program-thumb-ring {
+    height: initial;
+    max-width: initial;
+    border-radius: 24px;
+    padding: 24px 24px 10px;
+  }
+  .program-thumb-ring .thumb-ring {
+    max-width: 350px;
+    height: initial;
+  }
+  .program-thumb-ring .thumb-ring img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 

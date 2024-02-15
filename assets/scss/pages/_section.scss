@@ -675,6 +675,68 @@
 }
 //Current lotteryv7 Section
 
+//Current lotteryv8 Section
+.current-lottery-itemjewelry8{
+    .iconbox{
+        position: absolute;
+        right: 20px;
+        bottom: 90px;
+        @include box(40);
+        .icon{
+            @include box(40);
+            z-index: 1;
+            position: relative;
+            background: var(--n4);
+            transition: all 0.4s;
+            i{
+                color: var(--n0);
+            }
+        }
+        .team-social{
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            transition: all 0.6s;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0);
+            .social-area{
+                li{
+                    a{
+                        @include box(40);
+                        border: 1px solid var(--n4);
+                        border-radius: 50%;
+                        i{
+                            transition: all 0.4s;
+                        }
+                    }
+                    &:hover{
+                        a{
+                            border-color: var(--act4);
+                            i{
+                                color: var(--act4);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .team-social{
+                bottom: 50px;
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+            .icon{
+                background: var(--act4);
+                cursor: pointer;
+            }
+        }
+    }
+}
+//Current lotteryv8 Section
+
 //car body type Section
 .cate-body-type{
     background: rgba(244, 244, 244, 0.50);
@@ -1086,6 +1148,102 @@
 }
 //Testimonialv7 Section
 
+//Testimonialv8 Section
+.testimonial-sectionv8.badge-before-thumb{
+    &::before{
+        background: url(../../assets/images/global/testi-before-v8.png) no-repeat center center;
+    }
+}
+.testimonial-itemv8{
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    gap: 32px;
+    .adrew{
+        @include box(60);
+        border-radius: 50%;
+        margin: initial;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .total-content{
+        max-width: 412px;
+    }
+    .testi-ring{
+        height: 320px;
+        width: calc(100% - 412px);
+        .ring{
+            max-width: 194px;
+            height: 200px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    @include maxQuery(1399){
+        gap: 14px;
+        .total-content{
+            max-width: 350px;
+        }
+        .testi-ring{
+            height: 320px;
+            width: calc(100% - 350px);
+            .ring{
+                max-width: 194px;
+                height: 200px;
+            }
+        }
+    }
+    @include maxQuery(1199){
+        gap: 14px;
+        .total-content{
+            max-width: 290px;
+        }
+        .testi-ring{
+            height: 300px;
+            width: calc(100% - 290px);
+            .ring{
+                max-width: 194px;
+                height: 200px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        gap: 14px;
+        .total-content{
+            max-width: 270px;
+        }
+        .testi-ring{
+            height: 300px;
+            width: calc(100% - 270px);
+            .ring{
+                max-width: 194px;
+                height: 200px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        gap: 14px;
+        flex-wrap: wrap;
+        .total-content{
+            max-width: 100%;
+        }
+        .testi-ring{
+            height: 160px;
+            width: calc(100%);
+            .ring{
+                max-width: 120px;
+                height: 200px;
+            }
+        }
+    }
+}
+//Testimonialv8 Section
+
 //win bike Section
 .win-bikeslide-itemv1{
     background: var(--n0);
@@ -1219,6 +1377,25 @@
     }
 }
 //meet previous Section
+
+//previous v8 Section
+.previous-winner-v8{
+    .meet-previous-item{
+        .thumb-man{
+           .man-bike{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 5px 2px;
+               img{
+                max-width: 152px;
+                height: 131px;
+            }
+           } 
+        }
+    }
+}
+//previous v8 Section
 
 //Call to Action Section
 .call-custom-space{
@@ -1996,6 +2173,56 @@
     }
 }
 //Progaram Section
+
+//Ring Section
+.program-thumb-ring{
+     background: var(--act3);
+     display: flex;
+     border-radius: 50%;
+     max-width: 600px;
+     height: 600px;
+     .thumb-ring{
+        max-width: 400px;
+        height: 400px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @include maxQuery(1399){
+        height: initial;
+        max-width: initial;
+        border-radius: 24px;
+        padding: 24px 24px 10px;
+    }
+    @include maxQuery(1199){
+        .thumb-ring{
+            max-width: 350px;
+            height: 320px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    @include maxQuery(991){
+        height: initial;
+        max-width: initial;
+        border-radius: 24px;
+        padding: 24px 24px 10px;
+        .thumb-ring{
+            max-width: 350px;
+            height: initial;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+//Ring Section
 
 //Bike Testi Customize Section
 .bike-text-smallthumb{

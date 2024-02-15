@@ -365,6 +365,45 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
         });
+        //testimonial v7
+        var swiper = new Swiper(".testimonial-wrapv8", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 24,
+          speed: 4500,
+          autoplay: true,
+          centeredSlides: true,
+          autoplay: {
+            delay: 100,
+          },
+          pagination: {
+            el: ".swiper-pagination-testi",
+            clickable: true
+          },
+          breakpoints: {
+            1600: {
+                slidesPerView: 2.9,
+                spaceBetween: 24,
+            },
+            992: {
+                slidesPerView: 2.5,
+                spaceBetween: 14,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 14,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 14,
+            },
+            500: {
+              slidesPerView: 1,
+              spaceBetween: 14,
+            },
+        }
+        });
         //Sponsor selection
         var swiper = new Swiper(".sponsor-wrap", {
           loop: true,
