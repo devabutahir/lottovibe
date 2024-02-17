@@ -3328,6 +3328,22 @@ iframe {
   transform: rotate(50deg);
 }
 
+.category-v8-banner .categori-bikev3-item .thumb .thumb-in {
+  width: 160px;
+  height: 190px;
+}
+.category-v8-banner .categori-bikev3-item .thumb .thumb-in img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (min-width: 1199px) {
+  .category-v8-banner .categori-bikev3-item .thumb .thumb-in {
+    margin-bottom: 40px;
+  }
+}
+
 .bn1-odometer {
   padding-top: 148px;
 }
@@ -4275,6 +4291,45 @@ iframe {
     top: 4px;
     right: -6px;
     transform: rotate(4deg);
+  }
+}
+
+.banner-section-v8 .scroll-bn1 {
+  left: 50%;
+}
+.banner-section-v8 .scroll-bn1 .scroll-iconrarea svg path {
+  stroke: var(--n0);
+  fill: var(--n0);
+}
+
+.rotate-arrow {
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+}
+@media (max-width: 1399px) {
+  .rotate-arrow {
+    bottom: -20px;
+  }
+  .rotate-arrow svg {
+    width: 140px;
+  }
+}
+@media (max-width: 767px) {
+  .rotate-arrow {
+    display: none;
+  }
+}
+
+.review-v8 .review-star {
+  border-left: 1px solid rgba(239, 239, 239, 0.8);
+  padding-left: 20px;
+  margin-left: 20px;
+}
+@media (max-width: 1500px) {
+  .review-v8 .review-star {
+    padding-left: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -6262,16 +6317,41 @@ iframe {
   border-bottom: 1px solid var(--n4);
 }
 
+.current-lottery-itemjewelry8 {
+  border-radius: 24px;
+  overflow: hidden;
+}
 .current-lottery-itemjewelry8 .thumb {
   border-radius: 0px;
+  background: var(--nw3);
+}
+.current-lottery-itemjewelry8 .thumb .thumb-inner {
+  background: rgba(255, 101, 14, 0.1);
+  border-radius: 0 0 200px 200px;
+  width: 196px;
+  height: 247px;
+}
+.current-lottery-itemjewelry8 .thumb .thumb-inner img {
+  width: 165px;
+  height: 170px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.current-lottery-itemjewelry8 .range-custom {
+  max-width: 100%;
+}
+.current-lottery-itemjewelry8 .content-middle {
+  background: #F4F4F4;
 }
 .current-lottery-itemjewelry8 .iconbox {
-  position: absolute;
+  position: relative;
   bottom: 24px;
   right: 24px;
   width: 40px;
   min-width: 40px;
   height: 40px;
+  margin-left: auto;
+  margin-top: 20px;
 }
 .current-lottery-itemjewelry8 .iconbox .icon {
   width: 40px;
@@ -6319,6 +6399,23 @@ iframe {
 .current-lottery-itemjewelry8 .iconbox:hover .icon {
   background: var(--act4);
   cursor: pointer;
+}
+.current-lottery-itemjewelry8 .n4-badge {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 80px;
+  left: -55px;
+  transition: all 0.4s;
+}
+.current-lottery-itemjewelry8:hover .thumb-inner {
+  transform: rotate(0deg) !important;
+}
+.current-lottery-itemjewelry8:hover .content-middle h3 .pr {
+  color: var(--act4) !important;
+}
+.current-lottery-itemjewelry8:hover .content-middle .kewta-btn .kew-arrow,
+.current-lottery-itemjewelry8:hover .content-middle .kewta-btn .kew-text {
+  background: var(--act4);
 }
 
 .cate-body-type {

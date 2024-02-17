@@ -816,6 +816,27 @@
 }
 //banner Category bike v3
 
+//banner Categoryv8
+.category-v8-banner{
+    .categori-bikev3-item{
+        .thumb{
+            .thumb-in{
+                width: 160px;
+                height: 190px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                @include minQuery(1199){
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+//banner Categoryv8
+
 //Odometer items
 .bn1-odometer{
     padding-top: 148px;
@@ -1730,3 +1751,46 @@
     }
 }
 //Banner Seven
+
+//Banner Eight
+.banner-section-v8{
+    .scroll-bn1{
+        .scroll-iconrarea{
+            svg{
+               path{
+                stroke: var(--n0);
+                fill: var(--n0);
+               }
+            }
+        }
+        left: 50%;
+    }
+}
+.rotate-arrow{
+   position: absolute;
+   bottom: -30px;
+   left: 20px;
+   @include maxQuery(1399){
+    bottom: -20px;
+    svg{
+        width: 140px;
+    }
+   }
+   @include maxQuery(767){
+    display: none;
+   }
+}
+.review-v8{
+    .review-star{
+        border-left: 1px solid rgba(239, 239, 239, 0.8);
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+    @include maxQuery(1500){
+        .review-star{
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+//Banner Eight

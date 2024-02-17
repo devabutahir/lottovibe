@@ -677,14 +677,36 @@
 
 //Current lotteryv8 Section
 .current-lottery-itemjewelry8{
+    border-radius: 24px;
+    overflow: hidden;
     .thumb{
         border-radius: 0px;
+        background: var(--nw3);
+        .thumb-inner{
+            background: rgba(255, 101, 14, 0.10);
+            border-radius: 0 0 200px 200px;
+            width: 196px;
+            height: 247px;
+            img{
+                width: 165px;
+                height: 170px;
+                object-fit: contain;
+            }
+        }
+    }
+    .range-custom{
+        max-width: 100%;
+    }
+    .content-middle{
+        background: #F4F4F4;
     }
     .iconbox{
-        position: absolute;
+        position: relative;
         bottom: 24px;
         right: 24px;
         @include box(40);
+        margin-left: auto;
+        margin-top: 20px;
         .icon{
             @include box(40);
             z-index: 1;
@@ -736,6 +758,31 @@
                 cursor: pointer;
             }
         }
+    }
+    .n4-badge{
+        transform: rotate(90deg);
+        position: absolute;
+        top: 80px;
+        left: -55px;
+        transition: all 0.4s;
+    }
+    &:hover{
+       .thumb-inner{ 
+        transform: rotate(0deg) !important;
+       } 
+       .content-middle{
+        h3{
+            .pr{
+                color: var(--act4) !important;
+            }
+        }
+        .kewta-btn{
+            .kew-arrow,
+            .kew-text{
+                background: var(--act4);
+            }
+        }
+       }
     }
 }
 //Current lotteryv8 Section
