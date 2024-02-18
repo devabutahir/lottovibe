@@ -1798,6 +1798,7 @@
 //banner 8 slider area
 .banner-v8slidewrap{
     width: 1030px;
+    display: flex;
     gap: 60px;
     position: absolute;
     right: 20px;
@@ -1850,6 +1851,145 @@
     }
     @include maxQuery(1900){
         gap: 30px;
+        width: 900px;
+        right: 4px;
+        .banner-content-v7customer{
+            justify-content: center;
+        }
+        .slider-btn{
+            button{
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @include maxQuery(1599){
+        width: 700px;
+        gap: 10px;
+        .banner-rightslider-v8small{
+            width: 280px;
+            .mySwiper2{
+                .swiper-slide{
+                    height: 300px;
+                    width: 270px;
+                    .bn8-thumb-inner{
+                        height: 300px;
+                        width: 270px;
+                        img{
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+        .mySwiper{
+            .swiper-slide{
+                width: 536px;
+                height: 780px;
+                .bn8-thumb-big{
+                    height: 712px;
+                    width: 536px;
+                }
+            }
+        }
+        bottom: 60px;
+    }
+    @include maxQuery(1399){
+        width: 680px;
+        gap: 10px;
+        .banner-rightslider-v8small{
+            width: 280px;
+            .mySwiper2{
+                .swiper-slide{
+                    height: 300px;
+                    width: 270px;
+                    .bn8-thumb-inner{
+                        height: 300px;
+                        width: 270px;
+                        img{
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+        .mySwiper{
+            .swiper-slide{
+                width: 536px;
+                height: 700px;
+                .bn8-thumb-big{
+                    height: 712px;
+                    width: 536px;
+                }
+            }
+        }
+        bottom: 0px;
+        align-items: center;
+    }
+    @include maxQuery(1199){
+        width: 600px;
+        gap: 10px;
+        .banner-rightslider-v8small{
+            width: 250px;
+            .mySwiper2{
+                .swiper-slide{
+                    height: 300px;
+                    width: 270px;
+                    .bn8-thumb-inner{
+                        height: 300px;
+                        width: 240px;
+                        img{
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+        .mySwiper{
+            .swiper-slide{
+                width: 536px;
+                height: 700px;
+                .bn8-thumb-big{
+                    height: 680px;
+                    width: 536px;
+                }
+            }
+        }
+        bottom: 0px;
+        align-items: center;
+    }
+    @include maxQuery(991){
+        position: initial;
+        width: 100%;
+        padding-right: 0px;
+        margin-top: 40px;
+    }
+    @include maxQuery(767){
+        display: grid;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 00px;
+        .mySwiper{
+            display: none;
+        }
+        .banner-rightslider-v8small{
+            width: 310px;
+            .mySwiper2{
+                .swiper-slide{
+                    height: 300px;
+                    width: 310px;
+                    .bn8-thumb-inner{
+                        height: 300px;
+                        width: 280px;
+                        margin: 0 auto;
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .banner-rightslider-v8small{
@@ -1860,3 +2000,122 @@
    }
 }
 //Banner Eight
+
+
+//Banner Nine
+.banner-section-v9{
+    background: rgba(254, 201, 47, 0.1);
+}
+.banner-content-v9{
+    .start-icontext{
+        margin-top: -10px;
+    }
+    .arrow-exv9{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    @include maxQuery(1399){
+        .start-icontext{
+            svg{
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        .start-icontext{
+            margin-top: -7px;
+            svg{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    @include maxQuery(575){
+        .start-icontext{
+            margin-top: -4px;
+            svg{
+                width: 19px;
+                height: 19px;
+            }
+        }
+    }
+}
+.banner-thumbv9{
+    width: 100%;
+    height: 692px;
+    margin-top: -80px;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 300px 300px;
+    }
+}
+.banner-v9-countreview{
+    .review-v8{
+        width: 376px;
+    }
+    .bn1-odometer{
+        width: 420px;
+    }
+}
+//nexdraw v9
+.nexdraw-wrapperv9{
+    background: #FFF4D3;
+    .nextdraw-innerwrapv9{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .scroll-bn1{
+        bottom: 40px;
+        right: 40px;
+        left: initial;
+    }
+    .howit-video{
+        max-width: 306px;
+        height: 185px;
+        border-radius: 100px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .popup-video{
+            background: var(--n0);
+        }
+    }
+    .next-arrowv9{
+        position: absolute;
+        left: -162px;
+        top: -38px;
+    }
+    @include maxQuery(1399){
+        .howit-video{
+            max-width: 180px;
+            height: 94px;
+            border-radius: 100px;
+        }
+        .scroll-bn1{
+            right: 50%;
+            bottom: -22px;
+        }
+    }
+    @include maxQuery(991){
+        .next-arrowv9{
+            display: none;
+        }
+        .nextdraw-innerwrapv9{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+.ex-text{
+    text-decoration: underline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+//Banner Nine
