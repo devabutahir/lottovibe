@@ -506,15 +506,16 @@ document.addEventListener("DOMContentLoaded", function () {
           loop: true,
           spaceBetween: 10,
           slidesPerView: 1,
-          freeMode: true,
+          // freeMode: true,
           watchSlidesProgress: true,
+          allowTouchMove: false,
         });
         var swiper2 = new Swiper(".mySwiper2", {
           loop: true,
           spaceBetween: 10,
           navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-nextteamjk",
+            prevEl: ".swiper-button-prevteamjk",
           },
           thumbs: {
             swiper: swiper,

@@ -1763,7 +1763,8 @@
                }
             }
         }
-        left: 50%;
+        left: 42.5%;
+        z-index: 2;
     }
 }
 .rotate-arrow{
@@ -1792,5 +1793,70 @@
             margin-left: 10px;
         }
     }
+}
+
+//banner 8 slider area
+.banner-v8slidewrap{
+    width: 1030px;
+    gap: 60px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    .banner-rightslider-v8small{
+        height: 100%;
+        width: 336px;
+        .mySwiper2{
+            .swiper-slide{
+                width: 302px;
+                height: 396px;
+                .bn8-thumb-inner{
+                    height: 396px;
+                    width: 302px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .slider-btn{
+            button{
+                transition: all 0.4s;
+                &:hover{
+                    background: var(--p1);
+                    i{
+                        color: var(--n4);
+                    }
+                }
+            }
+        }
+    }
+    .mySwiper{
+        .swiper-slide{
+            width: 636px;
+            height: 880px;
+            .bn8-thumb-big{
+                height: 912px;
+                width: 636px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        &:hover{
+            pointer-events: unset;
+        }
+    }
+    @include maxQuery(1900){
+        gap: 30px;
+    }
+}
+.banner-rightslider-v8small{
+   .jk-cont{
+        a{
+            text-decoration: underline;
+        }
+   }
 }
 //Banner Eight

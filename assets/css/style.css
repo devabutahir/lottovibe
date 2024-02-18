@@ -4295,7 +4295,8 @@ iframe {
 }
 
 .banner-section-v8 .scroll-bn1 {
-  left: 50%;
+  left: 42.5%;
+  z-index: 2;
 }
 .banner-section-v8 .scroll-bn1 .scroll-iconrarea svg path {
   stroke: var(--n0);
@@ -4331,6 +4332,63 @@ iframe {
     padding-left: 10px;
     margin-left: 10px;
   }
+}
+
+.banner-v8slidewrap {
+  width: 1030px;
+  gap: 60px;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+.banner-v8slidewrap .banner-rightslider-v8small {
+  height: 100%;
+  width: 336px;
+}
+.banner-v8slidewrap .banner-rightslider-v8small .mySwiper2 .swiper-slide {
+  width: 302px;
+  height: 396px;
+}
+.banner-v8slidewrap .banner-rightslider-v8small .mySwiper2 .swiper-slide .bn8-thumb-inner {
+  height: 396px;
+  width: 302px;
+}
+.banner-v8slidewrap .banner-rightslider-v8small .mySwiper2 .swiper-slide .bn8-thumb-inner img {
+  width: 100%;
+  height: 100%;
+}
+.banner-v8slidewrap .banner-rightslider-v8small .slider-btn button {
+  transition: all 0.4s;
+}
+.banner-v8slidewrap .banner-rightslider-v8small .slider-btn button:hover {
+  background: var(--p1);
+}
+.banner-v8slidewrap .banner-rightslider-v8small .slider-btn button:hover i {
+  color: var(--n4);
+}
+.banner-v8slidewrap .mySwiper .swiper-slide {
+  width: 636px;
+  height: 880px;
+}
+.banner-v8slidewrap .mySwiper .swiper-slide .bn8-thumb-big {
+  height: 912px;
+  width: 636px;
+}
+.banner-v8slidewrap .mySwiper .swiper-slide .bn8-thumb-big img {
+  width: 100%;
+  height: 100%;
+}
+.banner-v8slidewrap .mySwiper:hover {
+  pointer-events: unset;
+}
+@media (max-width: 1900px) {
+  .banner-v8slidewrap {
+    gap: 30px;
+  }
+}
+
+.banner-rightslider-v8small .jk-cont a {
+  text-decoration: underline;
 }
 
 .header-fixed {
