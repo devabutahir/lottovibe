@@ -2012,8 +2012,9 @@
     }
     .arrow-exv9{
         position: absolute;
-        bottom: 0;
+        bottom: -50px;
         right: 0;
+        animation: rot10 2s linear infinite;
     }
     @include maxQuery(1399){
         .start-icontext{
@@ -2051,6 +2052,13 @@
         height: 100%;
         border-radius: 0 0 300px 300px;
     }
+    @include  maxQuery(1399){
+        height: initial;
+    }
+    @include maxQuery(767){
+        margin-top: 24px;
+        display: none;
+    }
 }
 .banner-v9-countreview{
     .review-v8{
@@ -2058,6 +2066,55 @@
     }
     .bn1-odometer{
         width: 420px;
+        margin-top: 80px;
+        gap: 36px;
+        p{
+            color: var(--n1);
+        }
+    }
+    @include maxQuery(1750){
+        .review-v8{
+            display: grid !important;
+            gap: 8px;
+            .review-star{
+                padding-left: 0;
+                margin-left: 0;
+                border-left: unset;
+            }
+        }
+        .bn1-odometer{
+            display: grid !important;
+            margin-top: 0px;
+            padding-top: 60px;
+            gap: 18px;
+        }
+    }
+    @include maxQuery(1399){
+        .review-v8{
+            display: grid !important;
+            .display-three{
+                font-size: 36px;
+            }
+        }
+        .bn1-odometer{
+            display: grid !important;
+            margin-top: 0px;
+            padding-top: 60px;
+            gap: 18px;
+            .display-four{
+                font-size: 36px;
+            }
+        }
+    }
+    @include maxQuery(767){
+        display: flex;
+    }
+    @include maxQuery(350){
+        flex-wrap: wrap;
+        display: grid !important; 
+        .bn1-odometer{
+            padding-top: 30px;
+        }
     }
 }
 //nexdraw v9

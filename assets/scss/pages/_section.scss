@@ -426,6 +426,20 @@
 }
 //limit-time
 
+//limit-timev9
+.limited-lotteryv9{
+    .draw-timer-item{
+        .smalltext,
+        .text-hed{  
+            color: var(--n0);
+        }
+    }
+    .ldots{
+        color: var(--n0);
+    }
+}
+//limit-timev9
+
 //Howit Section
 .howit-work-section{
     .howit-video{
@@ -480,6 +494,31 @@
     }
 }
 //Howit Section
+
+//Howit Sectionv9
+.howit-work-sectionv9{
+    .work-item1{
+        padding-left: 10px;
+    }
+    .border-endcustom{
+        position: relative;
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            content: "";
+            background: linear-gradient(180deg, #FF650E 0%, rgba(255, 101, 14, 0.00) 100%);
+        }
+    }
+    @include maxQuery(575){
+        .work-item1{
+            padding-left: 0px;
+        }
+    }
+}
+//Howit Sectionv9
 
 //Current lottery Section
 .browse-more{
@@ -786,6 +825,83 @@
     }
 }
 //Current lotteryv8 Section
+
+//Current lotteryv9 Section
+.current-lottery-itemv9{
+    overflow: hidden;
+    .cmn-prrice-range{
+        .range-custom{
+            max-width: 100%;
+        }
+    }
+    .draw-badge{
+        &::before{
+            background: var(--n4);
+        }
+    }
+    .thumb{
+        background: #F4F4F4 !important;
+    }
+    .current-hoberv9{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 240px;
+        transition: all 0.5s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .current-l-badge{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        a{
+            transition: all 0.4s;
+        }
+    }
+    &:hover{
+        .n0-fillhover{
+            border: 1px solid var(--act4) !important;
+            i{
+                color: var(--act4);
+            }
+        }
+        .pr{
+            color: var(--act4);
+        }
+        .current-hoberv9{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+//Current lotteryv9 Section
+
+//Feature V9
+.feature-items-v9{
+    .icon{
+        @include box(80);
+        font-size: 40px;
+    }
+    @include maxQuery(1399){
+        .icon{
+            @include box(60);
+            font-size: 36px;
+        }
+    }
+    p{
+        max-width: 238px;
+    }
+}
+.s1-texthover{
+    transition: all 0.4s;
+    &:hover{
+        color: var(--s1);
+    }
+}
+//Feature V9
 
 //car body type Section
 .cate-body-type{
@@ -1447,6 +1563,29 @@
 }
 //previous v8 Section
 
+//previous v9 Section
+.previous-winner-v9{
+    .meet-previous-item{
+        .man-bike{
+            padding: 10px 4px;
+            img{
+                max-width: 190px;
+                height: 122px;
+                object-fit: contain;
+            }
+        }
+        @include maxQuery(1199){
+            .man-bike{
+                img{
+                    max-width: 140px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+//previous v9 Section
+
 //Call to Action Section
 .call-custom-space{
     margin-bottom: 150px;
@@ -1685,6 +1824,58 @@
     }
 }
 //Call tov7 Section
+
+//Call tov9 Section
+.callto-actionv9{
+    .wind{
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+        animation: updown 2s linear infinite;
+    }
+    .wind-ball{
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+    }
+    .wind-cap{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        transform: rotate(-60deg);
+    }
+    @include maxQuery(1199){
+        .wind{
+            right: 10px;
+            bottom: 10px;
+            width: 120px;
+        }
+        .wind-ball{
+            bottom: 10px;
+            width: 120px;
+        }
+        .wind-cap{
+            top: 10px;
+            left: 10px;
+            width: 100px;
+        }
+    }
+    @include maxQuery(575){
+        .wind{
+            width: 90px;
+        }
+        .wind-ball{
+            bottom: 10px;
+            width: 100px;
+        }
+        .wind-cap{
+            top: 0px;
+            left: 0px;
+            width: 80px;
+        }
+    }
+}
+//Call tov9 Section
 
 //blog Section
 .blog-items1{
