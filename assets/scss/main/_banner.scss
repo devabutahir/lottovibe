@@ -2176,3 +2176,44 @@
     transform: translate(-50%, -50%);
 }
 //Banner Nine
+
+//Banner version 10
+.banner-content-v10{
+    .rotate-arrow-v10{
+        position: absolute;
+        bottom: -40px;
+        left: 20px;
+    }
+    @include maxQuery(1800){
+        .display-one{
+            font-size: 58px;
+        }
+        .rotate-arrow-v10{
+            bottom: -25px;
+            left: 20px;
+            svg{
+                width: 160px;
+                height: 10px;
+            }
+        }
+    }
+    @include maxQuery(1199){
+        .display-one{
+            font-size: 48px;
+        }
+        .rotate-arrow-v10{
+            display: none;
+        }
+    }
+    @include maxQuery(991){
+        .display-one{
+            font-size: 40px;
+        }
+    }
+    @include maxQuery(575){
+        .display-one{
+            font-size: 38px;
+        }
+    }
+}
+//Banner version 10

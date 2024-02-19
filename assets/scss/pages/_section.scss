@@ -520,6 +520,28 @@
 }
 //Howit Sectionv9
 
+//Howit Sectionv10
+.howit-work-sectionv10{
+    .work-item1{
+        transition: all 0.4s;
+        border: 1px solid var(--n0);
+        p{
+            max-width: 352px;
+        }
+        &:hover{
+            border: 1px solid var(--nw2);
+        }
+        @include maxQuery(1399){
+            .icons-step{
+                svg{
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
+//Howit Sectionv10
+
 //Current lottery Section
 .browse-more{
     .cmn__collection{
