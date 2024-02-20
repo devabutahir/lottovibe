@@ -126,6 +126,12 @@ p{
 .fs-22{
 	font-size: 22px;
 }
+.act4-texthover{
+	transition: all 0.4s;
+	&:hover{
+		color: var(--act4);
+	}
+}
 //default font sizeing maintain
 
 

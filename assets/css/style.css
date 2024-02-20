@@ -188,6 +188,13 @@ p {
   font-size: 22px;
 }
 
+.act4-texthover {
+  transition: all 0.4s;
+}
+.act4-texthover:hover {
+  color: var(--act4);
+}
+
 table thead tr th {
   font-size: 18px;
   line-height: 150%;
@@ -4752,6 +4759,107 @@ iframe {
   }
 }
 
+.banner-v10-thumbsamll {
+  display: flex;
+  height: 570px;
+}
+.banner-v10-thumbsamll .thumb {
+  animation: updown 2s linear infinite;
+}
+.banner-v10-thumbsamll .thumb img {
+  border-radius: 200px;
+}
+.banner-v10-thumbsamll .thumb-v2-v10 {
+  animation: updown 5s linear infinite;
+}
+.banner-v10-thumbsamll .star-copy {
+  position: absolute;
+  right: -100px;
+  top: 0;
+  width: 116px;
+  height: 130px;
+  animation: zoms 3s linear infinite;
+}
+@media (max-width: 1199px) {
+  .banner-v10-thumbsamll {
+    height: 490px;
+  }
+  .banner-v10-thumbsamll .star-copy {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 70px;
+    height: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-v10-thumbsamll {
+    height: 450px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-v10-thumbsamll {
+    margin-top: 30px;
+    gap: 16px;
+    height: 320px;
+  }
+}
+@media (max-width: 480px) {
+  .banner-v10-thumbsamll .star-copy {
+    position: absolute;
+    right: -10px;
+    top: -40px;
+  }
+}
+@media (max-width: 410px) {
+  .banner-v10-thumbsamll {
+    height: 250px;
+  }
+}
+
+.thumb-v10 {
+  position: absolute;
+  bottom: 0;
+  right: 400px;
+}
+@media (max-width: 1820px) {
+  .thumb-v10 {
+    max-width: 650px;
+  }
+  .thumb-v10 img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1699px) {
+  .thumb-v10 {
+    max-width: 550px;
+  }
+}
+@media (max-width: 1499px) {
+  .thumb-v10 {
+    max-width: 450px;
+    right: 200px;
+  }
+}
+@media (max-width: 1199px) {
+  .thumb-v10 {
+    max-width: 450px;
+    right: 100px;
+  }
+}
+@media (max-width: 991px) {
+  .thumb-v10 {
+    max-width: 350px;
+    right: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .thumb-v10 {
+    display: none;
+  }
+}
+
 .header-fixed {
   position: fixed;
   top: 0px;
@@ -6717,6 +6825,44 @@ iframe {
   border: 1px solid rgba(85, 74, 255, 0.1);
 }
 
+.range-custom-act4 {
+  background: rgba(255, 101, 14, 0.4);
+  height: 4px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 296px;
+}
+.range-custom-act4::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  background: var(--act4);
+  width: 70%;
+  height: 100%;
+  border-radius: 4px;
+}
+.range-custom-act4 .curs-range {
+  position: absolute;
+  left: 40%;
+  top: 0px;
+  content: "";
+  background: rgba(254, 201, 47, 0.8);
+  width: 20px;
+  height: 4px;
+  z-index: 3;
+}
+.range-custom-act4 .curs-range::before {
+  position: absolute;
+  top: -4px;
+  left: 4px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--act4);
+  content: "";
+}
+
 .current-lottery-itemjewelry .thumb {
   background: rgba(255, 101, 14, 0.1);
   width: 100%;
@@ -7460,6 +7606,64 @@ iframe {
   }
 }
 
+.testimonial-item11 {
+  margin-top: 30px;
+  margin-left: 30px;
+  background: var(--n0);
+}
+.testimonial-item11 .conts .adrew {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--act4);
+}
+.testimonial-item11 .thumb {
+  width: 100%;
+}
+.testimonial-item11 .thumb .quote-cmn {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  border: 10px solid var(--n0);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+.testimonial-item11 .thumb .quote-cmn i {
+  font-size: 48px;
+}
+.testimonial-item11 .thumb .rat-star {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.testimonial-item11 .thumb img {
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .testimonial-item11 {
+    margin-top: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .testimonial-item11 .thumb .quote-cmn {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    border: 2px solid var(--n0);
+    top: 10px;
+    left: 10px;
+  }
+  .testimonial-item11 .thumb .quote-cmn i {
+    font-size: 34px;
+  }
+}
+
+.rot160 {
+  transform: rotate(180deg);
+}
+
 .win-bikeslide-itemv1 {
   background: var(--n0);
 }
@@ -7921,6 +8125,104 @@ iframe {
     left: 0px;
     width: 80px;
   }
+}
+
+.real-estate-video {
+  background: url(../../assets/images/howit/real-bg.png) no-repeat center center;
+  background-size: cover;
+  height: 670px;
+}
+.real-estate-video .real-vid {
+  width: 200px;
+  margin: 0 auto !important;
+  text-align: center;
+  z-index: 1;
+}
+.real-estate-video .real-vid .real-play {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.real-estate-video .real-vid .real-play-circle {
+  position: absolute;
+  top: -18px;
+  left: 32px;
+  animation: cir360 5s linear infinite;
+  z-index: -1;
+}
+@media (max-width: 1399px) {
+  .real-estate-video {
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .real-estate-video {
+    height: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .real-estate-video {
+    height: 300px;
+  }
+}
+
+@keyframes cir360 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.current-lottery-itemv11 .range-custom {
+  max-width: 100%;
+}
+.current-lottery-itemv11 .current-l-badgev11 {
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+  width: 100%;
+}
+.current-lottery-itemv11 .draw-badge::before {
+  background: var(--n4);
+  transition: all 0.4s;
+}
+.current-lottery-itemv11 .iconbox-global .team-social .social-area li a {
+  border-color: var(--n0);
+  background: var(--n0);
+}
+.current-lottery-itemv11 .iconbox-global .team-social .social-area li a i {
+  color: var(--act4);
+}
+.current-lottery-itemv11:hover h3 .act4-texthover {
+  color: var(--act4);
+  text-decoration: underline;
+}
+.current-lottery-itemv11:hover .draw-badge::before {
+  background: var(--act4);
+}
+.current-lottery-itemv11:hover .draw-badge a {
+  color: var(--n0);
+}
+.current-lottery-itemv11:hover .pr {
+  color: var(--act4);
+}
+@media (max-width: 1199px) {
+  .current-lottery-itemv11 .current-l-badgev11 {
+    bottom: 15px;
+  }
+}
+
+.journey-exciting {
+  background: rgba(244, 244, 244, 0.5);
+}
+.journey-exciting .journey-exthumb {
+  direction: rtl;
+}
+.journey-exciting .journey-exthumb img {
+  max-width: unset;
 }
 
 .blog-items1 .thumb {
@@ -9050,6 +9352,60 @@ iframe {
   .win-bicycleslide-itemv5 .iconbox {
     top: 30%;
   }
+}
+
+.iconbox-global {
+  position: relative;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+}
+.iconbox-global .icon {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  z-index: 1;
+  position: relative;
+  background: var(--n4);
+  transition: all 0.4s;
+}
+.iconbox-global .icon i {
+  color: var(--n0);
+}
+.iconbox-global .team-social {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  transition: all 0.6s;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+}
+.iconbox-global .team-social .social-area li a {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid var(--n4);
+  border-radius: 50%;
+}
+.iconbox-global .team-social .social-area li a i {
+  transition: all 0.4s;
+}
+.iconbox-global .team-social .social-area li:hover a {
+  border-color: var(--act4);
+}
+.iconbox-global .team-social .social-area li:hover a i {
+  color: var(--act4);
+}
+.iconbox-global:hover .team-social {
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.iconbox-global:hover .icon {
+  background: var(--act4);
+  cursor: pointer;
 }
 
 @media (max-width: 1399px) {

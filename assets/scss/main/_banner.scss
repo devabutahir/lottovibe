@@ -2216,4 +2216,83 @@
         }
     }
 }
+.banner-v10-thumbsamll{
+    display: flex;
+    height: 570px;
+    .thumb{
+        animation: updown 2s linear infinite;
+        img{
+            border-radius: 200px;
+        }
+    }
+    .thumb-v2-v10{
+        animation: updown 5s linear infinite;
+    }
+    .star-copy{
+        position: absolute;
+        right: -100px;
+        top: 0;
+        width: 116px;
+        height: 130px;
+        animation: zoms 3s linear infinite;
+    }
+    @include maxQuery(1199){
+        .star-copy{
+            position: absolute;
+            right: -20px;
+            top: 0;
+            width: 70px;
+            height: 80px;
+        }
+        height: 490px;
+    }
+    @include maxQuery(991){
+        height: 450px;
+    }
+    @include maxQuery(767){
+        margin-top: 30px;
+        gap: 16px;
+        height: 320px;
+    }
+    @include maxQuery(480){
+        .star-copy{
+            position: absolute;
+            right: -10px;
+            top: -40px;
+        } 
+    }
+    @include maxQuery(410){
+        height: 250px;
+    }
+}
+.thumb-v10{
+    position: absolute;
+    bottom: 0;
+    right: 400px;
+    @include maxQuery(1820){
+        max-width: 650px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    @include maxQuery(1699){
+        max-width: 550px;
+    }
+    @include maxQuery(1499){
+        max-width: 450px;
+        right: 200px;
+    }
+    @include maxQuery(1199){
+        max-width: 450px;
+        right: 100px;
+    }
+    @include maxQuery(991){
+        max-width: 350px;
+        right: 100px;
+    }
+    @include maxQuery(767){
+       display: none;
+    }
+}
 //Banner version 10
