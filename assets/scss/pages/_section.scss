@@ -1661,6 +1661,17 @@
 }
 //meet previous Section
 
+//Winning bigv11 Section
+.winning-bigv12-item{
+    max-width: 306px;
+    .content-wing{
+        margin-top: -60px;
+        z-index: 1;
+        position: relative;
+    }
+}
+//Winning bigv11 Section
+
 //previous v8 Section
 .previous-winner-v8{
     .meet-previous-item{
@@ -2095,6 +2106,55 @@
 }
 //Realestate Section
 
+//Realestatev12 Section
+.current-lottery-itemv12{
+    position: relative;
+    .cmn-prrice-range{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        top: 16px;
+    }
+    .kewta-btn{
+        @include minQuery(1399){
+            .kt-one{
+                top: 18px !important;
+            }
+            .kt-two{
+                top: 18px;
+                left: 16px;
+            }
+            .kew-text{
+                height: 60px;
+            }
+            &:hover{
+                .kt-one{
+                    left: 16px !important;
+                }
+            }
+        }
+        @include maxQuery(1199){
+            .kew-text{
+                height: 46px;
+            }
+        }
+    }
+}
+.range-custom-act12{
+    .curs-range{
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        top: -7px;
+        background: rgba(250, 231, 219, 0.8);
+        &::before{
+            top: 4px;
+        }
+    }
+}
+//Realestatev12 Section
+
 //journey exting Section
 .journey-exciting{
     background: rgba(244, 244, 244, 50%);
@@ -2103,6 +2163,27 @@
         img{
             max-width: unset;
         }
+    }
+}
+.bedroom-cate{
+    margin-top: -200px;
+    z-index: 2;
+    position: relative;
+}
+.bedroom-item{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s;
+    .thumb{
+        margin-top: 20px;
+    }
+    margin-bottom: 30px;
+    &:hover{
+        background: var(--act3);
+    }
+    @include maxQuery(991){
+        margin-bottom: 0;
     }
 }
 //journey exting Section

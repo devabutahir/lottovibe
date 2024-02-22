@@ -132,6 +132,12 @@ p{
 		color: var(--act4);
 	}
 }
+.s1-texthover{
+	transition: all 0.4s;
+	&:hover{
+		color: var(--s1);
+	}
+}
 //default font sizeing maintain
 
 
