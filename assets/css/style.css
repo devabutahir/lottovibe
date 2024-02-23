@@ -8341,6 +8341,7 @@ iframe {
   }
   .current-lottery-itemv12 .kewta-btn .kew-text {
     height: 60px;
+    width: 300px;
   }
   .current-lottery-itemv12 .kewta-btn:hover .kt-one {
     left: 16px !important;
@@ -8349,6 +8350,29 @@ iframe {
 @media (max-width: 1199px) {
   .current-lottery-itemv12 .kewta-btn .kew-text {
     height: 46px;
+  }
+}
+.current-lottery-itemv12 .offering-content12 {
+  position: absolute;
+  bottom: -134px;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  transition: all 0.5s;
+}
+.current-lottery-itemv12 .vline-remaing {
+  border-right: 1px solid var(--nw1);
+}
+.current-lottery-itemv12:hover .offering-content12 {
+  bottom: 24px;
+}
+.current-lottery-itemv12:hover .kewta-btn .kew-arrow,
+.current-lottery-itemv12:hover .kewta-btn .kew-text {
+  background: var(--s1);
+}
+@media (max-width: 1399px) {
+  .current-lottery-itemv12 .offering-content12 {
+    bottom: -110px;
   }
 }
 

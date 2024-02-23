@@ -2127,6 +2127,7 @@
             }
             .kew-text{
                 height: 60px;
+                width: 300px;
             }
             &:hover{
                 .kt-one{
@@ -2138,6 +2139,33 @@
             .kew-text{
                 height: 46px;
             }
+        }
+    }
+    .offering-content12{
+        position: absolute;
+        bottom: -134px;
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        transition: all 0.5s;
+    }
+    .vline-remaing{
+        border-right: 1px solid var(--nw1);
+    }
+    &:hover{
+        .offering-content12{
+            bottom: 24px;
+        }
+        .kewta-btn{
+            .kew-arrow,
+            .kew-text{
+                background: var(--s1);
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .offering-content12{
+            bottom: -110px;
         }
     }
 }
