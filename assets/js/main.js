@@ -579,20 +579,8 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".currentYear").text(new Date().getFullYear());
       // Current Year//
 
-      //text circle
-        // const text = document.querySelector(".text");
-        // if (text) {
-        //   text.innerHTML = text.innerText
-        //     .split("")
-        //     .map(
-        //       (char, i) => `<span style="display:inline-block; transform:rotate(${i * 14}deg)">${char}</span>`
-        //     )
-        //     .join("");
-        // } else {
-        //   console.log("print");
-        // }
-        const texts = document.querySelectorAll(".text, .text2");
 
+        const texts = document.querySelectorAll(".text, .text2");
         texts.forEach(text => {
           if (text) {
             text.innerHTML = text.innerText
@@ -610,6 +598,11 @@ document.addEventListener("DOMContentLoaded", function () {
       //propdown common lide//
         $('.dropdown-toggle').dropdown()
       //propdown common lide//
+
+      //Tooptip//
+      // $('#example').tooltip(options)
+      $('[data-toggle="tooltip"]').tooltip();   
+      //Tooptip//
 
 
       // Mouse Follower //
