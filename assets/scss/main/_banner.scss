@@ -2384,3 +2384,38 @@
     z-index: -1;
 }
 //Banner version 11
+
+//Banner version 12
+.banner-v12wraper{
+    .banner-content-v12{
+        .banner-review12{
+            p{
+                max-width: 207px;
+            }
+        }
+        .review-border12{
+            width: 110px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.banner-v12-thumbright{
+    .watch-live-wrap{
+        .cmn-width{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    @include maxQuery(1399){
+        .watch-live-wrap{
+            .cmn-width{
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}
+//Banner version 12

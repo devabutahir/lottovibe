@@ -132,6 +132,12 @@ p{
 		color: var(--act4);
 	}
 }
+.act3-texthover{
+	transition: all 0.4s;
+	&:hover{
+		color: var(--act3);
+	}
+}
 .s1-texthover{
 	transition: all 0.4s;
 	&:hover{

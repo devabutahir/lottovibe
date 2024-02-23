@@ -195,6 +195,13 @@ p {
   color: var(--act4);
 }
 
+.act3-texthover {
+  transition: all 0.4s;
+}
+.act3-texthover:hover {
+  color: var(--act3);
+}
+
 .s1-texthover {
   transition: all 0.4s;
 }
@@ -4955,6 +4962,28 @@ iframe {
   bottom: 0;
   right: 0;
   z-index: -1;
+}
+
+.banner-v12wraper .banner-content-v12 .banner-review12 p {
+  max-width: 207px;
+}
+.banner-v12wraper .banner-content-v12 .review-border12 {
+  width: 110px;
+}
+.banner-v12wraper .banner-content-v12 .review-border12 img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-v12-thumbright .watch-live-wrap .cmn-width {
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 1399px) {
+  .banner-v12-thumbright .watch-live-wrap .cmn-width {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .header-fixed {
