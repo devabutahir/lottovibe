@@ -1412,8 +1412,6 @@
     @include maxQuery(1199){
         justify-content: center !important;
     }
-    // transform: translateY(-0px) !important;
-    // margin-bottom: -0px !important;
 }
 .how-v13-arrow{
     position: absolute;
@@ -2018,7 +2016,6 @@
 }
 //Banner Eight
 
-
 //Banner Nine
 .banner-section-v9{
     background: rgba(254, 201, 47, 0.1);
@@ -2515,3 +2512,119 @@
     }
 }
 //Banner version 12
+
+//Banner version 13
+.banner-section-v13{
+    .arrow-exv9{
+        position: absolute;
+        top: 60px;
+        right: -70px;
+    }
+    .nft-border{
+        position: absolute;
+        bottom: -27px;
+        left: 0;
+    }
+    .flash-focus{
+        position: absolute;
+        top: -50px;
+        right: -80px;
+    }
+    .banner-textanimation{
+        top: 180px;
+        right: 301px;
+        &::before{
+            height: 391px;
+        }
+        .textcircle2{
+            .text2{
+                span{
+                    color: var(--n4);
+                }
+            }
+        }
+    }
+    @include maxQuery(1650){
+        .banner-textanimation{
+            right: 40px;
+            top: 140px;
+        }
+    }
+    @include maxQuery(1399){
+        .banner-textanimation{
+            right: 20px;
+            top: 90px;
+        }
+    }
+    @include maxQuery(1199){
+        .banner-textanimation{
+           display: none;
+        }
+        .arrow-exv9{
+            display: none;
+        }
+    }
+}
+.banner-v13wraper{
+    .banner-content-v13{
+        .bn1-odometer{
+            .odometer__items{
+                p{
+                    color: var(--n3);
+                }
+            }
+        }
+    }
+    @include minQuery(1899){
+        margin-bottom: 76px;
+    }
+}
+.banner-v13-thumbwrap{
+    display: flex;
+    gap: 55px;
+    height: 629px;
+    align-items: flex-end;
+    .banner-innerv13-two{
+        p{
+            max-width: 196px;
+        }
+    }
+    @include maxQuery(1199){
+        height: 500px;
+    }
+    @include maxQuery(991){
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: flex-start;
+        .banner-innerv13-one{
+            @include minQuery(767){
+                height: 407px;
+            }
+        }
+        .banner-innerv13-two{
+            @include minQuery(767){
+                .thumb{
+                    display: none;
+                }
+            }
+        }
+    }
+    @include maxQuery(767){
+        flex-wrap: nowrap;
+        margin-top: 30px;
+    }
+    @include maxQuery(500){
+        margin-top: 15px;
+        height: initial;
+        .banner-innerv13-one{
+            height: initial;
+        }
+        .banner-innerv13-two{
+            display: none;
+        }
+        .banner-content-v1customer{
+            padding-bottom: 0;
+        }
+    }
+}
+//Banner version 13
