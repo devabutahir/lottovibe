@@ -1408,6 +1408,23 @@
         }
     }
 }
+.draw-nextwrapv13{
+    @include maxQuery(1199){
+        justify-content: center !important;
+    }
+    // transform: translateY(-0px) !important;
+    // margin-bottom: -0px !important;
+}
+.how-v13-arrow{
+    position: absolute;
+    right: -70px;
+    top: 0;
+    width: 110px;
+    animation: dimod 2s linear infinite;
+    @include maxQuery(767){
+        display: none;
+    }
+}
 //Next Draw v5 
 
 //Banner Six 

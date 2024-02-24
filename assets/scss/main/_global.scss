@@ -460,6 +460,9 @@ input[type="checkbox"] {
 .nw3-bg{
 	background: var(--nw3);
 }
+.nw3-border{
+	border: 1px solid var(--nw3);
+}
 .nw4-clr{
 	color: var(--nw4);
 }
@@ -711,6 +714,18 @@ i{
 	align-items: center;
 	justify-content: center;
 }
+.kewta-44{
+	.kew-arrow{
+		min-width: 44px;
+		min-height: 44px;
+		.kt-one{
+			top: 10px !important;
+		}
+		.kt-two{
+			top: 10px !important;
+		}
+	}
+}
 // cmn width
 
 // Draw Badge
@@ -722,7 +737,7 @@ i{
 	}
 	&::before{
 		background: var(--act3);
-		clip-path: polygon(100% 0, 83% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
+		clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
 		position: absolute;
 		content: "";
 		top: 0;

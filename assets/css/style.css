@@ -1033,6 +1033,10 @@ input[type=checkbox] {
   background: var(--nw3);
 }
 
+.nw3-border {
+  border: 1px solid var(--nw3);
+}
+
 .nw4-clr {
   color: var(--nw4);
 }
@@ -1293,6 +1297,17 @@ i {
   justify-content: center;
 }
 
+.kewta-44 .kew-arrow {
+  min-width: 44px;
+  min-height: 44px;
+}
+.kewta-44 .kew-arrow .kt-one {
+  top: 10px !important;
+}
+.kewta-44 .kew-arrow .kt-two {
+  top: 10px !important;
+}
+
 .draw-badge {
   position: relative;
   padding: 10px 29px 10px 16px;
@@ -1302,8 +1317,8 @@ i {
 }
 .draw-badge::before {
   background: var(--act3);
-  -webkit-clip-path: polygon(100% 0, 83% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
-          clip-path: polygon(100% 0, 83% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
+  -webkit-clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
+          clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
   position: absolute;
   content: "";
   top: 0;
@@ -3975,6 +3990,25 @@ iframe {
     gap: 20px !important;
   }
   .draw-nextwrap-v5wrap .next-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .draw-nextwrapv13 {
+    justify-content: center !important;
+  }
+}
+
+.how-v13-arrow {
+  position: absolute;
+  right: -70px;
+  top: 0;
+  width: 110px;
+  animation: dimod 2s linear infinite;
+}
+@media (max-width: 767px) {
+  .how-v13-arrow {
     display: none;
   }
 }
@@ -7283,6 +7317,55 @@ iframe {
   visibility: visible;
 }
 
+.current-lotteryv13 {
+  background: rgba(244, 244, 244, 0.5);
+}
+
+.current-lottery-itemv13 .cart-added {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transform: scale(0);
+  visibility: hidden;
+  transition: all 0.4s;
+}
+.current-lottery-itemv13 .current-l-badge {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+.current-lottery-itemv13:hover .cart-added {
+  visibility: visible;
+  transform: scale(1);
+}
+.current-lottery-itemv13:hover .pr {
+  color: var(--act4);
+}
+.current-lottery-itemv13:hover .kewta-btn .kew-arrow {
+  background: var(--act4);
+}
+
+.current-lottery-v13before {
+  transition: all 0.4s;
+}
+.current-lottery-v13before::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border: 1px solid var(--nw3);
+  border-radius: 24px;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.current-lottery-v13before:hover::before {
+  top: 12px;
+  left: -12px;
+  opacity: 1;
+}
+
 .feature-items-v9 .icon {
   width: 80px;
   min-width: 80px;
@@ -7994,6 +8077,67 @@ iframe {
   height: 100%;
 }
 
+.winning-bigv12 .ball-v12 {
+  position: absolute;
+  top: 120px;
+  left: 160px;
+  animation: balls 5s linear infinite;
+}
+.winning-bigv12 .dimond-v12 {
+  position: absolute;
+  top: 160px;
+  right: 110px;
+  animation: dimod 2s linear infinite;
+}
+@media (max-width: 1399px) {
+  .winning-bigv12 .ball-v12 {
+    top: 40px;
+    left: 40px;
+  }
+  .winning-bigv12 .dimond-v12 {
+    top: 40px;
+    right: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .winning-bigv12 .ball-v12 {
+    top: 40px;
+    left: 40px;
+    width: 80px;
+  }
+  .winning-bigv12 .dimond-v12 {
+    top: 40px;
+    right: 40px;
+    width: 70px;
+  }
+}
+@media (max-width: 575px) {
+  .winning-bigv12 .ball-v12 {
+    top: 10px;
+    left: 10px;
+    width: 40px;
+  }
+  .winning-bigv12 .dimond-v12 {
+    top: 10px;
+    right: 10px;
+    width: 50px;
+  }
+}
+
+.kew-rotate {
+  transform: rotate(-40deg);
+}
+
+@keyframes dimod {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes balls {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .winning-bigv12-item {
   max-width: 306px;
 }
@@ -8001,6 +8145,11 @@ iframe {
   margin-top: -60px;
   z-index: 1;
   position: relative;
+}
+
+.cmn-draw-badge {
+  -webkit-clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
+          clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
 }
 
 .previous-winner-v8 .meet-previous-item .thumb-man .man-bike {
@@ -9093,6 +9242,43 @@ iframe {
     -o-object-fit: contain;
        object-fit: contain;
   }
+}
+
+.tooltip-plus {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.tooltip-v1 {
+  left: -190px;
+  bottom: 180px;
+}
+
+.tooltip-v2 {
+  left: -210px;
+  top: 40%;
+}
+
+.tooltip-v3 {
+  left: -180px;
+  top: 20%;
+}
+
+.tooltip-v4 {
+  left: 140px;
+  top: 28%;
+}
+
+.tooltip-v5 {
+  left: 140px;
+  top: 54%;
+}
+
+.tooltip-v6 {
+  right: 10px;
+  top: 40%;
 }
 
 .bike-text-smallthumb {
