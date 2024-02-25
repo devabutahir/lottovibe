@@ -998,6 +998,18 @@
 }
 //Current lotteryv13 Section
 
+//Current lotteryv14 Section
+.current-lottery-itemv14{
+    .current-l-badge{
+        transform: rotate(90.2deg);
+        z-index: 2;
+        left: -44px;
+        top: 89px;
+        bottom: initial
+    }
+}
+//Current lotteryv14 Section
+
 //Feature V9
 .feature-items-v9{
     .icon{
@@ -2129,6 +2141,21 @@
 }
 //Call tov9 Section
 
+//Call tov15 Section
+.call-superv15{
+    bottom: 30px !important;
+    max-width: 278px;
+}
+//Call tov15 Section
+
+//Clothing Section
+.colthing-bg{
+    background: url(../../assets/images/howit/vidoe-bgv15.png) no-repeat center center !important;
+    background-size: contain;
+    background-attachment: fixed !important;
+}
+//Clothing Section
+
 //Realestate Section
 .real-estate-video{
     background: url(../../assets/images/howit/real-bg.png) no-repeat center center;
@@ -2484,6 +2511,45 @@
 }
 //blog Section
 
+//blogv15 Section
+.blog-items15{
+    .thumb{
+        overflow: hidden;
+        img{
+            overflow: hidden;
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
+    }
+    .read15{
+        border: 1px solid var(--nw4);
+        border-radius: 12px;
+        display: block;
+        @include box(48);
+        transition: all 0.4s;
+        i{
+            color: var(--n4);
+            transition: all 0.4s;
+        }
+        &:hover{
+            background: var(--n4);
+            i{
+                color: var(--n0);
+            }
+        }
+    }
+    &:hover{
+        .thumb{
+            overflow: hidden;
+            img{
+                overflow: hidden;
+                transform: scale(1);
+            }
+        }
+    }
+}
+//blogv15 Section
+
 //question faq Section
 .question-section{
     background: rgba(244, 244, 244, 0.50);
@@ -2564,6 +2630,12 @@
     }
 }
 //question faq Section
+
+//questionv15 faq Section
+.question-sectionv15{
+    background: rgba(244, 244, 244, 50%);
+}
+//questionv15 faq Section
 
 //Accordion Section
 .accordion-single{

@@ -2726,3 +2726,56 @@
     }
 }
 //Banner version 14
+
+//Banner version 15
+.banner-content-v15{
+    .custom-bigarrow{
+        border: 1px solid var(--nw4);
+        .icon{
+            svg{
+                width: 110px;
+                path{
+                    stroke: var(--nw4);
+                }
+            }
+        }
+    }
+}
+.banner-v15-wrap-right{
+    margin-left: 60px;
+    .thumb{
+        width: 428px;
+        img{
+            width: 100%;
+        }
+    }
+    .bn1-odometer{
+        width: 428px;
+    }
+}
+.real-underline{
+    text-decoration: underline;
+}
+.scroll-circle{
+    @include box(140);
+    .scroll-iconrarea{
+        animation: updown 2s linear infinite;
+    }
+    @include maxQuery(1399){
+        @include box(90);
+        .scroll-text{
+            line-height: 18px;
+            font-size: 11px;
+        }
+        .scroll-iconrarea{
+            svg{
+                width: 40px;
+                height: 20px;
+            }
+        }
+    }
+}
+.n3-fixed{
+    color: var(--n3) !important;
+}
+//Banner version 15
