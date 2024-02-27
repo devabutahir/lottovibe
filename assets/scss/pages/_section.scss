@@ -440,6 +440,21 @@
 }
 //limit-timev9
 
+//limit-timev16
+.limited-lotteryv16{
+    .current-lottery-itemv13{
+        .n4-bg{
+            transition: all 0.4s;
+        }
+        &:hover{
+            .n4-bg{
+                background: var(--act4);
+            }
+        }
+    }
+}
+//limit-timev16
+
 //Howit Section
 .howit-work-section{
     .howit-video{
@@ -1595,6 +1610,14 @@
     transform: rotate(180deg);
 }
 //Testimonialv11 Section
+
+//Testimonialv16 Section
+.testimonial-sectionv16.testimonial-v1-before{
+    &::before{
+        background: var(--s1);
+    }
+}
+//Testimonialv16 Section
 
 //win bike Section
 .win-bikeslide-itemv1{
