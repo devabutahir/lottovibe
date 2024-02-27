@@ -5317,6 +5317,9 @@ iframe {
 .banner-content-v15 .custom-bigarrow .icon svg path {
   stroke: var(--nw4);
 }
+.banner-content-v15 .max-520 {
+  max-width: 620px;
+}
 
 .banner-v15-wrap-right {
   margin-left: 60px;
@@ -5329,6 +5332,90 @@ iframe {
 }
 .banner-v15-wrap-right .bn1-odometer {
   width: 428px;
+}
+@media (max-width: 1599px) {
+  .banner-v15-wrap-right .bn1-odometer {
+    width: 290px;
+    text-align: start;
+  }
+  .banner-v15-wrap-right p {
+    text-align: start;
+  }
+}
+@media (max-width: 1399px) {
+  .banner-v15-wrap-right {
+    margin-left: 0;
+  }
+  .banner-v15-wrap-right .display-four {
+    font-size: 28px;
+  }
+  .banner-v15-wrap-right p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-v15-wrap-right {
+    margin-top: 30px;
+  }
+  .banner-v15-wrap-right .thumb {
+    width: 100%;
+  }
+  .banner-v15-wrap-right .thumb img {
+    width: 100%;
+  }
+}
+
+.banner-v15-wrap-left {
+  margin-left: -145px;
+  margin-bottom: -100px;
+  margin-top: 40px;
+  gap: 30px;
+}
+.banner-v15-wrap-left .thumb {
+  direction: ltr;
+  width: 428px;
+}
+.banner-v15-wrap-left .thumb img {
+  width: 100%;
+}
+.banner-v15-wrap-left .banner-textanimation {
+  position: relative;
+  top: initial;
+  right: initial;
+  background: transparent;
+  border: 1px solid var(--nw4);
+  margin: 0 auto;
+}
+.banner-v15-wrap-left .banner-textanimation::before {
+  display: none;
+}
+.banner-v15-wrap-left .banner-textanimation .textcircle2 .text2 {
+  color: var(--n4) !important;
+}
+.banner-v15-wrap-left .banner-textanimation .textcircle2 .text2 span {
+  color: var(--n4) !important;
+}
+.banner-v15-wrap-left .banner-textanimation .icon-explore {
+  border-color: var(--nw4);
+}
+.banner-v15-wrap-left .banner-textanimation .icon-explore .icon {
+  background: var(--act3);
+}
+.banner-v15-wrap-left .banner-textanimation .icon-explore .icon i {
+  color: var(--n4);
+}
+@media (max-width: 1399px) {
+  .banner-v15-wrap-left {
+    margin-left: -200px;
+  }
+  .banner-v15-wrap-left .banner-textanimation {
+    margin: 0 0 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .banner-v15-wrap-left {
+    display: none !important;
+  }
 }
 
 .real-underline {

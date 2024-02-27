@@ -2740,6 +2740,9 @@
             }
         }
     }
+    .max-520{
+        max-width: 620px;
+    }
 }
 .banner-v15-wrap-right{
     margin-left: 60px;
@@ -2751,6 +2754,83 @@
     }
     .bn1-odometer{
         width: 428px;
+    }
+    @include maxQuery(1599){
+        .bn1-odometer{
+            width: 290px;
+            text-align: start;
+        } 
+        p{
+            text-align: start;
+        }
+    }
+    @include maxQuery(1399){
+        margin-left: 0;
+        .display-four{
+            font-size: 28px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    @include maxQuery(767){
+        margin-top: 30px;
+        .thumb{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.banner-v15-wrap-left{
+    margin-left: -145px;
+    margin-bottom: -100px;
+    margin-top: 40px;
+    gap: 30px;
+    .thumb{
+        direction: ltr;
+        width: 428px;
+        img{
+            width: 100%;
+        }
+    }
+    .banner-textanimation{
+        position: relative;
+        top: initial;
+        right: initial;
+        background: transparent;
+        border: 1px solid var(--nw4);
+        &::before{
+            display: none;
+        }
+        margin: 0 auto;
+        .textcircle2{
+            .text2{
+                color: var(--n4) !important;
+                span{
+                    color: var(--n4) !important;
+                }
+            }
+        }
+        .icon-explore{
+            border-color: var(--nw4);
+            .icon{
+                background: var(--act3);
+                i{
+                    color: var(--n4);
+                }
+            }
+        }
+    }
+    @include maxQuery(1399){
+        margin-left: -200px;
+        .banner-textanimation{
+            margin: 0 0 0 auto;
+        }
+    }
+    @include maxQuery(991){
+        display: none !important;
     }
 }
 .real-underline{
