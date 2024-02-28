@@ -2203,13 +2203,27 @@
     background-size: contain;
     background-attachment: fixed !important;
 }
+.competition-bg{
+    background: url(../../assets/images/howit/vidoe-bgv15.png) no-repeat center center !important;
+    background-size: contain;
+    background-attachment: fixed !important;
+}
 //Clothing Section
 
 //Realestate Section
 .real-estate-video{
-    background: url(../../assets/images/howit/real-bg.png) no-repeat center center;
-    background-size: cover;
+    background: url(../../assets/images/howit/how-competition-bg.png) no-repeat center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
     height: 670px;
+    &::before{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: rgba(32, 32, 35, 0.461);
+    }
     .real-vid{
         width: 200px;
         margin: 0 auto !important;

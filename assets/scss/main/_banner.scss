@@ -2373,6 +2373,9 @@
         }
     }
 }
+.max-600{
+    max-width: 600px;
+}
 .cmn-formwrap{
     form{
         background: rgba(254, 201, 47, 0.20);
@@ -2858,6 +2861,9 @@
 .n3-fixed{
     color: var(--n3) !important;
 }
+.max-630{
+    max-width: 630px;
+}
 //Banner version 15
 
 //Banner version 16
@@ -2955,6 +2961,9 @@
 }
 .custom-bigarrow-act3{
     .icon{
+        svg{
+            width: 100px;
+        }
         &::before{
             background: var(--act3);
         }
@@ -3126,9 +3135,238 @@
         }
     }
 }
+.active-userv17{
+    color: rgba(255, 255, 255, 0.70);
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    &::before{
+        position: absolute;
+        left: 0;
+        content: "";
+        background: var(--p1);
+        @include box(8);
+        border-radius: 50%;
+    }
+}
 @keyframes zin {
     50%{
         transform: scale(1.1);
     }
 }
+.customer-reviewv17{
+    width: 81px;
+    margin: 0 auto;
+    li{
+        &:not(:first-child){
+            margin-top: -15px;
+        }
+        a{
+            @include box(60);
+            img{
+                @include box(57);
+            }
+        }
+        .customer-revew-item{
+            z-index: 1;
+            position: relative;
+            .customer-ratting{
+                @include box(56);
+            }
+        }
+    }
+}
+.customer-review17-alt{
+    width: initial!important;
+    margin: initial;
+    display: inline-flex;
+    li{
+        &:not(:first-child){
+            margin-top: 0px !important;
+            margin-left: -15px;
+        }
+    }
+}
+.active-userv17-alt{
+    width: 165px;
+    &::before{
+        background: var(--act3) !important;
+    }
+}
 //Banner version 17
+
+//Banner version 18
+.banner-section-v18{
+    background: url(../../assets/images/banner/bannerv18-bg.png) no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+    .container{
+        @include minQuery(575){
+            max-width: 1340px;
+        }
+    }
+    .bannerv18-mainthumb{
+        position: absolute;
+        bottom: 0;
+        right: 91px;
+        max-width: 850px;
+        img{
+            width: 100%;
+        }
+    }
+    .mouse-animation{
+        right: 40px;
+        bottom: 40px;
+    }
+    .v18-shapee{
+        position: absolute;
+        top: 222px;
+        left: 97px;
+        animation: infinite-circle 30s linear infinite;
+    }
+    .v18-shaper{
+        position: absolute;
+        bottom: 300px;
+        left: 40%;
+        animation: infinite-circle 50s linear infinite;
+    }
+    .banner-arrowv18{
+        position: absolute;
+        top: 140px;
+        right: 30%;
+    }
+    .bannerv18-shape{
+        position: absolute;
+        left: 0;
+        bottom: 310px;
+        z-index: -1;
+    }
+    .call-sunv18{
+        position: absolute;
+        right: 80px;
+        top: 180px;
+        animation: zin 2s linear infinite;
+        width: 100px;
+        height: 100px;
+    }
+    .banner-reviewer18{
+        width: 220px;
+        position: absolute;
+        top: 280px;
+        right: 194px;
+    }
+    @include maxQuery(1800){
+        .bannerv18-mainthumb{
+            right: 91px;
+            max-width: 550px;
+        }
+    }
+    @include maxQuery(1399){
+        .v18-shapee{
+            display: none;
+        }
+        .v18-shaper{
+            bottom: 220px;
+            width: 60px;
+        }
+        .banner-arrowv18{
+            position: absolute;
+            top: 80px;
+            right: 30%;
+        }
+        .bannerv18-mainthumb{
+            right: 60px;
+            max-width: 480px;
+            z-index: -1;
+        }
+    }
+    @include maxQuery(1199){
+        .banner-arrowv18{
+            position: absolute;
+            top: 0px;
+            right: 30%;
+        }
+        .call-sunv18{
+            top: 100px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+        }
+        .banner-reviewer18{
+            right: 120px;
+            top: 200px;
+        }
+    }
+    @include maxQuery(991){
+        .v18-shaper{
+            bottom: 160px;
+            width: 50px;
+        }
+        .banner-arrowv18{
+            position: absolute;
+            top: 50px;
+            right: 20%;
+            width: 120px;
+        }
+        .call-sunv18{
+            top: 150px;
+            right: 40px;
+            width: 60px;
+            height: 60px;
+        }
+        .banner-reviewer18{
+            position: initial;
+            margin-left: 14px;
+            margin-top: 28px;
+        }
+        .bannerv18-mainthumb{
+            right: 60px;
+            max-width: 400px;
+        }
+    }
+    @include maxQuery(767){
+        .banner-arrowv18{
+            top: 50px;
+            right: 10%;
+        }
+        .bannerv18-mainthumb{
+            right: 40px;
+            max-width: 300px;
+        }
+    }
+    @include maxQuery(575){
+        .v18-shaper{
+            display: none;
+        }
+        .banner-arrowv18{
+           display: none;
+        }
+        .call-sunv18{
+            display: none;
+        }
+        .game-line{
+            display: none;
+        }
+        .bannerv18-mainthumb{
+            right: 0px;
+            max-width: 300px;
+            position: initial;
+            width: 100%;
+            margin-left: 14px;
+            margin: 24px auto -80px auto;
+        }
+    }
+}
+.banner-v18wraper{
+    .banner-content-v18{
+        .game-line{
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            svg{
+                width: 100%;
+            }
+        }
+    }
+}
+//Banner version 18

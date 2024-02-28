@@ -1564,6 +1564,11 @@ iframe {
 		transform: rotate(10deg);
 	}
 }
+@keyframes infinite-circle {
+	100%{
+		transform: rotate(3602deg);
+	}
+}
 // cmn body scroll body btn
 
 // swiper slider btn
