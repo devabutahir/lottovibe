@@ -2990,3 +2990,145 @@
     }
 }
 //Banner version 16
+
+//Banner version 17
+.banner-section-v17{
+    .bannerv17-shape{
+        position: absolute;
+        left: 0;
+        bottom: 200px;
+    }
+    .call-sunv17{
+        position: absolute;
+        left: 186px;
+        top: 205px;
+        animation: zin 2s linear infinite;
+    }
+    .banner-arrowv17{
+        position: absolute;
+        bottom: 0;
+        left: 120px;
+    }
+    @include maxQuery(1600){
+        .call-sunv17{
+            left:80px;
+            top: 120px;
+            width: 120px;
+        } 
+    }
+    @include maxQuery(1199){
+        .call-sunv17{
+            left: 60px;
+            top: 80px;
+            width: 90px;
+        } 
+    }
+    @include maxQuery(991){
+        .banner-arrowv17{
+            display: none;
+        }
+    }
+    @include maxQuery(575){
+        .call-sunv17{
+            display: none;
+        }
+    }
+}
+.banner-v17wraper{
+    .banner-content-v17{
+       .game-line{
+        position: absolute;
+        bottom: -31px;
+        left: 0;
+        svg{
+            width: 100%;
+        }
+       } 
+       @include maxQuery(575){
+        .game-line{
+            display: none;
+        }
+       }
+    }
+}
+.bannerv17-trophy-wrap{
+    padding: 0 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .trophyv17-thumb{
+        max-width: 620px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+    .customer-reviewv17{
+        width: 81px;
+        margin: 0 auto;
+        li{
+            &:not(:first-child){
+                margin-top: -15px;
+            }
+            a{
+                @include box(60);
+                img{
+                    @include box(57);
+                }
+            }
+            .customer-revew-item{
+                z-index: 1;
+                position: relative;
+                .customer-ratting{
+                    @include box(56);
+                }
+            }
+        }
+    }
+    .active-userv17{
+        color: rgba(255, 255, 255, 0.70);
+        display: flex;
+        align-items: center;
+        padding-left: 14px;
+        &::before{
+            position: absolute;
+            left: 0;
+            content: "";
+            background: var(--p1);
+            @include box(8);
+            border-radius: 50%;
+        }
+    }
+    .bn1-odometer{
+        position: absolute;
+        right: 0;
+        bottom: 107px;
+    }
+    @include maxQuery(991){
+        .trophyv17-thumb{
+            max-width: 420px;
+            margin: 0 auto;
+        }
+    }
+    @include maxQuery(767){
+        .trophyv17-thumb{
+            max-width: 280px;
+            margin: 0 auto;
+            padding-right: 40px;
+        }
+        .bn1-odometer{
+            bottom: 70px;
+        }
+    }
+    @include maxQuery(450){
+        .trophyv17-thumb{
+            display: none;
+        }
+    }
+}
+@keyframes zin {
+    50%{
+        transform: scale(1.1);
+    }
+}
+//Banner version 17

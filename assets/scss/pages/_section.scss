@@ -455,6 +455,32 @@
 }
 //limit-timev16
 
+//limit-timev17
+.current-lottery-itemv17{
+    .current-l-badgev11{
+        bottom: -20px !important;
+    }
+    .current-l-badge{
+        .cmn-draw-badge{
+            transition: all 0.5s;
+        }
+    }
+    &:hover{
+        .current-l-badge{
+            .cmn-draw-badge{
+                background: var(--act4);
+            }
+        }
+        .kewta-btn{
+            .kew-arrow,
+            .kew-text{
+                background: var(--act4);
+            }
+        }
+    }
+}
+//limit-timev17
+
 //Howit Section
 .howit-work-section{
     .howit-video{

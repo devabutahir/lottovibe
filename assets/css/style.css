@@ -5572,6 +5572,148 @@ iframe {
   }
 }
 
+.banner-section-v17 .bannerv17-shape {
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+}
+.banner-section-v17 .call-sunv17 {
+  position: absolute;
+  left: 186px;
+  top: 205px;
+  animation: zin 2s linear infinite;
+}
+.banner-section-v17 .banner-arrowv17 {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+}
+@media (max-width: 1600px) {
+  .banner-section-v17 .call-sunv17 {
+    left: 80px;
+    top: 120px;
+    width: 120px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-section-v17 .call-sunv17 {
+    left: 60px;
+    top: 80px;
+    width: 90px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section-v17 .banner-arrowv17 {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .banner-section-v17 .call-sunv17 {
+    display: none;
+  }
+}
+
+.banner-v17wraper .banner-content-v17 .game-line {
+  position: absolute;
+  bottom: -31px;
+  left: 0;
+}
+.banner-v17wraper .banner-content-v17 .game-line svg {
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .banner-v17wraper .banner-content-v17 .game-line {
+    display: none;
+  }
+}
+
+.bannerv17-trophy-wrap {
+  padding: 0 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.bannerv17-trophy-wrap .trophyv17-thumb {
+  max-width: 620px;
+  margin: 0 auto;
+}
+.bannerv17-trophy-wrap .trophyv17-thumb img {
+  width: 100%;
+}
+.bannerv17-trophy-wrap .customer-reviewv17 {
+  width: 81px;
+  margin: 0 auto;
+}
+.bannerv17-trophy-wrap .customer-reviewv17 li:not(:first-child) {
+  margin-top: -15px;
+}
+.bannerv17-trophy-wrap .customer-reviewv17 li a {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+}
+.bannerv17-trophy-wrap .customer-reviewv17 li a img {
+  width: 57px;
+  min-width: 57px;
+  height: 57px;
+}
+.bannerv17-trophy-wrap .customer-reviewv17 li .customer-revew-item {
+  z-index: 1;
+  position: relative;
+}
+.bannerv17-trophy-wrap .customer-reviewv17 li .customer-revew-item .customer-ratting {
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+}
+.bannerv17-trophy-wrap .active-userv17 {
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+}
+.bannerv17-trophy-wrap .active-userv17::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  background: var(--p1);
+  width: 8px;
+  min-width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.bannerv17-trophy-wrap .bn1-odometer {
+  position: absolute;
+  right: 0;
+  bottom: 107px;
+}
+@media (max-width: 991px) {
+  .bannerv17-trophy-wrap .trophyv17-thumb {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .bannerv17-trophy-wrap .trophyv17-thumb {
+    max-width: 280px;
+    margin: 0 auto;
+    padding-right: 40px;
+  }
+  .bannerv17-trophy-wrap .bn1-odometer {
+    bottom: 70px;
+  }
+}
+@media (max-width: 450px) {
+  .bannerv17-trophy-wrap .trophyv17-thumb {
+    display: none;
+  }
+}
+
+@keyframes zin {
+  50% {
+    transform: scale(1.1);
+  }
+}
 .header-fixed {
   position: fixed;
   top: 0px;
@@ -7337,6 +7479,20 @@ iframe {
   transition: all 0.4s;
 }
 .limited-lotteryv16 .current-lottery-itemv13:hover .n4-bg {
+  background: var(--act4);
+}
+
+.current-lottery-itemv17 .current-l-badgev11 {
+  bottom: -20px !important;
+}
+.current-lottery-itemv17 .current-l-badge .cmn-draw-badge {
+  transition: all 0.5s;
+}
+.current-lottery-itemv17:hover .current-l-badge .cmn-draw-badge {
+  background: var(--act4);
+}
+.current-lottery-itemv17:hover .kewta-btn .kew-arrow,
+.current-lottery-itemv17:hover .kewta-btn .kew-text {
   background: var(--act4);
 }
 
