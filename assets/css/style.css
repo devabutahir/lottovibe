@@ -6160,6 +6160,55 @@ iframe {
   }
 }
 
+.banner-section-v20 {
+  z-index: 1;
+}
+.banner-section-v20 .bannerv20-shape {
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+.banner-section-v20 .game-line {
+  position: absolute;
+  bottom: -40px;
+  left: 15px;
+}
+.banner-section-v20 .game-line svg {
+  width: 100%;
+}
+.banner-section-v20 .mouse-animation {
+  right: initial;
+  left: 70px;
+  bottom: 80px;
+}
+
+.bannerv20-thumb {
+  position: absolute;
+  right: 107px;
+  top: 52%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.bannerv20-thumb .thumb {
+  max-width: 700px;
+}
+.bannerv20-thumb .thumb img {
+  width: 100%;
+}
+.bannerv20-thumb .video-bg2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.bannerv20-thumb .video-bg2 span::after, .bannerv20-thumb .video-bg2 span::before {
+  border-color: var(--p1);
+}
+
+.next-draw-sectionv20 {
+  z-index: 1;
+  position: relative;
+}
+
 .header-fixed {
   position: fixed;
   top: 0px;
@@ -9587,6 +9636,15 @@ iframe {
 .call-superv15 {
   bottom: 30px !important;
   max-width: 278px;
+}
+
+.calto-thumb20 {
+  max-width: 400px;
+  height: 370px;
+}
+.calto-thumb20 img {
+  width: 100%;
+  height: 100%;
 }
 
 .colthing-bg {
