@@ -2397,6 +2397,26 @@
 }
 //Realestatev12 Section
 
+//Realestatev19 Section
+.current-lottery-itemv19{
+    &:hover{
+        .content-middle{
+            .kewta-btn{
+                .kew-text,
+                .kew-arrow{
+                    background: var(--act4);
+                }
+            }
+        }
+        h3{
+            a{
+                color: var(--act4);
+            }
+        }
+    }
+}
+//Realestatev19 Section
+
 //journey exting Section
 .journey-exciting{
     background: rgba(244, 244, 244, 50%);

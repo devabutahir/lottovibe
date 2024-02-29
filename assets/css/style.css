@@ -5962,6 +5962,204 @@ iframe {
   width: 100%;
 }
 
+.banner-section-v19 {
+  background: url(../../assets/images/banner/banner19-bg.png) no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+.banner-section-v19 .scroll-bn1 {
+  bottom: 49px;
+  left: 50%;
+}
+.banner-section-v19 .banner-v19wraper .banner-content-v19 .game-line {
+  position: absolute;
+  bottom: -54px;
+  left: 0;
+}
+.banner-section-v19 .banner-v19wraper .banner-content-v19 .game-line svg {
+  width: 100%;
+}
+.banner-section-v19 .bannerv19-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner-section-v19 .call-sunv19 {
+  position: absolute;
+  top: 215px;
+  left: 290px;
+  width: 90px;
+  height: 90px;
+  animation: zin 2s linear infinite;
+}
+.banner-section-v19 .call-sunv19-small {
+  position: absolute;
+  top: 290px;
+  left: 400px;
+  width: 27px;
+  height: 27px;
+  animation: zin 2s linear infinite;
+}
+.banner-section-v19 .banner-arrowv19 {
+  position: absolute;
+  top: 37%;
+  right: 20%;
+}
+.banner-section-v19 .ball19-shape {
+  position: absolute;
+  left: 0;
+  top: 290px;
+  z-index: -1;
+}
+.banner-section-v19 .ball19-shape2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+@media (max-width: 1800px) {
+  .banner-section-v19 .banner-arrowv19 {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+}
+@media (max-width: 1750px) {
+  .banner-section-v19 .ball19-shape {
+    top: 290px;
+    width: 240px;
+  }
+  .banner-section-v19 .ball19-shape2 {
+    width: 240px;
+    top: 50px;
+  }
+}
+@media (max-width: 1399px) {
+  .banner-section-v19 .call-sunv19 {
+    top: 120px;
+    left: 90px;
+  }
+  .banner-section-v19 .call-sunv19-small {
+    top: 180px;
+    left: 200px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-section-v19 .scroll-bn1 {
+    bottom: 8px;
+    left: 50%;
+  }
+  .banner-section-v19 .ball19-shape {
+    top: 290px;
+    width: 200px;
+  }
+  .banner-section-v19 .ball19-shape2 {
+    width: 200px;
+    top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-section-v19 .ball19-shape {
+    display: none;
+  }
+  .banner-section-v19 .banner-arrowv19 {
+    top: 30%;
+    right: 4%;
+    width: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section-v19 .ball19-shape2 {
+    width: 120px;
+    top: 50px;
+  }
+  .banner-section-v19 .call-sunv19 {
+    top: 80px;
+    left: 40px;
+  }
+  .banner-section-v19 .call-sunv19-small {
+    top: 140px;
+    left: 160px;
+  }
+  .banner-section-v19 .banner-arrowv19 {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .banner-section-v19 .call-sunv19 {
+    display: none;
+  }
+  .banner-section-v19 .call-sunv19-small {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .banner-section-v19 .ball19-shape2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1399px) {
+  .banner-content-v19 .display-one {
+    font-size: 70px;
+  }
+  .banner-content-v19 .game-line {
+    bottom: -38px !important;
+  }
+}
+@media (max-width: 767px) {
+  .banner-content-v19 .display-one {
+    font-size: 48px;
+  }
+  .banner-content-v19 .game-line {
+    bottom: -30px !important;
+  }
+}
+@media (max-width: 500px) {
+  .banner-content-v19 .display-one {
+    font-size: 36px;
+  }
+  .banner-content-v19 .game-line {
+    display: none;
+  }
+}
+
+.banner19-thumb {
+  position: absolute;
+  bottom: -10px;
+  right: 17px;
+  max-width: 650px;
+  z-index: -1;
+}
+.banner19-thumb img {
+  width: 100%;
+}
+@media (max-width: 1700px) {
+  .banner19-thumb {
+    max-width: 500px;
+  }
+}
+@media (max-width: 1399px) {
+  .banner19-thumb {
+    max-width: 390px;
+  }
+}
+@media (max-width: 1199px) {
+  .banner19-thumb {
+    max-width: 300px;
+  }
+}
+@media (max-width: 991px) {
+  .banner19-thumb {
+    max-width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .banner19-thumb {
+    display: none;
+  }
+}
+
 .header-fixed {
   position: fixed;
   top: 0px;
@@ -9564,6 +9762,14 @@ iframe {
 }
 .range-custom-act12 .curs-range::before {
   top: 4px;
+}
+
+.current-lottery-itemv19:hover .content-middle .kewta-btn .kew-text,
+.current-lottery-itemv19:hover .content-middle .kewta-btn .kew-arrow {
+  background: var(--act4);
+}
+.current-lottery-itemv19:hover h3 a {
+  color: var(--act4);
 }
 
 .journey-exciting {
