@@ -3603,6 +3603,8 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        width: 800px;
+        height: 800px;
         span{
             &::after,
             &::before{
