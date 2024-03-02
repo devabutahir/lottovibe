@@ -1,5 +1,26 @@
 
 
+//About Section
+.about-wrapper-core{
+    padding: 0 20px;
+}
+.about-winner-countitem{
+    .icon{
+        @include box(120);
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+    @include maxQuery(1199){
+        .icon{
+            @include box(80);
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
+//About Section
+
 //luxury  selection car 
 .luxury-selection-v1{
     .click-slideluxry-button{

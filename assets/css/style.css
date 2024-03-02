@@ -2523,6 +2523,65 @@ iframe {
     transform: rotate(180deg);
   }
 }
+.banner-bredcrumbs {
+  z-index: 1;
+}
+.banner-bredcrumbs .ball-shape-breadcrumb {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: -1;
+  width: 400px;
+}
+.banner-bredcrumbs .ball-circle-breadcrumb {
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  animation: balls 30s linear infinite;
+}
+.banner-bredcrumbs .shape-breadcrumbright {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+@media (max-width: 1399px) {
+  .banner-bredcrumbs .ball-shape-breadcrumb {
+    top: 80px;
+    left: 0;
+    width: 250px;
+  }
+  .banner-bredcrumbs .ball-circle-breadcrumb {
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .banner-bredcrumbs .ball-shape-breadcrumb {
+    top: 60px;
+    width: 160px;
+  }
+  .banner-bredcrumbs .ball-circle-breadcrumb {
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .banner-bredcrumbs .ball-shape-breadcrumb {
+    display: none;
+  }
+  .banner-bredcrumbs .ball-circle-breadcrumb {
+    right: 5px;
+    bottom: 5px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .banner-section-v1 {
   z-index: 1;
 }
@@ -7595,6 +7654,28 @@ iframe {
 
 .footer-explore-v7 .kewta-btn {
   transform: rotate(-40deg);
+}
+
+.about-wrapper-core {
+  padding: 0 20px;
+}
+
+.about-winner-countitem .icon {
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+@media (max-width: 1199px) {
+  .about-winner-countitem .icon {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+  }
+  .about-winner-countitem .icon img {
+    width: 50px;
+  }
 }
 
 .luxury-selection-v1 .click-slideluxry-button {

@@ -1,3 +1,64 @@
+//Breadcrums banner
+.banner-bredcrumbs{
+    z-index: 1;
+    .ball-shape-breadcrumb{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: -1;
+        width: 400px;
+    }
+    .ball-circle-breadcrumb{
+        position: absolute;
+        right: 60px;
+        bottom: 60px;
+        animation: balls 30s linear infinite;
+    }
+    .shape-breadcrumbright{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+    @include maxQuery(1399){
+        .ball-shape-breadcrumb{
+            top: 80px;
+            left: 0;
+            width: 250px;
+        }
+        .ball-circle-breadcrumb{
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    @include maxQuery(991){
+        .ball-shape-breadcrumb{
+            top: 60px;
+            width: 160px;
+        }
+        .ball-circle-breadcrumb{
+            right: 10px;
+            bottom: 10px;
+            width: 50px;
+            height: 50px;
+        } 
+    }
+    @include maxQuery(550){
+        .ball-shape-breadcrumb{
+            display: none;
+        }
+        .ball-circle-breadcrumb{
+            right: 5px;
+            bottom: 5px;
+            width: 40px;
+            height: 40px;
+        } 
+    }
+}
+//Breadcrums banner
+
 //Banner styel version One
 .banner-section-v1{
     z-index: 1;
