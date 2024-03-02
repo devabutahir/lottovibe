@@ -3586,6 +3586,20 @@
         left: 70px;
         bottom: 80px;
     }
+    @include maxQuery(1600){
+        .mouse-animation{
+            left: 50%;
+            bottom: 10px;
+            transform: translateX(-50%);
+        }
+    }
+    @include maxQuery(991){
+        .mouse-animation{
+            .m-aniline{
+                display: none;
+            }
+        }
+    }
 }
 .bannerv20-thumb{
     position: absolute;
@@ -3603,13 +3617,33 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 800px;
-        height: 800px;
         span{
             &::after,
             &::before{
+                animation: videoTwo4 8s linear infinite;
                 border-color: var(--p1);
             }
+        }
+    }
+    @include maxQuery(1600){
+        right: 20px;
+        top: 52%;
+        .thumb{
+            max-width: 450px;
+            img{
+               width: 100%;
+            }
+        }
+    }
+    @include maxQuery(991){
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+        .thumb{
+            margin: 30px auto 0;
+            padding: 0 24px;
+            z-index: 3;
         }
     }
 }

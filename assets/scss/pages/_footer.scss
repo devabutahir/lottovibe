@@ -194,6 +194,34 @@
       height: 300px;
     }
   }
+
+  @keyframes videoTwo4 {
+    0% {
+      transform: translate(-50%, -50%) scale(2.3);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(4);
+      opacity: 0;
+      width: 300px;
+      height: 300px;
+    }
+  }
+  @include maxQuery(1600){
+    @keyframes videoTwo4 {
+        0% {
+          transform: translate(-50%, -50%) scale(2.3);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(3);
+          opacity: 0;
+          width: 300px;
+          height: 300px;
+        }
+      }  
+  }
+
   //common animation Two
   .video-bg2 span {
     position: absolute;

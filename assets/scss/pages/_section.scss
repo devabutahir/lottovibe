@@ -583,6 +583,25 @@
 }
 //Howit Sectionv10
 
+//work global dot
+.step-donglobal{
+    position: absolute;
+    left: 290px;
+    top: 40px;
+    width: 230px;
+    @include maxQuery(1399){
+        left: 280px;
+        width: 160px;
+    }
+    @include maxQuery(1199){
+        left: 210px;
+    }
+    @include maxQuery(991){
+        display: none;
+    }
+}
+//work global dot
+
 //Current lottery Section
 .browse-more{
     .cmn__collection{

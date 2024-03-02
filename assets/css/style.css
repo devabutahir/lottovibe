@@ -6181,6 +6181,18 @@ iframe {
   left: 70px;
   bottom: 80px;
 }
+@media (max-width: 1600px) {
+  .banner-section-v20 .mouse-animation {
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 991px) {
+  .banner-section-v20 .mouse-animation .m-aniline {
+    display: none;
+  }
+}
 
 .bannerv20-thumb {
   position: absolute;
@@ -6199,11 +6211,35 @@ iframe {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 800px;
-  height: 800px;
 }
 .bannerv20-thumb .video-bg2 span::after, .bannerv20-thumb .video-bg2 span::before {
+  animation: videoTwo4 8s linear infinite;
   border-color: var(--p1);
+}
+@media (max-width: 1600px) {
+  .bannerv20-thumb {
+    right: 20px;
+    top: 52%;
+  }
+  .bannerv20-thumb .thumb {
+    max-width: 450px;
+  }
+  .bannerv20-thumb .thumb img {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .bannerv20-thumb {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+  }
+  .bannerv20-thumb .thumb {
+    margin: 30px auto 0;
+    padding: 0 24px;
+    z-index: 3;
+  }
 }
 
 .next-draw-sectionv20 {
@@ -6903,6 +6939,32 @@ iframe {
     opacity: 0;
     width: 300px;
     height: 300px;
+  }
+}
+@keyframes videoTwo4 {
+  0% {
+    transform: translate(-50%, -50%) scale(2.3);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 1600px) {
+  @keyframes videoTwo4 {
+    0% {
+      transform: translate(-50%, -50%) scale(2.3);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+      width: 300px;
+      height: 300px;
+    }
   }
 }
 .video-bg2 span {
@@ -8080,6 +8142,29 @@ iframe {
 @media (max-width: 1399px) {
   .howit-work-sectionv10 .work-item1 .icons-step svg {
     width: 20px;
+  }
+}
+
+.step-donglobal {
+  position: absolute;
+  left: 290px;
+  top: 40px;
+  width: 230px;
+}
+@media (max-width: 1399px) {
+  .step-donglobal {
+    left: 280px;
+    width: 160px;
+  }
+}
+@media (max-width: 1199px) {
+  .step-donglobal {
+    left: 210px;
+  }
+}
+@media (max-width: 991px) {
+  .step-donglobal {
+    display: none;
   }
 }
 
