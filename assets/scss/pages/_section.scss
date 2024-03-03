@@ -2820,6 +2820,21 @@
 }
 //Blog Details
 
+//Latest Popularity
+.showing-sort{
+    .nice-select{
+        border: 1px solid rgba(78, 78, 78, 0.50);
+        padding: 10px 20px;
+        max-width: 273px;
+        border-radius: 12px;
+        .list{
+            background: var(--n0);
+            padding: 8px 14px;
+        }
+    }
+}
+//Latest Popularity
+
 //question faq Section
 .question-section{
     background: rgba(244, 244, 244, 0.50);
