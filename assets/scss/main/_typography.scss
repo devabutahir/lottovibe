@@ -246,6 +246,22 @@ li {
 	opacity: 0.1;
 }
 
+//Custom Pagination
+.custom-pagination{
+	li{
+		a{
+			&:hover,
+			&:active{
+				background: var(--p1);
+				color: var(--n4);
+				i{
+					color: var(--n4);
+				}
+			}
+		}
+	}
+}
+
 //Default all responsive
 //max 1399
 @media (max-width: 1399px) {
