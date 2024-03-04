@@ -1290,6 +1290,26 @@ iframe {
 	}
 }
 
+//Tab Common
+.example-common-button{
+	.tablinks{
+		.nav-links{
+			width: 100%;
+			transition: all 0.5s;
+			.tablink{
+				transition: all 0.5s;
+			}
+			&.active{
+				.tablink{
+					background: var(--act4);
+					color: var(--n0);
+				}
+			}
+		}
+	}
+}
+//Tab Common
+
 // Pagination
 .pagination{
 	li{
