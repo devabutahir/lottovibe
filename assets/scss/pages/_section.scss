@@ -1097,14 +1097,23 @@
         @include box(80);
         font-size: 40px;
     }
+    .icon-big{
+        @include box(100);
+    }
     @include maxQuery(1399){
         .icon{
             @include box(60);
             font-size: 36px;
         }
+        .icon-big{
+            @include box(60);
+        }
     }
     p{
         max-width: 238px;
+    }
+    .cont-big{
+        max-width: 301px;
     }
 }
 .s1-texthover{
@@ -2961,6 +2970,237 @@
 }
 //Contest Details
 
+//Basket section
+.thumb-basket{
+    width: 170px;
+    min-width: 170px;
+    height: 135px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #E9F2FF;
+    padding: 8px;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: var(--s1);
+        clip-path: polygon(0 0, 100% 0%, 0 100%, 0% 100%);
+        z-index: -1;
+    }
+}
+.basket-wrapper{
+    .basket-items{
+        .basket-thumb{
+            max-width: 620px;
+        }
+        .basket-content-area{
+            width: 597px;
+            .cmn-time{
+                @include box(48);
+            }
+        }
+        .border-clrn3{
+            border: 1px solid var(--n3) !important;
+        }
+    }
+    @include maxQuery(1199){
+        .basket-items{
+            .basket-thumb{
+                max-width: 620px;
+            }
+            .basket-content-area{
+                width: 358px;
+                .cmn-time{
+                    @include box(38);
+                }
+            }
+        }
+        .thumb-basket{
+            width: 100px;
+            min-width: 100px;
+            height: 90px;
+            padding: 6px;
+        }
+    }
+    @include maxQuery(767){
+        
+    }
+}
+.quantity-basket{
+    form{
+        .qty{
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--nw4);
+            border-radius: 12px;
+            button,
+            input{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--n4);
+                font-weight: 700;
+                font-size: 20px;
+            }
+            button{
+                width: 60px;
+                height: 60px;
+            }
+            input{
+                width: 78px;
+                height: 60px;
+                text-align: center;
+                border-radius: 0;
+                border: unset;
+                outline: none;
+            }
+            .qtyminus{
+                border-right: 1px solid var(--nw4);
+            }
+            .qtyplus{
+                border-left: 1px solid var(--nw4);
+            }
+        }
+        @include maxQuery(1199){
+            .qty{
+                button,
+                input{
+                    font-size: 16px;
+                }
+                button{
+                    width: 40px;
+                    height: 40px;
+                }
+                input{
+                    width: 58px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+.coupon-code{
+    form{
+        border-radius: 12px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        input{
+            border: 1px solid var(--nw4);
+            background: rgba(239, 239, 239, 0.20);
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            height: 60px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        button{
+            height: 60px;
+            min-width: 180px;
+            padding: 2px;
+        }
+        @include maxQuery(1199){
+            input{
+                height: 48px;
+                width: 140px;
+            }
+            button{
+                height: 48px;
+                min-width: 136px;
+                padding: 2px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.total-pricewrap{
+    width: 303px;
+}
+//Basket section
+
+//Checkout section
+.checkout-carslide-wrap{
+    background: var(--s1);
+    border-radius: 12px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ch-carslide-item{
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 20px 5px;
+        img{
+            width: 100%;
+        }
+    }
+    @include maxQuery(1199){
+        height: 220px;
+    }
+}
+.ch-condition{
+    .checkbox-single{
+        .checkmark{
+            border: 1px solid var(--nw4);
+            border-radius: 4px;
+        }
+    }
+}
+.swiper-pagination-ch{
+    z-index: 2;
+    position: absolute;
+    bottom: 20px !important;
+    left: 40% !important;
+    .swiper-pagination-bullet{
+        width: 15px;
+        border-radius: 0;
+        opacity: 1;
+        transition: all 0.5s;
+        height: 8px;
+        background: var(--nw1);
+        border-radius: 10px;
+        opacity: 50%;
+        &.swiper-pagination-bullet-active{
+            background: var(--nw1);
+            opacity: 1;
+            width: 26px;
+        }
+    }
+
+}
+.checkout-informationwrap{
+    .ch-form-one{
+        .ch-form-items{
+            input{
+                border: 1px solid var(--nw4);
+                outline: none;
+                padding: 12px 16px;
+                border-radius: 12px;
+            }
+        }
+    }
+    .delivery-method{
+        .icon{
+            transition: all 0.4s;
+        }
+        &:hover{
+            .icon{
+                background: var(--p1);
+            }
+        }
+    }
+}
+.pays{
+    &:hover{
+        border: 1px solid var(--p1) !important;
+    }
+}
+//Checkout section
+
 //question faq Section
 .question-section{
     background: rgba(244, 244, 244, 0.50);
@@ -4064,6 +4304,38 @@
     }
 }
 //Bicycle winv4 Section
+
+//Contact Section
+.max-340{
+    max-width: 340px;
+}
+.contact-cont-items{
+    .icon{
+        @include box(80);
+    }
+    @include maxQuery(1399){
+        .icon{
+            @include box(70);
+        }  
+    }
+    @include maxQuery(1199){
+        .icon{
+            @include box(60);
+        }  
+    }
+}
+.contact-form{
+    input,
+    textarea{
+        padding: 11px 0;
+        border: unset;
+        border-radius: 0;
+        color: var(--n3);
+        border-bottom: 1px solid var(--nw4);
+        outline: none;
+    }
+}
+//Contact Section
 
 
 

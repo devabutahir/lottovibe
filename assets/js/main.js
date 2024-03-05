@@ -164,6 +164,44 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
         });
+        //checkout car slide
+        var swiper = new Swiper(".checkout-carslide-wrap", {
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 14,
+          speed: 4500,
+          autoplay: false,
+          autoplay: {
+            delay: 100,
+          },
+          pagination: {
+            el: ".swiper-pagination-ch",
+            clickable: true
+          },
+          breakpoints: {
+            1400: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            992: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            576: {
+                slidesPerView: 1,
+                spaceBetween: 14,
+            },
+            500: {
+              slidesPerView: 1,
+              spaceBetween: 14,
+            },
+        }
+        });
+        
         // banner Bike one slide //
         var swiper = new Swiper(".banner-bikeslide-wrap", {
           loop: true,
@@ -240,6 +278,44 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
         });
+        //luxury bike-onefixed selection
+        var swiper = new Swiper(".bike-onefixed", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 24,
+          speed: 1500,
+          navigation: {
+            nextEl: ".swiper-button-prevteam",
+            prevEl: ".swiper-button-nextteam",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          breakpoints: {
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 14,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 14,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 14,
+            },
+            500: {
+              slidesPerView: 1,
+              spaceBetween: 14,
+            },
+        }
+        });
         //luxury selection
         var swiper = new Swiper(".luxury-selectionwrap1", {
           loop: true,
@@ -271,6 +347,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         //Bike Working win Slider
         var swiper = new Swiper(".bikeworking-wrap", {
+          loop: false,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 50,
+          direction: "vertical",
+          autoHeight: true,
+          mousewheel: true,
+          speed: 1000,
+          pagination: {
+            el: ".swiper-pagination-workguide",
+            clickable: true
+          },
+          autoplay: {
+            delay: 3000,
+          },
+        });
+        //bikeworking-wrap-howtoplay
+        var swiper = new Swiper(".bikeworking-wrap-howtoplay", {
           loop: false,
           slidesPerView: 1,
           slidesToShow: 1,
@@ -642,6 +736,45 @@ document.addEventListener("DOMContentLoaded", function () {
       //nice select
       $('select').niceSelect();
 
+      //Quantity 
+      var inputs = document.querySelectorAll('#qty, #qty2, #qty3');
+      var btnminus = document.querySelectorAll('.qtyminus');
+      var btnplus = document.querySelectorAll('.qtyplus');
+
+      if (inputs.length > 0 && btnminus.length > 0 && btnplus.length > 0) {
+        
+        inputs.forEach(function(input, index) {
+          var min = Number(input.getAttribute('min'));
+          var max = Number(input.getAttribute('max'));
+          var step = Number(input.getAttribute('step'));
+
+          function qtyminus(e) {
+            var current = Number(input.value);
+            var newval = (current - step);
+            if(newval < min) {
+              newval = min;
+            } else if(newval > max) {
+              newval = max;
+            } 
+            input.value = Number(newval);
+            e.preventDefault();
+          }
+
+          function qtyplus(e) {
+            var current = Number(input.value);
+            var newval = (current + step);
+            if(newval > max) newval = max;
+            input.value = Number(newval);
+            e.preventDefault();
+          }
+            
+          btnminus[index].addEventListener('click', qtyminus);
+          btnplus[index].addEventListener('click', qtyplus);
+        });
+      }
+
+      //Quantity 
+
 
 
       // Mouse Follower Hide Function //
@@ -760,25 +893,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-  //quantity //
-  // function increaseCount(a, b) {
-  //   var input = b.previousElementSibling;
-  //   var value = parseInt(input.value, 10);
-  //   value = isNaN(value) ? 0 : value;
-  //   value++;
-  //   input.value = value;
-  // }
-  // function decreaseCount(a, b) {
-  //   var input = b.nextElementSibling;
-  //   var value = parseInt(input.value, 10);
-  //   if (value > 1) {
-  //     value = isNaN(value) ? 0 : value;
-  //     value--;
-  //     input.value = value;
-  //   }
-  // }    
-  //quantity //
 
 
