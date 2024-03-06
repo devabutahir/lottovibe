@@ -1079,6 +1079,333 @@
 }
 //Current lotteryv13 Section
 
+//Winner List Section
+.check-lotterywrap{
+    transform: translateY(140px);
+    margin-top: -140px;
+    p{
+        max-width: 340px;
+    }
+    .check-lottery-inner{
+        display: flex;
+        align-items: center;
+        gap: 37px;
+        .contest-numberwrap{
+            display: flex;
+            align-items: center;
+            gap: 37px;
+            .conts-number{
+                max-width: 260px;
+                input{
+                    border-radius: 12px;
+                    border: 1px solid var(--n2);
+                    color: rgba(0, 0, 0, 0.6);
+                    height: 58px;
+                }
+                &::placeholder{
+                    color: rgba(0, 0, 0, 0.6);
+                }
+            }
+            .m-number{
+                input{
+                    width: 58px;
+                    height: 58px;
+                    text-align: center;
+                    border: 1px solid var(--n4);
+                    border-radius: 12px;
+                    color: var(--n4);
+                    font-style: 18px;
+                    font-weight: 700;
+                    padding: 1px 4px;
+                }
+                &::placeholder{
+                    color: var(--n4);
+                }
+            }
+        }
+        .daysper{
+            .nice-select{
+                width: 270px;
+                border: 1px solid var(--n4);
+                height: 58px;
+                padding: 8px 14px;
+                border-radius: 12px;
+                .list{
+                    background: var(--n0);
+                    padding: 8px 10px;
+                    li{
+                        color: var(--n4);
+                    }
+                }
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .check-lottery-inner{
+            gap: 18px;
+            .contest-numberwrap{
+                gap: 18px;
+            }
+            .daysper{
+                .nice-select{
+                    width: 200px;
+                    .list{
+                        padding: 8px 10px;
+                    }
+                }
+            }
+        }
+    }
+    @include maxQuery(1199){
+        transform: translateY(0px);
+        margin-top: -0px;
+        margin-bottom: 24px;
+    }
+    @include maxQuery(991){
+        .check-lottery-inner{
+            gap: 14px;
+            .contest-numberwrap{
+                gap: 14px;
+                .m-number{
+                    input{
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+            }
+            .daysper{
+                .nice-select{
+                    width: 170px;
+                    .list{
+                        padding: 8px 10px;
+                    }
+                }
+            }
+        }
+    }
+    @include maxQuery(767){
+        .check-lottery-inner{
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            .contest-numberwrap{
+                gap: 14px;
+                flex-wrap: wrap;
+                justify-content: center;
+                .m-number{
+                    input{
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+            }
+            .daysper{
+                .nice-select{
+                    width: 170px;
+                    .list{
+                        padding: 8px 10px;
+                    }
+                }
+            }
+        }
+    }
+    @include maxQuery(400){
+        .check-lottery-inner{
+            .contest-numberwrap{
+                .m-number{
+                    input{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+.winner-custom-space{
+    @include minQuery(1199){
+        margin-top: 120px;
+    }
+}
+.winner-main-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    .thumb-basket{
+        width: 295px;
+        height: 273px;
+        img{
+            width: 260px;
+            height: 158px;
+        }
+    }
+    .content{
+        width: 305px;
+    }
+    .win-man{
+        width: 170px;
+    }
+    @include maxQuery(1199){
+        justify-content: center;
+        @include minQuery(991){
+            gap: 14px;
+            .thumb-basket{
+                width: 155px;
+                img{
+                    width: 260px;
+                    height: 158px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    @include maxQuery(991){
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        .thumb-basket{
+            width: 280px;
+            height: 203px;
+            margin: 0 auto;
+            img{
+                width: 260px;
+                height: 158px;
+            }
+        }
+        .content{
+            width: 290px;
+        }
+    }
+}
+.biggest-winnerwrap-box{
+    background: rgba(255, 101, 14, 10%);
+}
+.biggest-winner-slide-items{
+    .thumb{
+        padding-top: 20px;
+        .head-badge{
+         position: absolute;
+         top: 0px;
+         left: 58px;
+         z-index: 2;
+        } 
+        width: 200px;
+    }
+    .designation{
+        margin-top: -50px;
+        z-index: 2;
+        position: relative;
+        .car{
+            @include box(80);
+            img{
+                width: 60px;
+            }
+        }
+    }
+}
+.biggest-winner-sldewrap{
+    .click-slideluxry-button{
+        position: absolute;
+        z-index: 2;
+        top: 190px;
+    }
+    @include maxQuery(1199){
+        .click-slideluxry-button{
+            position: absolute;
+            z-index: 2;
+            top: 220px;
+        }
+    }
+}
+//Winner List Section
+
+//Multiple Benifit Section
+.multiple-bitems{
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+    .icons{
+        @include box(100);
+        .badges{
+           top: -10px;
+           left: -10px;
+        }
+    }
+    h4{
+        max-width: 270px;
+        margin: 0 auto;
+    }
+    @include maxQuery(1399){
+        .icons{
+            @include box(80);
+        }
+    }
+}
+//Multiple Benifit Section
+
+//Terms Condition Section
+.total-termswrap{
+    .total-terms{
+        .term-list{
+            li{
+                &::before{
+                    position: absolute;
+                    content: "";
+                    top: 10px;
+                    left: 0;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: var(--n4);
+                }
+            }
+        }
+    }
+}
+//Terms Condition Section
+
+//Error Section
+.error-section{
+    height: 100vh;
+    width: 100%;
+}
+.error-wrapper{
+    .thumb{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+//Error Section
+
+//Login Section
+.login-section{
+    height: 100vh;
+    .left-logwrap{
+        height: 100vh;
+        width: 100%;
+    }
+}
+.form-cmn-action{
+    .form-cmn{
+        input,
+        textarea{
+            padding: 14px 38px 14px 18px;
+            border-radius: 12px;
+            border: 1px solid var(--nw4);
+            outline: none;
+        }
+    }
+}
+.eye-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+//Login Section
+
 //Current lotteryv14 Section
 .current-lottery-itemv14{
     .current-l-badge{

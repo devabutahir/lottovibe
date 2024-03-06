@@ -127,6 +127,24 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       // navbar custom//
 
+    // Password icon fill//
+      document.querySelectorAll(".toggle-password").forEach(function(button) {
+          button.addEventListener("click", function() {
+              console.log('toggle click');
+              this.classList.toggle("fa-eye");
+              this.classList.toggle("fa-eye-slash");
+              var inputs = document.querySelectorAll(".password-field, .password-field2, .password-field3");
+              inputs.forEach(function(input) {
+                  if (input.type === "password") {
+                      input.type = "text";
+                  } else {
+                      input.type = "password";
+                  }
+              });
+          });
+      });
+  
+
       // banner car slide //
         var swiper = new Swiper(".banner-carslide-wrap", {
           loop: true,
@@ -344,6 +362,34 @@ document.addEventListener("DOMContentLoaded", function () {
               slidesPerView: 1
             },
         }
+        });
+        var swiper = new Swiper(".biggest-winner-sldewrap", {
+          loop: true,
+          slidesPerView: 1,
+          slidesToShow: 1,
+          spaceBetween: 0,
+          speed: 1500,
+          navigation: {
+            nextEl: ".luxury-prevteam",
+            prevEl: ".luxury-nextteam",
+          },
+            breakpoints: {
+              1400: {
+                  slidesPerView: 1
+              },
+              992: {
+                  slidesPerView: 1
+              },
+              768: {
+                  slidesPerView: 1
+              },
+              576: {
+                  slidesPerView: 1
+              },
+              500: {
+                slidesPerView: 1
+              },
+          }
         });
         //Bike Working win Slider
         var swiper = new Swiper(".bikeworking-wrap", {
