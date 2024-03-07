@@ -1384,7 +1384,38 @@
     height: 100vh;
     .left-logwrap{
         height: 100vh;
-        width: 100%;
+    }
+    .log-thumbwrap{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1080px;
+        .thumb{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    @include maxQuery(1800){
+        .log-thumbwrap{
+            width: 800px;
+        }
+    }
+    @include maxQuery(1299){
+        .log-thumbwrap{
+           position: initial;
+        }
+    }
+    @include maxQuery(991){
+        height: initial;
+        .log-thumbwrap{
+            display: none;
+        }
+        .left-logwrap{
+            height: initial;
+            padding: 60px 0;
+        }
     }
 }
 .form-cmn-action{
@@ -3239,6 +3270,44 @@
             }
         }
     }
+    .quantity-basket{
+        .qty{
+            border: unset;
+        }
+        input{
+            padding: 1px 1px;
+            width: initial !important;
+        }
+        .qtyminus,
+        .qtyplus{
+            @include box(60);
+            background: var(--nw1);
+            border: unset !important;
+            border-radius: 12px;
+            @include maxQuery(1199){
+                @include box(38);
+            }
+        }
+    }
+    .scroll-price-count{
+        width: 58px;
+        border-radius: 8px;
+        position: absolute;
+        top: -50px;
+        left: 186px;
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: -10px;
+            left: 10px;
+            width: 2px;
+            height: 14px;
+            background: var(--act4);
+        }
+        @include maxQuery(1399){
+            display: none !important;
+        }
+    }
 }
 .added-ticket-modal{
     .modal-header{
@@ -3317,6 +3386,55 @@
     }
     @include maxQuery(575){
 
+    }
+}
+
+//contest details slider
+.contest-carslide-section{
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: "";
+        height: 300px;
+        background: var(--n4);
+    }
+    @include maxQuery(991){
+        &::before{
+            display: none;
+        }
+        padding-top: 70px;
+    }
+    @include maxQuery(767){
+        padding-top: 60px;
+    }
+}
+.contest-details-carslidewrap{
+    clip-path: polygon(5% 0%, 100% 0, 100% 90%, 95% 100%, 0 100%, 0% 14%);
+    .click-slideluxry-button{
+        position: absolute;
+        top: 48%;
+    }
+    @include maxQuery(1399){
+        button{
+            background: var(--act4);
+            i{
+                color: var(--n0) !important;
+            }
+        }
+    }
+    @include maxQuery(767){
+        button{
+            @include box(36);
+        }
+    }
+}
+.cons-decar-items{
+    max-width: 850px;
+    margin: 0 auto;
+    img{
+        width: 100%;
     }
 }
 //Contest Details

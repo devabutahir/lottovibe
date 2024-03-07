@@ -508,6 +508,39 @@
     </section>
     <!-- ==== Banner Breadcrumbs ==== -->
 
+    <!-- ==== Contest Details Slide ==== -->
+    <div class="contest-carslide-section position-relative">
+        <div class="container">
+            <div class="contest-details-carslidewrap position-relative biggest-winner-sldewrap s1-bg swiper py-xxl-5 py-lg-6 py-7 px-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cons-decar-items">
+                            <img src="assets/images/banner/banner-thumb-car1.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cons-decar-items">
+                            <img src="assets/images/banner/banner-car3.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="click-slideluxry-button">
+                    <div class="container">
+                        <div class="slider-btn d-inline-flex justify-content-between w-100 gap-xxl-5 gap-3" data-aos="zoom-in-down" data-aos-duration="1400">
+                            <button type="button" class="luxury-prevteam cmn-s1-slide cmn-48 act4-border p1-clr radius-circle">
+                                <i class="ph-light ph-caret-left act4-clr"></i>
+                            </button>
+                            <button type="button"  class="luxury-nextteam cmn-s1-slide cmn-48 act4-border p1-clr radius-circle">
+                                <i class="ph-light ph-caret-right act4-clr"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==== Contest Details Slide ==== -->
+
     <!-- ==== Contest Section ==== -->
     <section class="contest-details pt-120">
         <div class="container">
@@ -633,8 +666,8 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="competition-ending border radius24">
-                        <div class="conpetition-title border-bottom py-xxl-10 py-xl-7 py-6 px-xxl-8 px-xl-6">
-                            <h3 class="n4-clr mb-xxl-8 mb-xl-6 mb-5">
+                        <div class="conpetition-title border-bottom py-xxl-10 py-xl-7 py-6 px-xxl-8 px-xl-6 px-4">
+                            <h3 class="n4-clr mb-xxl-8 mb-xl-6 mb-5 text-center">
                                 This competition ends in:
                             </h3>
                         </div>
@@ -659,7 +692,7 @@
                                 <span class="curs-range"></span>
                             </div>
                         </div>
-                        <div class="ans-qustion-wrap mx-xxl-12 mx-xl-9 mx-lg-7 mx-6 mb-xxl-10 mb-6">
+                        <div class="ans-qustion-wrap mx-xxl-12 mx-xl-9 mx-lg-7 mx-sm-6 mx-2 mb-xxl-10 mb-6">
                             <span class="ans-title py-xxl-5 py-3 px-3 w-100 text-center">
                                 PLEASE ANSWER THE QUESTION
                             </span>
@@ -696,9 +729,37 @@
                                 </ul>
                             </div>
                             <div class="ans-ticket py-xxl-8 py-xl-6 py-5 px-xxl-8 px-xl-6 px-4">
-                                <h4 class="n1-clr mb-xxl-8 mb-xl-6 mb-4">
+                                <h4 class="n1-clr mb-xxl-18 mb-xl-6 mb-4">
                                     How many tickets?
                                 </h4>
+                                <div class="custom-many-ticketprice mb-xxl-8 mb-xl-7 mb-sm-6 mb-5">
+                                    <div class="range-custom mw-100 range-custom-act4 position-relative">
+                                        <span class="curs-range"></span>
+                                        <span class="scroll-price-count act4-bg py-1 px-1 d-center nw1-clr">
+                                            227
+                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mt-2">
+                                        <span class="fs-eight fw_700 n4-clr">
+                                            Ticket Sold
+                                        </span>
+                                        <span class="n4-clr soldout fw_700 fs-eight">
+                                            45% Sold
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="quantity-basket mb-xxl-15 mb-xl-10 mb-sm-8 mb-6">
+                                    <form action="">
+                                        <p class="qty d-flex align-items-center gap-2 justify-content-between">
+                                            <button class="qtyminus" aria-hidden="true">&minus;</button>
+                                            <span class="d-flex align-items-center">
+                                                <span class="n3-clr fs18 fw_600">Number of tickets: </span>
+                                                <input type="number" name="qty" id="qty" min="1" max="10" step="1" value="1">
+                                            </span>
+                                            <button class="qtyplus" aria-hidden="true">&plus;</button>
+                                        </p>
+                                    </form>	
+                                </div>
                                 <button type="button" class="act4-bg radius12 d-center w-100 nw1-clr fw_700 py-xxl-3 py-2 px-6" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Add ticket to basket
                                 </button>
