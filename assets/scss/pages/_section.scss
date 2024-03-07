@@ -1461,6 +1461,30 @@
 }
 //Login Section
 
+.tablet-custom-v1{
+    .tags-container > canvas {
+        position: relative;
+        border: unset !important;
+        border: 0 !important;
+      }
+      
+      .tags-container {
+        width: 100%;
+        height: 400px;
+        margin-top: 0vw;
+        overflow: hidden;
+        background: var(--n4);
+        transform: scale(1.001);
+    }
+    @include maxQuery(1299){
+
+    }
+}
+.tablet-section-title{
+    margin-bottom: -30px;
+}
+
+
 //Current lotteryv14 Section
 .current-lottery-itemv14{
     .current-l-badge{
