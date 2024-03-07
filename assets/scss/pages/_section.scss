@@ -1404,6 +1404,30 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.cmn-scroll-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.cmn-scroll{
+    max-width: 500px;
+    .left-logwrap{
+        background: var(--n0);
+
+    }
+}
+.ps-disitwrap{
+    input{
+        @include box(55);
+        border: 1px solid var(--nw4);
+        border-radius: 12px;
+        text-align: center;
+        outline: none;
+        padding: 3px 3px;
+        @include maxQuery(1399){
+            @include box(42);
+        }
+    }
+}
 //Login Section
 
 //Current lotteryv14 Section

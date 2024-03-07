@@ -1596,6 +1596,11 @@ iframe {
   width: 100%;
 }
 
+.cmn-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 *::-webkit-scrollbar {
   width: 2px;
   background: var(--n2);
@@ -8986,6 +8991,36 @@ iframe {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.cmn-scroll-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.cmn-scroll {
+  max-width: 500px;
+}
+.cmn-scroll .left-logwrap {
+  background: var(--n0);
+}
+
+.ps-disitwrap input {
+  width: 55px;
+  min-width: 55px;
+  height: 55px;
+  border: 1px solid var(--nw4);
+  border-radius: 12px;
+  text-align: center;
+  outline: none;
+  padding: 3px 3px;
+}
+@media (max-width: 1399px) {
+  .ps-disitwrap input {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+  }
 }
 
 .current-lottery-itemv14 .current-l-badge {
