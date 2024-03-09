@@ -731,6 +731,27 @@
 .b-one{
     border-color: var(--n2) !important;
 }
+.jewellery-custom-tablet{
+    .tags-container2 > canvas {
+        position: relative;
+        border: unset !important;
+        border: 0 !important;
+      }
+      
+      .tags-container2 {
+        width: 100%;
+        height: 400px;
+        margin-top: 0vw;
+        overflow: hidden;
+        background: var(--n4);
+        transform: scale(1.001);
+        .categories1{
+            display: none;
+        }
+    }
+}
+
+
 //footer five
 .footer-v5-item{
     .social-wrap{

@@ -3713,3 +3713,158 @@
     position: relative;
 }
 //Banner version 20
+
+
+
+//User Panel 
+.win40{
+    background: rgba(244, 244, 244, 40%);
+}
+.win40-ragba{
+    background: rgba(244, 244, 244, 100%);
+}
+.ticket-border{
+    border-bottom: 1px solid var(--nw4);
+}
+.user-panel-sidebarwrap{
+    .user-panel-sideinner{
+        .user-profile-thumb{
+            .pencil{
+               position: absolute;
+               top: -20px;
+               right: -10px; 
+               border: 1px solid var(--nw4);
+               width: 30px;
+               height: 30px;
+               cursor: pointer;
+               @include maxQuery(1399){
+                top: 0;
+                right: 0;
+               }
+            }
+        }
+    }
+}
+.my-ticket-boxwrap{
+    &::before{
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        content: "";
+        border: 1px solid var(--nw4);
+        background: rgba(244, 244, 244, 100%);
+        z-index: 9;
+    }
+    &::after{
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        content: "";
+        border: 1px solid var(--nw4);
+        background: rgba(244, 244, 244, 100%);
+        z-index: 9;
+    }
+}
+.user-text-inner{
+    .icon-rotate{
+        transform: rotate(90deg);
+    }
+        &.active,
+        &:hover{
+            background: rgba(255, 101, 14, 20%);
+            color: var(--n4);
+        }            
+}
+
+//personal info
+.cmn-box-addingbg{
+    .ch-form-one{
+        .ch-form-items{
+            input{
+                border: 1px solid var(--nw4);
+                outline: none;
+                padding: 12px 16px;
+                border-radius: 12px;
+            }
+        }
+    }
+    .checkmark{
+        border: 1px solid var(--act4) !important;
+        color: var(--act4) !important;
+        font-size: 12px !important;
+    }
+    .trans-pribox{
+        height: 191px;
+        width: 328px;
+    }
+    .deposit-box{
+        width: 200px;
+        height: 191px;
+        .icon{
+            @include box(80);
+        }
+    }
+    .table-responsive{
+        table{
+            thead{
+                tr{
+                    th{
+                        padding: 10px 24px;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    border-bottom: 1px solid var(--nw4);
+                    td{
+                        padding: 14px 24px 18px;
+                        .table-check{
+                            .checkmark{
+                                top: -15px;
+                                border-color: var(--s1) !important;
+                                color: var(--n0) !important;
+                                background-color: var(--s1) !important;
+                                font-size: 10px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include maxQuery(1399){
+        .deposit-box{
+            .icon{
+                @include box(60);
+            }
+        }
+    }
+    @include maxQuery(767){
+        .table-responsive{
+            overflow-y: scroll;
+            table{
+                width: 800px;
+            }
+        }
+        .deposit-box{
+            width: 120px;
+            height: 150px;
+            .icon{
+                @include box(60);
+            }
+        }
+        .trans-pribox{
+            height: 150px;
+            width: initial;
+        }
+    }
+}
+//User Panel 

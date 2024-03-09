@@ -251,7 +251,7 @@ li {
 	li{
 		a{
 			&:hover,
-			&:active{
+			&.active{
 				background: var(--p1);
 				color: var(--n4);
 				i{

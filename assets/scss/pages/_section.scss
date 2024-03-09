@@ -1464,8 +1464,6 @@
 .tablet-custom-v1{
     .tags-container > canvas {
         position: relative;
-        border: unset !important;
-        border: 0 !important;
       }
       
       .tags-container {
@@ -1475,9 +1473,6 @@
         overflow: hidden;
         background: var(--n4);
         transform: scale(1.001);
-    }
-    @include maxQuery(1299){
-
     }
 }
 .tablet-section-title{

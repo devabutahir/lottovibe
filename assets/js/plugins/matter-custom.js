@@ -12,7 +12,7 @@ function initSimulation() {
       world = engine.world;
 
     // Get the container element and its dimensions
-    var containerElement = document.querySelector(".tags-container");
+    var containerElement = document.querySelector(".tags-container, .tags-container2");
     var containerWidth = containerElement.clientWidth;
     var containerHeight = containerElement.clientHeight;
 
@@ -25,7 +25,6 @@ function initSimulation() {
         height: containerHeight,
         pixelRatio: 2,
         background: "rgba(0, 0, 0, 1)",
-        // background: "#fff",
         wireframes: false,
       },
     });
@@ -397,6 +396,7 @@ function initSimulation() {
       },
     );
 
+    
     // Original Shape
     // var tagFotografie = Bodies.rectangle(70, 500, 133, 40, {render: { fillStyle: tagVideos}, chamfer: {radius: 20}})
 
@@ -491,7 +491,7 @@ function initSimulation() {
   }
 
   // Get the container element
-  var containerElement = document.querySelector(".tags-container");
+  var containerElement = document.querySelector(".tags-container, .tags-container2");
 
   // Create an intersection observer
   var observer = new IntersectionObserver((entries, observer) => {
@@ -508,3 +508,6 @@ function initSimulation() {
 
   // Observe the container element
   observer.observe(containerElement);
+
+
+  
