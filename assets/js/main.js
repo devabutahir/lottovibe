@@ -715,6 +715,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       //--reply box--//
 
+      //--Copy Post--//
+      var els_copy = document.querySelectorAll("[data-copy]");
+
+      for (var i = 0; i < els_copy.length; i++) {
+        var el = els_copy[i];
+        el.addEventListener("submit", function(e) {
+          e.preventDefault();
+          var textInput = e.target.querySelector('input[type="text"]');
+          textInput.select();
+          document.execCommand("copy");
+        });
+      }
+      //--Copy Post--//
+
       // Current Year//
         $(".currentYear").text(new Date().getFullYear());
       // Current Year//

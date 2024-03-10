@@ -3867,4 +3867,52 @@
         }
     }
 }
+//Copy Partner box
+.copy-codearea{
+    form{
+        .icon-text{
+            width: 250px;
+        }
+        .minput{
+            width: 100%;
+            .in-input{
+                font-size: 16px;
+                color: var(--n3);
+                border: unset;
+                outline: none;
+            }
+        }
+        .btn-copy{
+            width: 110px;
+            padding: 10px 24px;
+            border-radius: 100px;
+            border: unset;
+            background: var(--s1);
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--nw1);
+        }
+    }
+    @include maxQuery(575){
+        form{
+            .icon-text{
+                width: initial;
+            }
+            .minput{
+                width: 100%;
+                .in-input{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+//max and min form
+.min-maxdate{
+
+    input{
+        border: unset;
+        padding: 0 0;
+    }
+}
 //User Panel 

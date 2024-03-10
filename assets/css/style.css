@@ -6463,6 +6463,45 @@ iframe {
   }
 }
 
+.copy-codearea form .icon-text {
+  width: 250px;
+}
+.copy-codearea form .minput {
+  width: 100%;
+}
+.copy-codearea form .minput .in-input {
+  font-size: 16px;
+  color: var(--n3);
+  border: unset;
+  outline: none;
+}
+.copy-codearea form .btn-copy {
+  width: 110px;
+  padding: 10px 24px;
+  border-radius: 100px;
+  border: unset;
+  background: var(--s1);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--nw1);
+}
+@media (max-width: 575px) {
+  .copy-codearea form .icon-text {
+    width: initial;
+  }
+  .copy-codearea form .minput {
+    width: 100%;
+  }
+  .copy-codearea form .minput .in-input {
+    text-align: center;
+  }
+}
+
+.min-maxdate input {
+  border: unset;
+  padding: 0 0;
+}
+
 .header-fixed {
   position: fixed;
   top: 0px;
