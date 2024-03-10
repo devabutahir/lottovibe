@@ -928,6 +928,7 @@
         max-width: 960px;
         .bn-carslide-item{
             max-width: 850px;
+            padding: 0 10px 0 50px;
         }
     }
     @include maxQuery(1500){
@@ -966,6 +967,7 @@
             max-width: 580px;
             .bn-carslide-item{
                 max-width: 360px;
+                padding: 0 0px 0 40px;
             }
         }
     }

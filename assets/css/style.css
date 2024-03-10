@@ -3508,6 +3508,7 @@ iframe {
 }
 .banner-oneslider .banner-carslide-wrap .bn-carslide-item {
   max-width: 850px;
+  padding: 0 10px 0 50px;
 }
 @media (max-width: 1500px) {
   .banner-oneslider {
@@ -3554,6 +3555,7 @@ iframe {
   }
   .banner-oneslider .banner-carslide-wrap .bn-carslide-item {
     max-width: 360px;
+    padding: 0 0px 0 40px;
   }
 }
 @media (max-width: 575px) {
