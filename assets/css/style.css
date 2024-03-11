@@ -9306,6 +9306,16 @@ iframe {
   color: var(--s1);
 }
 
+.real-estate-video.freature-videobg {
+  background: url(../../assets/images/howit/m-feature-bg.png) no-repeat center center !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+}
+
+.m-feature-items {
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+}
+
 .cate-body-type {
   background: rgba(244, 244, 244, 0.5);
 }
