@@ -632,6 +632,11 @@
        @include maxQuery(1199){
         @include box(100);
        }
+       &:hover{
+        i{
+            color: var(--nw1);
+        }
+       }
     }
 }
 .current-lottery-item{
@@ -1021,6 +1026,9 @@
             visibility: visible;
         }
     }
+}
+.winfixed{
+    background: #F4F4F4 !important;
 }
 //Current lotteryv9 Section
 
@@ -1953,6 +1961,8 @@
 .testimonial-sectionv8.badge-before-thumb{
     &::before{
         background: url(../../assets/images/global/testi-before-v8.png) no-repeat center center;
+        background-size: cover;
+        height: 100%;
     }
 }
 .testimonial-itemv8{
@@ -2672,10 +2682,9 @@
 //Call tov20 Section
 
 //Clothing Section
-.colthing-bg{
-    background: url(../../assets/images/howit/vidoe-bgv15.png) no-repeat center center !important;
+.real-estate-video.colthing-bg{
+    background: url(../../assets/images/howit/vidoe-bgv15.png) !important;
     background-size: contain;
-    background-attachment: fixed !important;
 }
 .competition-bg{
     background: url(../../assets/images/howit/vidoe-bgv15.png) no-repeat center center !important;
@@ -2791,6 +2800,11 @@
             bottom: 15px;
         }
     }
+}
+
+.real-bg{
+    background: url(../../assets/images/howit/real-bg.png) no-repeat center center !important;
+    background-size: cover;
 }
 //Realestate Section
 
@@ -2982,6 +2996,35 @@
         }
     }
 }
+.blog-v5-inner{
+    &:hover{
+        .boxs{
+            transform: scale(0.91);
+        }
+        .kewta-btn{
+            .kew-text{
+                background: var(--s1);
+                color: var(--n0);
+            }
+            .kew-arrow{
+                background: var(--s1);
+                .kt-one{
+                    i{
+                        color: var(--n0);
+                    }
+                }
+            }
+        }
+        .fs-four{
+            color: var(--s1) !important;
+        }
+        h3{
+            a{
+                color: var(--s1);
+            }
+        } 
+    }
+}
 //blog v5
 .blog-items-v5{
     border: 1px solid var(--borderd);
@@ -3072,10 +3115,12 @@
 .blog-items15{
     .thumb{
         overflow: hidden;
+        border-radius: 24px;
         img{
             overflow: hidden;
             transform: scale(1.1);
             transition: all 0.5s;
+            border-radius: 24px;
         }
     }
     .read15{
@@ -3967,7 +4012,7 @@
                 @include box(80);
                 border-radius: 50%;
                 i{
-                    font-size: 42px;
+                    font-size: 34px;
                 }
             }
         }

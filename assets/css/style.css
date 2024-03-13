@@ -2110,6 +2110,10 @@ iframe {
   animation: rot10 2s linear infinite;
 }
 
+.n4fixed {
+  color: var(--n4) !important;
+}
+
 @keyframes updown10 {
   50% {
     transform: translateY(-10px);
@@ -4863,6 +4867,27 @@ iframe {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.electronic-shape {
+  position: relative;
+}
+.electronic-shape::before {
+  position: absolute;
+  content: "";
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background: var(--act3);
+  opacity: 50%;
+  width: 400px;
+  height: 360px;
+  right: -90px;
+  bottom: 24%;
+}
+@media (max-width: 1800px) {
+  .electronic-shape::before {
+    display: none;
+  }
 }
 
 .banner-content-v10 .rotate-arrow-v10 {
@@ -7792,6 +7817,9 @@ iframe {
   }
 }
 
+.box-address {
+  width: 400px;
+}
 .box-address input {
   font-size: 18px;
   font-weight: 600;
@@ -7816,6 +7844,11 @@ iframe {
 }
 .box-address .worries {
   margin-top: 8px;
+}
+@media (max-width: 1199px) {
+  .box-address {
+    width: initial;
+  }
 }
 
 .footer-v4cont-info {
@@ -7991,6 +8024,9 @@ iframe {
   border: 1px solid var(--n3);
 }
 
+.box-addressv7 {
+  width: initial;
+}
 .box-addressv7 input {
   font-size: 14px;
   font-weight: 600;
@@ -8619,6 +8655,9 @@ iframe {
     height: 100px;
   }
 }
+.browse-more .cmn__collection:hover i {
+  color: var(--nw1);
+}
 
 .current-lottery-item .cmn-prrice-range .soldout {
   width: calc(100% - 190px);
@@ -8967,6 +9006,10 @@ iframe {
 .current-lottery-itemv9:hover .current-hoberv9 {
   opacity: 1;
   visibility: visible;
+}
+
+.winfixed {
+  background: #F4F4F4 !important;
 }
 
 .current-lotteryv13 {
@@ -9865,6 +9908,8 @@ iframe {
 
 .testimonial-sectionv8.badge-before-thumb::before {
   background: url(../../assets/images/global/testi-before-v8.png) no-repeat center center;
+  background-size: cover;
+  height: 100%;
 }
 
 .testimonial-itemv8 {
@@ -10581,10 +10626,9 @@ iframe {
   height: 100%;
 }
 
-.colthing-bg {
-  background: url(../../assets/images/howit/vidoe-bgv15.png) no-repeat center center !important;
+.real-estate-video.colthing-bg {
+  background: url(../../assets/images/howit/vidoe-bgv15.png) !important;
   background-size: contain;
-  background-attachment: fixed !important;
 }
 
 .competition-bg {
@@ -10688,6 +10732,11 @@ iframe {
   .current-lottery-itemv11 .current-l-badgev11 {
     bottom: 15px;
   }
+}
+
+.real-bg {
+  background: url(../../assets/images/howit/real-bg.png) no-repeat center center !important;
+  background-size: cover;
 }
 
 .current-lottery-itemv12 {
@@ -10851,6 +10900,26 @@ iframe {
   color: var(--s1);
 }
 
+.blog-v5-inner:hover .boxs {
+  transform: scale(0.91);
+}
+.blog-v5-inner:hover .kewta-btn .kew-text {
+  background: var(--s1);
+  color: var(--n0);
+}
+.blog-v5-inner:hover .kewta-btn .kew-arrow {
+  background: var(--s1);
+}
+.blog-v5-inner:hover .kewta-btn .kew-arrow .kt-one i {
+  color: var(--n0);
+}
+.blog-v5-inner:hover .fs-four {
+  color: var(--s1) !important;
+}
+.blog-v5-inner:hover h3 a {
+  color: var(--s1);
+}
+
 .blog-items-v5 {
   border: 1px solid var(--borderd);
   border-radius: 24px;
@@ -10940,11 +11009,13 @@ iframe {
 
 .blog-items15 .thumb {
   overflow: hidden;
+  border-radius: 24px;
 }
 .blog-items15 .thumb img {
   overflow: hidden;
   transform: scale(1.1);
   transition: all 0.5s;
+  border-radius: 24px;
 }
 .blog-items15 .read15 {
   border: 1px solid var(--nw4);
@@ -11782,7 +11853,7 @@ iframe {
   border-radius: 50%;
 }
 .program-planwrap .program-plan-item .program-plan-inner .icon i {
-  font-size: 42px;
+  font-size: 34px;
 }
 .program-planwrap .program-plan-item:not(:last-child) {
   margin-bottom: 80px;

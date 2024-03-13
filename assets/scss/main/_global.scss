@@ -1569,7 +1569,9 @@ iframe {
 .m-howarrow{
 	animation: rot10 2s linear infinite;
 }
-
+.n4fixed{
+	color: var(--n4) !important;
+}
 //cmn animation eyframes
 @keyframes updown10 {
 	50%{
