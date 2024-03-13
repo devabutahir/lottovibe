@@ -60,22 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
           }
           // Check Scroll //
 
-        //--Odometer--//
-        // $(".odometer-item").each(function () {
-        //   $(this).isInViewport(function (status) {
-        //     if (status === "entered") {
-        //       for (
-        //         var i = 0;
-        //         i < document.querySelectorAll(".odometer").length;
-        //         i++
-        //       ) {
-        //         var el = document.querySelectorAll(".odometer")[i];
-        //         el.innerHTML = el.getAttribute("data-odometer-final");
-        //       }
-        //     }
-        //   });
-        // });
-              // Odometer Init 
+        
+      // Odometer Init 
         let windowHeight = $(window).height();
         $('.odometer').children().each(function () {
           if ($(this).isInViewport({ "tolerance": windowHeight, "toleranceForLast": windowHeight, "debug": false })) {
@@ -127,23 +113,22 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       // navbar custom//
 
-    // Password icon fill//
-      document.querySelectorAll(".toggle-password").forEach(function(button) {
-          button.addEventListener("click", function() {
-              console.log('toggle click');
-              this.classList.toggle("fa-eye");
-              this.classList.toggle("fa-eye-slash");
-              var inputs = document.querySelectorAll(".password-field, .password-field2, .password-field3");
-              inputs.forEach(function(input) {
-                  if (input.type === "password") {
-                      input.type = "text";
-                  } else {
-                      input.type = "password";
-                  }
-              });
-          });
-      });
-  
+      // Password icon fill//
+        document.querySelectorAll(".toggle-password").forEach(function(button) {
+            button.addEventListener("click", function() {
+                console.log('toggle click');
+                this.classList.toggle("fa-eye");
+                this.classList.toggle("fa-eye-slash");
+                var inputs = document.querySelectorAll(".password-field, .password-field2, .password-field3");
+                inputs.forEach(function(input) {
+                    if (input.type === "password") {
+                        input.type = "text";
+                    } else {
+                        input.type = "password";
+                    }
+                });
+            });
+        });
 
       // banner car slide //
         var swiper = new Swiper(".banner-carslide-wrap", {
@@ -587,7 +572,6 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
         });
-        
         //Sponsor selection
         var swiper = new Swiper(".sponsor-wrap", {
           loop: true,
@@ -683,8 +667,6 @@ document.addEventListener("DOMContentLoaded", function () {
             reverseDirection: true,
           },
         });
-        
-
         //checking slider
         var swiper = new Swiper(".mySwiper", {
           loop: true,
@@ -706,7 +688,6 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         });
       // swipper slide //
-
 
       //--reply box--//
         $(".reply").on("click", function () {
@@ -733,7 +714,6 @@ document.addEventListener("DOMContentLoaded", function () {
         $(".currentYear").text(new Date().getFullYear());
       // Current Year//
 
-
         const texts = document.querySelectorAll(".text, .text2");
         texts.forEach(text => {
           if (text) {
@@ -757,7 +737,6 @@ document.addEventListener("DOMContentLoaded", function () {
       // $('#example').tooltip(options)
       $('[data-toggle="tooltip"]').tooltip();   
       //Tooptip//
-
 
       // Mouse Follower //
       const follower = document.querySelector(".mouse-follower .cursor-outline");
@@ -835,8 +814,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       //Quantity 
 
-
-
       // Mouse Follower Hide Function //
       $("a, button").on('mouseenter mouseleave', function () {
         $('.mouse-follower').toggleClass('hide-cursor');
@@ -876,7 +853,6 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.tabLinks .nav-links').not(this).removeClass('active');
       });
       // tabLinks add active  //
-
 
       // custom Accordion //
       $('.accordion-single .header-area').on('click', function () {
@@ -947,7 +923,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (clockdiv2){
         initializeClock(clockdiv2, deadline);
       }
-
 
     });
 });

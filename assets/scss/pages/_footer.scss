@@ -46,6 +46,9 @@
     .footer-browse-btn{
         display: flex;
         justify-content: center;
+        margin-bottom: -55px;
+        z-index: 3;
+        position: relative;
     }
     .footer-thumb1{
         z-index: 1;
@@ -61,6 +64,30 @@
             img{
                 max-width: 600px;
             }
+        }
+    }
+    @include maxQuery(1399){
+        .footer-browse-btn{
+            margin-bottom: -55px;
+            margin-right: -100px;
+        }
+    }
+    @include maxQuery(991){
+        .footer-browse-btn{
+            margin-bottom: -55px;
+            margin-right: -1px;
+        }
+    }
+    @include maxQuery(767){
+        .footer-browse-btn{
+            margin-bottom: -55px;
+            margin-right: 40px;
+        }
+    }
+    @include maxQuery(480){
+        .footer-browse-btn{
+            margin-bottom: 0px;
+            margin-right: 40px;
         }
     }
 }

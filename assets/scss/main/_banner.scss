@@ -2732,6 +2732,7 @@
 .banner-section-v14{
     background: url(../../assets/images/banner/banner-v14-bg.png) no-repeat center center;
     background-size: cover;
+    z-index: 1;
     .scroll-bn1{
         left: initial;
         right: 40px;
@@ -2746,6 +2747,26 @@
         top: -70px;
         right: -80px;
     }
+    .ladnig-vnft{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    @include maxQuery(1800){
+        .ladnig-vnft{
+            max-width: 180px;
+            img{
+                width: 100%;
+            }
+        }   
+    }
+    @include maxQuery(1600){
+        .ladnig-vnft{
+            max-width: 100px;
+            opacity: 0.5;
+        }   
+    }
     @include maxQuery(1399){
         .scroll-bn1{
             left: initial;
@@ -2753,8 +2774,16 @@
             transform: translateX(50%);
         }
     }
+    @include maxQuery(767){
+        .ladnig-vnft{
+           display: none;
+        } 
+    }
     @include maxQuery(500){
         .flash{
+            display: none;
+        }
+        .nft-border{
             display: none;
         }
     }
@@ -2770,6 +2799,36 @@
             }
         }
     }
+    @include maxQuery(1399){
+        .display-one{
+            font-size: 70px;
+        }
+        .nft-border{
+            svg{
+                width: 120px;
+            }
+        }
+    }
+    @include maxQuery(991){
+        .display-one{
+            font-size: 48px;
+        }
+        .nft-border{
+            svg{
+                width: 90px;
+            }
+        }
+    }
+    @include maxQuery(575){
+        .display-one{
+            font-size: 39px;
+        }
+        .nft-border{
+            svg{
+                width: 90px;
+            }
+        }
+    }
 }
 .banner-v14-thumb{
     border: 1px solid rgba(255, 255, 255, 0.50);
@@ -2778,14 +2837,68 @@
     padding: 20px 20px;
     width: 100%;
     height: 100%;
+    position: relative;
     img{
         border-radius: 32px;
         width: 100%;
         height: 100%;
     }
+    .place-customer{
+        border-radius: 32px;
+        border: 2px solid rgba(255, 255, 255, 0.70);
+        background: linear-gradient(153deg, rgba(255, 255, 255, 0.30) -65.62%, rgba(255, 255, 255, 0.10) 83.28%);
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(25px);
+        padding: 24px 24px;
+        overflow: hidden;
+        position: absolute;
+        top: -50px;
+        left: -120px;
+    }
+    .place-bidwrap{
+        border-radius: 32px;
+        border: 2px solid rgba(255, 255, 255, 0.70);
+        background: linear-gradient(153deg, rgba(255, 255, 255, 0.30) -65.62%, rgba(255, 255, 255, 0.10) 83.28%);
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(25px);
+        padding: 19px 19px;
+        overflow: hidden;
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        width: 82%;
+        transform: translateX(-50%);
+    }
+    @include maxQuery(991){
+        .place-customer{
+            border-radius: 24px;
+            padding: 13px 13px;
+            top: -130px;
+            left: 0px;
+        }
+        .place-bidwrap{
+            border-radius: 24px;
+            padding: 14px 14px;
+            bottom: -50%;
+            width: 100%;
+        }
+    }
     @include maxQuery(767){
         margin-top: 35px;
-        max-width: 380px;
+        // max-width: 380px;
+        width: 100%;
+        .place-bidwrap{
+            width: 100%;
+            position: initial;
+            margin: 0 auto;
+            left: 0;
+            transform: translateX(0);
+        }
+        height: initial;
+        .place-customer{
+            position: initial;
+            margin-bottom: 10px;
+        }
     }
     @include maxQuery(575){
         margin-top: 30px;

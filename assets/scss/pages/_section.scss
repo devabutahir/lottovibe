@@ -87,7 +87,7 @@
     .thumb{
         max-width: 390px;
         padding-right: 40px;
-        border-right: 2px solid var(--act4);
+        border-right: 2px solid rgb(255 101 14 / 20%);
     }
     .right-side-nextdraw{
         width: calc(100% - 390px);
@@ -184,7 +184,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    
     .draw-timer-item{
         text-align: center;
         .text-hed{
@@ -200,7 +199,7 @@
     }
     .lborder{
         border-width: 2px;
-        border: 1px solid var(--act4);
+        border: 1px solid rgb(255 101 14 / 20%);
         height: 78px;
     }
     @include maxQuery(500){
@@ -220,6 +219,9 @@
             height: 55px;
         }
     }
+}
+.ml-auto{
+    margin-left: auto !important;
 }
 //Next Draw 
 
