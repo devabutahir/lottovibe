@@ -252,10 +252,10 @@ li {
 		a{
 			&:hover,
 			&.active{
-				background: var(--p1);
-				color: var(--n4);
+				background: var(--s1) !important;
+				color: var(--nw1) !important;
 				i{
-					color: var(--n4);
+					color: var(--nw1) !important;
 				}
 			}
 		}

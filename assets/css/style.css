@@ -317,11 +317,11 @@ li {
 }
 
 .custom-pagination li a:hover, .custom-pagination li a.active {
-  background: var(--p1);
-  color: var(--n4);
+  background: var(--s1) !important;
+  color: var(--nw1) !important;
 }
 .custom-pagination li a:hover i, .custom-pagination li a.active i {
-  color: var(--n4);
+  color: var(--nw1) !important;
 }
 
 @media (max-width: 1399px) {
@@ -2112,6 +2112,10 @@ iframe {
 
 .n4fixed {
   color: var(--n4) !important;
+}
+
+.pagi-bg {
+  background: #E9F2FF !important;
 }
 
 @keyframes updown10 {
