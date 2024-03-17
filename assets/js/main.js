@@ -1,6 +1,6 @@
 "use strict";
-document.addEventListener("DOMContentLoaded", function () {
-    $(function ($) {
+document.addEventListener("DOMContentLoaded", () => {
+  $(($ => {
 
       // preloader
       setTimeout(function() {
@@ -924,7 +924,7 @@ document.addEventListener("DOMContentLoaded", function () {
         initializeClock(clockdiv2, deadline);
       }
 
-    });
+    }));
 });
 
 
