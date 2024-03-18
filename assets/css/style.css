@@ -1606,6 +1606,21 @@ i {
   height: 100%;
   animation: lineani6 3s linear infinite;
 }
+@media (max-width: 1199px) {
+  .global-line-animation span:nth-child(2), .global-line-animation span:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .global-line-animation span:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .global-line-animation span {
+    display: none;
+  }
+}
 
 @keyframes lineani1 {
   10% {
@@ -1619,12 +1634,12 @@ i {
 }
 @keyframes lineani3 {
   10% {
-    background: rgba(255, 102, 14, 0.337);
+    background: rgba(255, 102, 14, 0.265);
   }
 }
 @keyframes lineani4 {
   10% {
-    background: rgba(255, 102, 14, 0.337);
+    background: rgba(255, 102, 14, 0.27);
   }
 }
 @keyframes lineani5 {
