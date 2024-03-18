@@ -1653,7 +1653,7 @@ i {
   }
 }
 .mouse-follower {
-  z-index: 10;
+  z-index: 99;
 }
 .mouse-follower span {
   z-index: 10;
