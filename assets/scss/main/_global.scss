@@ -6,7 +6,7 @@ html {
 
 //global body
 body {
-	background-color: rgb(var(--bg1)); 
+	background-color: var(--nw1); 
 	color: var(--n2);
 	font-size: 18px;
 	line-height: 150%;
@@ -134,7 +134,7 @@ button {
 input,
 textarea {
 	padding: 12px 20px;
-	color: rgba(var(--n2), 0.5);
+	color: var(--n2);
 	width: 100%;
 	font-family: var(--body-font);
 	outline-color: transparent;
@@ -1275,7 +1275,7 @@ iframe {
 			font-weight: 700;
 			color: rgba(var(--p2));
 			.active{
-				background: rgba(var(--p1));
+				background: var(--p1);
 			}
 			button{
 				transition: var(--transition);
@@ -1305,7 +1305,7 @@ iframe {
         height: 50%;
         bottom: 0;
         left: 0;
-        background: rgba(var(--bg1));
+        background: var(--bg1);
         z-index: -1;
     }
     .search-box {
@@ -1512,7 +1512,7 @@ iframe {
 		width: 10px;
 		right: 15px;
 		top: initial;
-		border-color: rgba(var(--n2), 0.6);;
+		border-color: rgba(26, 26, 26, 0.6);
 	}
 
 	.list {
@@ -1956,16 +1956,16 @@ iframe {
     .nice-select {
 		padding-right: 40px !important;
         &::placeholder {
-            color: rgba(var(--n3), 1);
+            color: var(--n3);
         }
         &:focus,
         &:hover {
             border: none;
             outline: none;
-            color: rgba(var(--n3), 1);
+            color: var(--n3)
         }
         .current {
-            color: rgba(var(--n3), 1);
+            color: var(--n3);
             font-size: 16px;
             border: none;
             outline: none;
@@ -1974,8 +1974,8 @@ iframe {
             border: 1px solid rgba(var(--n6), 0.2);
             bottom: initial;
             padding: 8px 16px;
-            background: rgb(var(--bg1));
-            color: rgba(var(--n3), 1);
+            background: var(--bg1);
+            color: var(--n3);
         }
         &::after {
             display: block;
@@ -1984,7 +1984,7 @@ iframe {
     }
     &.second {
         border-radius: 48px;
-        border: 1px solid rgba(var(--n5), 1);
+        border: 1px solid var(--n5);
         input {
             font-size: 16px;
         }

@@ -552,7 +552,7 @@ html {
 }
 
 body {
-  background-color: rgb(var(--bg1));
+  background-color: var(--nw1);
   color: var(--n2);
   font-size: 18px;
   line-height: 150%;
@@ -693,7 +693,7 @@ button {
 input,
 textarea {
   padding: 12px 20px;
-  color: rgba(var(--n2), 0.5);
+  color: var(--n2);
   width: 100%;
   font-family: var(--body-font);
   outline-color: transparent;
@@ -1822,7 +1822,7 @@ iframe {
   color: rgba(var(--p2));
 }
 .singleTab.pros-cros .nav-item .active {
-  background: rgba(var(--p1));
+  background: var(--p1);
 }
 .singleTab.pros-cros .nav-item button {
   transition: var(--transition);
@@ -1844,7 +1844,7 @@ iframe {
   height: 50%;
   bottom: 0;
   left: 0;
-  background: rgba(var(--bg1));
+  background: var(--bg1);
   z-index: -1;
 }
 .search-area .search-box {
@@ -2043,7 +2043,7 @@ iframe {
   width: 10px;
   right: 15px;
   top: initial;
-  border-color: rgba(var(--n2), 0.6);
+  border-color: rgba(26, 26, 26, 0.6);
 }
 .nice-select .list {
   width: initial;
@@ -2509,18 +2509,18 @@ iframe {
   padding-right: 40px !important;
 }
 .input-area .nice-select::-moz-placeholder {
-  color: rgba(var(--n3), 1);
+  color: var(--n3);
 }
 .input-area .nice-select::placeholder {
-  color: rgba(var(--n3), 1);
+  color: var(--n3);
 }
 .input-area .nice-select:focus, .input-area .nice-select:hover {
   border: none;
   outline: none;
-  color: rgba(var(--n3), 1);
+  color: var(--n3);
 }
 .input-area .nice-select .current {
-  color: rgba(var(--n3), 1);
+  color: var(--n3);
   font-size: 16px;
   border: none;
   outline: none;
@@ -2529,8 +2529,8 @@ iframe {
   border: 1px solid rgba(var(--n6), 0.2);
   bottom: initial;
   padding: 8px 16px;
-  background: rgb(var(--bg1));
-  color: rgba(var(--n3), 1);
+  background: var(--bg1);
+  color: var(--n3);
 }
 .input-area .nice-select::after {
   display: block;
@@ -2538,7 +2538,7 @@ iframe {
 }
 .input-area.second {
   border-radius: 48px;
-  border: 1px solid rgba(var(--n5), 1);
+  border: 1px solid var(--n5);
 }
 .input-area.second input {
   font-size: 16px;
@@ -9213,7 +9213,7 @@ iframe {
   border: 1px solid var(--n4);
   border-radius: 12px;
   color: var(--n4);
-  font-style: 18px;
+  font-size: 18px;
   font-weight: 700;
   padding: 1px 4px;
 }
