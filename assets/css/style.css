@@ -561,6 +561,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
+  z-index: 1;
 }
 
 section,
@@ -1543,6 +1544,99 @@ i {
   color: var(--n4);
 }
 
+.global-line-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  padding: 0 150px;
+}
+.global-line-animation span {
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid rgba(179, 182, 185, 0.2);
+  display: block;
+  position: relative;
+}
+.global-line-animation span::after, .global-line-animation span::before {
+  position: absolute;
+  content: "";
+}
+.global-line-animation span:nth-child(1)::before {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  animation: lineani1 3s linear infinite;
+}
+.global-line-animation span:nth-child(2)::before {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  animation: lineani2 4s linear infinite;
+}
+.global-line-animation span:nth-child(3)::before {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  animation: lineani3 5s linear infinite;
+}
+.global-line-animation span:nth-child(4)::before {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  animation: lineani4 5s linear infinite;
+}
+.global-line-animation span:nth-child(5)::before {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  animation: lineani5 4s linear infinite;
+}
+.global-line-animation span:nth-child(6)::before {
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  animation: lineani6 3s linear infinite;
+}
+
+@keyframes lineani1 {
+  10% {
+    background: rgba(176, 254, 58, 0.211);
+  }
+}
+@keyframes lineani2 {
+  10% {
+    background: rgba(86, 74, 255, 0.293);
+  }
+}
+@keyframes lineani3 {
+  10% {
+    background: rgba(255, 102, 14, 0.337);
+  }
+}
+@keyframes lineani4 {
+  10% {
+    background: rgba(255, 102, 14, 0.337);
+  }
+}
+@keyframes lineani5 {
+  10% {
+    background: rgba(86, 74, 255, 0.293);
+  }
+}
+@keyframes lineani6 {
+  10% {
+    background: rgba(176, 254, 58, 0.211);
+  }
+}
 .mouse-follower {
   z-index: 10;
 }

@@ -60,18 +60,17 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           // Check Scroll //
 
-        
-      // Odometer Init 
-        let windowHeight = $(window).height();
-        $('.odometer').children().each(function () {
-          if ($(this).isInViewport({ "tolerance": windowHeight, "toleranceForLast": windowHeight, "debug": false })) {
-            var section = $(this).closest(".counters");
-            section.find(".odometer").each(function () {
-              $(this).html($(this).attr("data-odometer-final"));
-            });
-          }
-        });
-        //--Odometer--//
+        // Odometer Init 
+          let windowHeight = $(window).height();
+          $('.odometer').children().each(function () {
+            if ($(this).isInViewport({ "tolerance": windowHeight, "toleranceForLast": windowHeight, "debug": false })) {
+              var section = $(this).closest(".counters");
+              section.find(".odometer").each(function () {
+                $(this).html($(this).attr("data-odometer-final"));
+              });
+            }
+          });
+          //--Odometer--//
 
       });
       // window on scroll function//
@@ -672,7 +671,6 @@ document.addEventListener("DOMContentLoaded", () => {
           loop: true,
           spaceBetween: 10,
           slidesPerView: 1,
-          // freeMode: true,
           watchSlidesProgress: true,
           allowTouchMove: false,
         });
@@ -734,7 +732,6 @@ document.addEventListener("DOMContentLoaded", () => {
       //propdown common lide//
 
       //Tooptip//
-      // $('#example').tooltip(options)
       $('[data-toggle="tooltip"]').tooltip();   
       //Tooptip//
 
